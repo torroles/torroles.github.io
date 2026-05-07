@@ -73,6 +73,10 @@ li{
        margin-bottom: 10px;
         border-radius: 4px;
 }
+.resumen{
+    font-size: 0.9em;
+     color: #666;
+    }
 
 .vivo{
     color: #1a3a5a; 
