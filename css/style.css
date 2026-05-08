@@ -93,3 +93,44 @@ li{
       font-style: italic;
        margin-top: 20px;
 }
+
+/* Contenedor de iconos */
+.header-contact {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-contact svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.header-contact svg:hover {
+    transform: scale(1.2);
+    fill: #00d1b2; /* Color verde/teal al pasar el ratón */
+}
+
+/* Botón de CV Estilo Premium */
+.btn-cv {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: white;
+    color: #1a3a5a;
+}
+
+/* Ajuste de la foto para que no quede tan pegada arriba */
+.sidebar-photo {
+    margin-top: 10px;
+}
