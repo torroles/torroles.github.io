@@ -1,136 +1,171 @@
- body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1a3a5a; /* El azul de tu CV */
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #1a3a5a;
-            border-bottom: 2px solid #1a3a5a;
-            padding-bottom: 5px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            background: #e1e8f0;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: #666;
-        }
-        .sidebar-photo {
-    text-align: center; /* Centra el contenedor */
-    margin-bottom: 20px;
+/* RESET GENERAL */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-dark: #1a3a5a; /* Color del fondo del header en tu captura */
+    --blue-main: #0d4a86;
+    --bg-body: #f4f7f9;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-muted: #5a6478;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* CONTENEDOR PRINCIPAL: 80% en PC, 100% en Móvil */
+.portfolio-container {
+    width: 80%;
+    margin: 40px auto;
+    background: transparent;
+}
+
+/* HEADER (Azul oscuro como en la captura) */
+header {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Bordes redondeados arriba */
 }
 
 .sidebar-photo img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;      /* Hace la imagen completamente redonda */
-    object-fit: cover;        /* Crucial: recorta la imagen para que no se deforme */
-    object-position: center;  /* Centra el enfoque del recorte */
-    border: 4px solid var(--teal); /* Añade un borde con el color verde de tu CV */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Un sombreado suave para dar relieve */
-    display: block;
-    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-/*estilo de las listas de ejercicios*/
-ul{
-    list-style: none;
-     padding: 0;
-}
-li{
-    background: #f9f9f9;
-     padding: 15px;
-      border-left: 5px solid #1a3a5a;
-       margin-bottom: 10px;
-        border-radius: 4px;
-}
-.resumen{
-    font-size: 0.9em;
-     color: #666;
-    }
-
-.vivo{
-    color: #1a3a5a; 
-    font-weight: bold;
-     text-decoration: none;
-}
-.codigo{
-    color: #555; font-weight: bold; text-decoration: none; font-size: 0.9em;
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
-#observaciones{
-    font-size: 0.9em;
-     color: #888;
-      font-style: italic;
-       margin-top: 20px;
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
 }
 
-/* Contenedor de iconos */
 .header-contact {
-    margin-top: 15px;
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 25px;
 }
 
 .header-contact svg {
-    transition: transform 0.3s ease, fill 0.3s ease;
+    transition: transform 0.2s;
 }
 
-.header-contact svg:hover {
+.header-contact a:hover svg {
     transform: scale(1.2);
-    fill: #00d1b2; /* Color verde/teal al pasar el ratón */
 }
 
-/* Botón de CV Estilo Premium */
 .btn-cv {
     display: inline-block;
-    margin-top: 25px;
     padding: 10px 25px;
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 25px;
     text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
 .btn-cv:hover {
-    background-color: white;
-    color: #1a3a5a;
+    background: white;
+    color: var(--blue-dark);
 }
 
-/* Ajuste de la foto para que no quede tan pegada arriba */
-.sidebar-photo {
-    margin-top: 10px;
+/* SECCIONES DEL CONTENIDO (Fondo blanco) */
+main {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 0 0 8px 8px; /* Redondeado abajo */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--blue-main);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* PROYECTOS */
+.projects-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.projects-list li {
+    background: #f9fbff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border-left: 5px solid var(--blue-main);
+}
+
+.resumen {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 5px 0 10px 0;
+}
+
+.codigo, .vivo {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--blue-main);
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ── RESPONSIVE (MÓVILES) ── */
+@media (max-width: 850px) {
+    .portfolio-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    header, main {
+        border-radius: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
 }
