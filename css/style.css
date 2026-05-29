@@ -89,6 +89,14 @@ header h1 {
     color: var(--blue-dark);
 }
 
+#shareBtn{
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+     display: none;
+}
+
 /* SECCIONES DEL CONTENIDO (Fondo blanco) */
 main {
     background: var(--white);
