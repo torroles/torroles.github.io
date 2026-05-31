@@ -1,85 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <title>Mi primera página en TOP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En Construcción</title>
-    <style>
-        /* RESET Y ESTILOS GENERALES (Estilo Hacker/Terminal) */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #0a0a0a;
-            color: #00ff66;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            padding: 20px;
-            margin: 0;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        h1 { 
-            font-size: 2rem;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
-        }
-
-        /* El símbolo animado <... */
-        .symbol {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 35px;
-            animation: parpadeo 1.2s steps(2, start) infinite;
-        }
-
-        /* CAJA DE LA TERMINAL DE CÓDIGO */
-        #terminal {
-            background-color: #000000;
-            color: #00ff66;
-            padding: 25px;
-            width: 100%;
-            max-width: 650px;
-            height: 320px;
-            border: 1px solid #222;
-            border-radius: 6px;
-            text-align: left;
-            overflow-y: auto;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            white-space: pre-wrap; /* Mantiene los saltos de línea y tabulaciones */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        /* Personalización de la barra de scroll de la terminal */
-        #terminal::-webkit-scrollbar {
-            width: 6px;
-        }
-        #terminal::-webkit-scrollbar-thumb {
-            background-color: #111;
-            border-radius: 3px;
-        }
-
-        /* ANIMACIÓN DE PARPADEO */
-        @keyframes parpadeo { 
-            50% { opacity: 0; } 
-        }
-
-        /* AJUSTES RESPONSIVE PARA MÓVILES */
-        @media (max-width: 600px) {
-            h1 { font-size: 1.5rem; }
-            .symbol { font-size: 2.5rem; margin-bottom: 20px; }
-            #terminal { height: 280px; font-size: 0.8rem; padding: 15px; }
-        }
-    </style>
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="TOP">
+    <meta name="keywords" content="html, top, curso, fundamentos">
+    <link rel="stylesheet" href="css/en_construccion.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
 </head>
 <body>
 
@@ -88,61 +18,16 @@
 
     <div id="terminal"></div>
 
-    <script>
-        const terminal = document.getElementById('terminal');
-        
-        // El bloque de código personalizado con tus tecnologías y datos reales
-        const codigo = `
-/**
- * @file torroles.github.io - Build Config
- * @status UNDER_CONSTRUCTION
- */
-
-function deployPortfolio() {
-    console.log("Iniciando despliegue en servidor...");
+    <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+<li><a href="https://torroles.github.io/index.html">Volver Porfolio</a></li>
+                </ul>
+        </footer>
+    </div>
+    <script src="js/año_footer.js"></script>
+    <script src="js/en_construccion.js"></script>
     
-    const devProfile = {
-        name: "Raúl Galisteo García",
-        stack: ["Java", "JavaScript", "PHP", "MySQL", "React"],
-        tools: ["VS Code", "Tomcat", "Git", "WSL/Ubuntu"]
-    };
-
-    // Cargando módulos del currículum...
-    const secciones = ["Experiencia_Ayuntamiento", "Formacion_CENEC", "Proyectos"];
-    secciones.forEach(sec => console.log(\`Compilando: \${sec}.html...\`));
-
-    return "Sistema optimizado. Listo para producción.";
-}
-
-// Ejecutando tareas de optimización...
-// [ERROR] Jekyll bloqueado temporalmente.
-// [FIX] Archivo .nojekyll detectado correctamente.
-// Estado: [||||||||||....] 75% completado.
-`;
-
-        let i = 0;
-        function escribir() {
-            if (i < codigo.length) {
-                // Escribimos el siguiente carácter
-                terminal.textContent += codigo.charAt(i);
-                i++;
-                
-                // Auto-scroll hacia abajo para que siempre se vea la última línea escrita
-                terminal.scrollTop = terminal.scrollHeight;
-                
-                setTimeout(escribir, 40); // Velocidad de escritura (40ms por letra)
-            } else {
-                // BUCLE DE REINICIO: Espera 4 segundos quieto al finalizar y vuelve a empezar
-                setTimeout(() => {
-                    terminal.textContent = ''; // Vaciamos la terminal
-                    i = 0;                     // Reseteamos el índice
-                    escribir();                // Arrancamos de nuevo
-                }, 4000);
-            }
-        }
-        
-        // Arrancamos la simulación al cargar la página
-        escribir();
-    </script>
 </body>
 </html>

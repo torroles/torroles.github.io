@@ -1,0 +1,140 @@
+   /* RESET Y ESTILOS GENERALES (Estilo Hacker/Terminal) */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 { 
+            font-size: 2rem;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        /* El símbolo animado <... */
+        .symbol {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 35px;
+            animation: parpadeo 1.2s steps(2, start) infinite;
+        }
+
+        /* CAJA DE LA TERMINAL DE CÓDIGO */
+        #terminal {
+            background-color: #000000;
+            color: #00ff66;
+            padding: 25px;
+            width: 100%;
+            max-width: 650px;
+            height: 320px;
+            border: 1px solid #222;
+            border-radius: 6px;
+            text-align: left;
+            overflow-y: auto;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            white-space: pre-wrap; /* Mantiene los saltos de línea y tabulaciones */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Personalización de la barra de scroll de la terminal */
+        #terminal::-webkit-scrollbar {
+            width: 6px;
+        }
+        #terminal::-webkit-scrollbar-thumb {
+            background-color: #111;
+            border-radius: 3px;
+        }
+
+        /* ANIMACIÓN DE PARPADEO */
+        @keyframes parpadeo { 
+            50% { opacity: 0; } 
+        }
+
+        /* AJUSTES RESPONSIVE PARA MÓVILES */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .symbol { font-size: 2.5rem; margin-bottom: 20px; }
+            #terminal { height: 280px; font-size: 0.8rem; padding: 15px; }
+        }
+
+
+
+
+/* FOOTER */
+footer {
+    margin-top: 50px; /* Separa el footer del ejercicio */
+    padding: 20px;
+    border-top: 1px solid #ccc; /* Una línea sutil de separación */
+    text-align: center;
+    padding: 30px;
+    color: #00ff66;
+    font-size: 0.9rem;
+    background-color: #0a0a0a;}
+
+
+.viñeta {
+    list-style: none;
+    padding: 0;
+    max-width: 600px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la lista */
+}
+
+.viñeta li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.viñeta li::before {
+    content: ">_ "; 
+    color: #00ff66; /* Un verde terminal le quedaría genial, o mantén tu #333 */
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Opcional: le da un toque más "code" */
+}
+
+/* 1. Definimos la animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #00ff66; /* Verde encendido */
+    }
+    50% {
+        color: transparent; /* Se apaga (invisible) */
+    }
+}
+
+/* 2. Modificamos el comportamiento al hacer hover */
+/* Cuando el usuario pasa el ratón por encima del li o del enlace... */
+.viñeta li:hover::before, li:hover {
+    /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
+    animation: parpadeo 0.8s steps(2, start) infinite;
+}
+
+.viñeta a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #00ff66;
+}
+
+.viñeta a:hover {
+    text-decoration: underline;
+    color: #00ff66;
+}
