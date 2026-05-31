@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con CSS</title>
+
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="palabras claves para el buscador">
+    <meta name="description" content="Descripción de la página">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/comun.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+     <header> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logofrom.png" alt="logo html5" title="inicio de página">
+                        Formularios
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="../formulario_de_contacto/index.html">Formulario de contacto</a></span>
+                    <span><a href="../formulario_de_pago_online/index.html">pago online</a></span>
+                    <span><a href="../formulario_de_redes_sociales/index.html">redes</a></span>
+                    <span><a href="../formulario_de_registro/index.html">registro</a></span>
+                    <span><a href="../formularios_general/formularios_css.html">formularios css3</a></span>
+                    <span><a href="../formularios_general/formulario_mio.html">mi formulario css3</a></span>
+                    <span><a href="../formularios_general/todos_los_formularios.html">campos formularios</a></span>
+                </nav>
+            </div>
+
+            <hr>
+
+
+    <h1>FORMULARIOS CON CSS</h1>
+
+    <hr>
+    <h3>USANDO ESTILOS CON CSS EN FORMULARIO HTML</h3>
+
+    <div>
+        <form action="#">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="tu nombre">
+
+            <label for="apellido">Primer apellido</label>
+            <input type="text" id="apellido" name="primer_apellido" placeholder="tu apellido">
+
+            <label for="Ciudad">Ciudad</label>
+            <select id="Ciudad" name="Ciudad">
+                <option value="Malaga">Málaga</option>
+                <option value="Torremolinos">Torremolinos</option>
+                <option value="Alhaurin el grande">Alhaurín el Grande</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h2>APLICAR ESTILOS A LOS CAMPOS DE ENTRADA</h2>
+
+    <p>Utilice la propiedad <code>width</code> para determinar el ancho del campo de entrada.</p>
+
+    <h2>A full-width input field</h2>
+
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+    </form>
+
+    <p>
+        El ejemplo anterior se aplica a todos los elementos <code>input</code>.
+        Si solo desea aplicar estilo a un tipo de entrada específico, puede utilizar selectores de atributos:
+    </p>
+
+    <ul>
+        <li><code>input[type=text]</code> – solo seleccionará campos de texto</li>
+        <li><code>input[type=password]</code> – solo seleccionará campos de contraseña</li>
+        <li><code>input[type=number]</code> – solo seleccionará campos numéricos</li>
+    </ul>
+
+    <h2>ENTRADAS ACOLCHADAS</h2>
+
+    <p>
+        Utilice la propiedad <code>padding</code> para agregar espacio dentro del campo de texto.
+        Consejo: cuando tienes muchas entradas una tras otra, también puedes usar <code>margin</code> para agregar
+        espacio exterior.
+    </p>
+
+    <form>
+        <label for="nombrepropio">Nombre</label>
+        <input type="text" id="nombrepropio" name="propio">
+    </form>
+
+    <h2>ENTRADAS CON BORDES</h2>
+
+    <p>
+        Utilice la propiedad <code>border</code> para cambiar el tamaño y color del borde, y <code>border-radius</code>
+        para esquinas redondeadas.
+    </p>
+
+    <form action="#">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombrepropio">
+    </form>
+
+    <p>Si solo desea un borde inferior, utilice la propiedad <code>border-bottom</code>:</p>
+
+    <form action="#">
+        <label for="apellido">Primer apellido</label>
+        <input type="text" id="apellido" name="primerapellido">
+    </form>
+
+    <h2>BACKGROUND</h2>
+
+    <p>
+        Utilice <code>background-color</code> para agregar color de fondo y <code>color</code> para cambiar el color del
+        texto.
+    </p>
+
+    <form action="#">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="colorfondo">
+    </form>
+
+    <h2>ENTRADAS ENFOCADAS</h2>
+
+    <p>
+        Algunos navegadores agregan un contorno azul al enfocar un campo.
+        Puede eliminarlo con <code>outline: none;</code>.
+        Use <code>:focus</code> para aplicar estilos cuando el campo recibe el foco.
+    </p>
+
+    <form action="#">
+        <label for="foco1">Cambio al foco</label>
+        <input type="text" name="cambiofoco1" id="foco1">
+    </form>
+
+    <form action="#">
+        <label for="foco2">Cambio al foco</label>
+        <input type="text" name="cambiofoco2" id="foco2">
+    </form>
+
+    <h2>ICONO O IMAGEN EN LA ENTRADA</h2>
+
+    <p>
+        Use <code>background-image</code> y <code>background-position</code> para colocar un icono dentro del campo.
+        Agregue <code>padding-left</code> para reservar espacio.
+    </p>
+
+    <form action="#">
+        <label for="icono">Búsqueda</label>
+        <input type="text" name="icono" id="icono">
+    </form>
+
+    <h2>ENTRADA DE BÚSQUEDA ANIMADA</h2>
+
+    <p>
+        Use <code>transition</code> para animar el ancho de la entrada cuando recibe el foco.
+    </p>
+
+    <form action="#">
+        <label for="animada">Animada</label>
+        <input type="text" name="animada" id="animada">
+    </form>
+
+    <h2>ESTILOS A TEXTAREA</h2>
+
+    <p>
+        Use <code>resize</code> para evitar que se cambie el tamaño del área de texto.
+    </p>
+
+    <form>
+        <textarea id="tamaño">aquí va el texto</textarea>
+    </form>
+
+    <h2>ESTILOS A SELECT</h2>
+
+    <form>
+        <select id="country" name="country">
+            <option value="ES">España</option>
+            <option value="IT">Italia</option>
+            <option value="PO">Portugal</option>
+        </select>
+    </form>
+
+    <h2>ESTILOS A BOTÓN</h2>
+
+    <input type="button" value="Button">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+
+    <h2>RESPONSIVE FORM</h2>
+
+    <p>
+        Cambie el tamaño de la ventana para ver el efecto.
+        Cuando la pantalla tenga menos de 600px, las columnas se apilan verticalmente.
+    </p>
+
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nombre1">Nombre</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nombre1" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="apellido1">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="apellido1" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pais">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="pais" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="sujeto">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="sujeto" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

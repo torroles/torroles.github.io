@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: rgb(167, 168, 167);
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+label {
+    font-size: bold;
+    margin-top: 10px;
+}
+
+span {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+input[type=checkbox],
+input[type=submit] {
+    width: auto;
+}
+
+input[type=submit]{
+    border: 2px outset grey;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+:is(input[type=text], input[type=tel], input[type=email], textarea):invalid {
+    border: 2px red solid;
+    border-radius: 2px;
+    background-image: url(../img/wrong.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+:is(input[type=text], input[type=tel], input[type=email], textarea):valid {
+    border: 2px green solid;
+    border-radius: 2px;
+    background-image: url(../img/check.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+input:focus, textarea:focus{outline: none;}
+
+
+
+textarea{padding: 10px;}

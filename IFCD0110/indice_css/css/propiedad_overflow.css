@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+	text-align: left;
+}
+
+/* Caja base */
+.box {
+    width: 260px;          /* ancho fijo */
+    height: 120px;         /* alto fijo */
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f7f7f7;
+    text-align: left;      /* para que el texto no quede centrado dentro */
+    overflow-wrap: break-word;
+}
+
+/* Tipos de overflow */
+.visible {
+    overflow: visible;
+	 white-space: nowrap;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+.lateral {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;   /* NECESARIO para scroll horizontal */
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todos los posibles campos de formulario</title>
+
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="palabras claves para el buscador">
+    <meta name="description" content="Descripción de la página">
+<link rel="stylesheet" href="../css/comun.css">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+     <header> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logofrom.png" alt="logo html5" title="inicio de página">
+                        Formularios
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="../formulario_de_contacto/index.html">Formulario de contacto</a></span>
+                    <span><a href="../formulario_de_pago_online/index.html">pago online</a></span>
+                    <span><a href="../formulario_de_redes_sociales/index.html">redes</a></span>
+                    <span><a href="../formulario_de_registro/index.html">registro</a></span>
+                    <span><a href="../formularios_general/formularios_css.html">formularios css3</a></span>
+                    <span><a href="../formularios_general/formulario_mio.html">mi formulario css3</a></span>
+                    <span><a href="../formularios_general/todos_los_formularios.html">campos formularios</a></span>
+                </nav>
+            </div>
+
+            <hr>
+
+    <h1>CAMPOS DEFORMULARIOS</h1>
+<hr>
+    <form>
+        …Aquí irán los campos del formulario...
+    </form>
+
+    <h2>INPUT</h2>
+
+    <form>
+        Tu nombre: <input>
+        Tu apellido: <input>
+    </form>
+
+    <h2>ATRIBUTO TYPE</h2>
+
+    <form>
+        Nombre: <input type="text"> <br><br>
+        Apellidos: <input type="text"> <br><br>
+        Contraseña: <input type="password"> <br><br>
+        Casilla de verificación: <input type="checkbox"> <br><br>
+        Casilla de selección: <input type="radio"> <br><br>
+        Selección de archivo: <input type="file"> <br><br>
+        Botón de envío: <input type="submit">
+    </form>
+
+    <h2>SELECT Y OPTION</h2>
+
+    <form>
+        ELIGE UN COLOR:
+        <select>
+            <option>Blanco</option>
+            <option>Negro</option>
+            <option>Azul</option>
+            <option>Rojo</option>
+            <option>Verde</option>
+        </select>
+    </form>
+
+    <h2>TEXTAREA</h2>
+
+    <form>
+        Nombre: <input type="text"> <br><br>
+        Correo electrónico: <input type="email"> <br><br>
+        Tu mensaje: <textarea name="mensaje"></textarea> <br><br>
+        <input type="submit" value="Enviar ahora">
+    </form>
+
+    <h2>LABEL</h2>
+
+    <label for="html">HTML</label>
+
+    <h2>ATRIBUTOS</h2>
+
+    <h2>ACTION</h2>
+
+    <form action="URL"></form>
+
+    <h2>METHOD</h2>
+
+    <form action="URL" method="get"></form>
+    <form action="URL" method="post"></form>
+
+    <h2>NAME</h2>
+
+    <form name="miformulario" action="URL" method="post"></form>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form>
+        Nombre: <input name="nombre" type="text"> <br><br>
+        Correo electrónico: <input name="correo" type="email"> <br><br>
+        Tu mensaje: <textarea name="mensaje"></textarea> <br><br>
+        <input type="submit" value="Enviar ahora">
+    </form>
+
+    <h2>TEXTO</h2>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <h2>RADIO</h2>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <h2>CHECKBOX</h2>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label><br>
+
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label><br>
+
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label>
+    </form>
+
+    <h2>SUBMIT</h2>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>VALORES PARA TYPE</h2>
+
+    <form>
+        COLOR: <input type="color"><br><br>
+        DATE: <input type="date"><br><br>
+        DATETIME: <input type="datetime"><br><br>
+        DATETIME-LOCAL: <input type="datetime-local"><br><br>
+        EMAIL: <input type="email"><br><br>
+        MONTH: <input type="month"><br><br>
+        NUMBER: <input type="number">
+    </form>
+
+    <form>
+        SEARCH: <input type="search"><br><br>
+        TEL: <input type="tel"><br><br>
+        TIME: <input type="time"><br><br>
+        URL: <input type="url"><br><br>
+        WEEK: <input type="week"><br><br>
+        RANGE: <input type="range"><br><br>
+    </form>
+
+    <h2>ATRIBUTOS PARA HTML5</h2>
+
+    <form>
+        Correo: <input type="email" placeholder="Escribe tu correo aquí."><br><br>
+        Teléfono: <input type="tel" size="20"><br><br>
+        Texto: <input type="text" value="No puedes editar esto." readonly><br><br>
+        Número: <input type="number" disabled><br><br>
+    </form>
+
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

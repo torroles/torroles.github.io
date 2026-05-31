@@ -1,0 +1,54 @@
+* {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* Quitamos márgenes y viñetas */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Cada elemento del menú */
+nav ul li {
+    float: left;
+}
+
+/* Convertimos el enlace en bloque */
+nav ul a {
+    display: block;              /* ← CLAVE para alinear */
+    width: 120px;                /* puedes ajustar */
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 5px;
+    border-right: solid 1px #336699;
+}
+
+/* Hover */
+nav ul a:hover {
+    background-color: #336699;
+}
+
+/* Último elemento sin borde */
+nav ul li:last-child a {
+    border-right: none;
+}
+
+/* Limpiar floats para evitar problemas */
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer nav .viñeta  a {
+    text-align: center;
+    display: inline !important;       /* Quita el display: block */
+    width: auto !important;           /* Elimina los 120px fijos que rompen el texto */
+    border-right: none !important;    /* Borra la línea azul vertical */
+    padding: 0 !important;            /* Quita los paddings del menú superior */
+    background-color: transparent !important;
+    color: inherit;                   /* Hereda el color del 'li' para poder parpadear */
+}

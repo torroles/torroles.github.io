@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <title>Selectores CSS</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejemplos de selectores en CSS.">
+    <meta name="keywords" content="CSS, selectores, hover, active, nth-child, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/selectores.css">
+    <link rel="stylesheet" type="text/css" href="../css/comun.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+    
+     <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logo css3.jpg" alt="logo html5" title="inicio de página">
+                        Lenguaje CSS3
+                    </a>
+                </div>
+            </div>
+
+    <div id="navegacion">
+        <nav>
+            <span>
+                <span><a href="../index.html">índice</a></span>
+                    <span><a class="volver-indice" href="propiedades_txt.html">TEXTOS</a></span>
+                    <span><a href="selectores.html">PSEUDO-CLASES</a></span>
+                    <span><a href="combinadores.html">PSEUDO-ELEMENTOS</a></span>
+                    <span><a href="bordes.html">bordes</a></span>
+                    <span><a href="transiciones.html">transiciones</a></span>
+                     <span><a href="transformaciones_2D.html">transformaciones 2D</a></span>
+                    <span><a href="flexbox.html">flexbox</a></span>
+                    <span><a href="grid.html">grid</a></span>
+                    <span><a href="call_to_action.html">call to action</a></span>
+                    <span><a href="emojis_before.html">LISTA CON ::BEFORE </a></span>
+                    <span><a href="nav_horizontal.html">MENÚ HORIZONTAL</a></span>
+                    <span><a href="breadcrumb.html">breadcrumb</a></span>
+                    <span><a href="nav_vertical.html">MENÚ VERTICAL</a></span>
+                    <span><a href="galeria_img.html">GALERÍA</a></span>
+                    <span><a href="tabla_productos.html">tabla productos</a></span>
+                    <span><a href="propiedad_overflow.html">OVERFLOW</a></span>
+                    <span><a href="mini_producto.html">MINIATURA DE PRODUCTO</a></span>
+        </nav>
+    </div>
+
+    <hr>
+    <h1>Uso de Pseudo-clases</h1>
+    <hr>
+
+    <div class="flexcontainer">
+        <!-- Estados de interacción -->
+        <div>
+            <h2>Pseudo-clases de usuario</h2>
+            <p>a:hover {color: red} (Al pasar el ratón)</p>
+            <p>button:active {transform: scale(0.9)} (Al hacer clic)</p>
+            
+            <div id="demo-interaccion">
+                <a href="#" class="btn-ejemplo">Pasa el ratón por aquí</a>
+                <br><br>
+                <button type="button">Haz clic en mí</button>
+            </div>
+            
+            <code>
+                a:hover { color: red; }<br>
+                button:active { background: orange; }
+            </code>
+        </div>
+
+        <!-- Estados de enlaces -->
+        <div>
+            <h2>Estados de Hipervínculos</h2>
+            <p>Controla cómo se ven los enlaces según si se han visitado o no.</p>
+            
+            <div id="demo-links">
+                <a href="https://google.es" target="_blank">Enlace no visitado</a><br>
+                <a href="introduccion.html">Enlace que ya conoces</a>
+            </div>
+            
+            <code>
+                a:link { color: blue; }<br>
+                a:visited { color: purple; }
+            </code>
+        </div>
+
+        <!-- Selección por posición -->
+        <div>
+            <h2>Pseudo-clases estructurales</h2>
+            <p>Seleccionan elementos según su orden en el HTML.</p>
+            
+            <ul id="lista-demo">
+                <li>Primer elemento (:first-child)</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+                <li>Último elemento (:last-child)</li>
+            </ul>
+
+            <code>
+                li:first-child { font-weight: bold; }<br>
+                li:last-child { color: green; }<br>
+                li:nth-child(2) { background: #eee; }
+            </code>
+        </div>
+
+        <!-- Estados de formulario -->
+        <div>
+            <h2>Estados de Formulario</h2>
+            <p>input:focus (Cuando el cursor está dentro)</p>
+            
+            <div id="demo-form">
+                <label for="nombre">Escribe algo:</label>
+                <input type="text" id="nombre" placeholder="Haz clic aquí...">
+            </div>
+
+            <code>
+                input:focus { border: 2px solid blue; }
+            </code>
+        </div>
+    </div>
+
+    <hr>
+    <p><strong>Nota:</strong> Las pseudo-clases siempre empiezan con un solo punto (<code>:</code>), a diferencia de los pseudo-elementos que usan dos (<code>::</code>).</p>
+<footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+</html>

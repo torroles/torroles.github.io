@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Formulario de pasarela de pago</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Creación de pasarela de pago">
+    <meta name="keywords" content="pasarela, pago, formulario">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/pago.css">
+    <link rel="stylesheet" href="../css/comun.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+     <header> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logofrom.png" alt="logo html5" title="inicio de página">
+                        Formularios
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="../formulario_de_contacto/index.html">Formulario de contacto</a></span>
+                    <span><a href="../formulario_de_pago_online/index.html">pago online</a></span>
+                    <span><a href="../formulario_de_redes_sociales/index.html">redes</a></span>
+                    <span><a href="../formulario_de_registro/index.html">registro</a></span>
+                    <span><a href="../formularios_general/formularios_css.html">formularios css3</a></span>
+                    <span><a href="../formularios_general/formulario_mio.html">mi formulario css3</a></span>
+                    <span><a href="../formularios_general/todos_los_formularios.html">campos formularios</a></span>
+                </nav>
+            </div>
+
+            <hr>
+
+    <h1>Formulario de pago</h1>
+<hr>
+    <div class="contenedor">
+        <form action="#" method="post">
+            <div class="flexible">
+
+                <div class="envio">
+                    <h3>Dirección de envío</h3>
+
+                    <label for="nombre"><img src="../img/user.png" alt="usuario">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Raúl Galisteo García" required
+                        pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ ]+">
+
+                    <label for="email"><img src="../img/mail.png" alt="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@servidor.com" required>
+
+                    <label for="direccion"><img src="../img/contactcard.png" alt="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle Convento 105" required
+                        pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ0-9 ]+">
+
+                    <label for="ciudad"><img src="../img/building.png" alt="ciudad">Ciudad</label>
+                    <select name="ciudad" id="ciudad" required>
+                        <option value="malaga">Málaga</option>
+                        <option value="torremolinos">Torremolinos</option>
+                        <option value="alhaurionelgrande">Alhaurín el Grande</option>
+                    </select>
+
+                    <div class="juntos">
+                        <div>
+                            <label for="estado">Estado</label><br>
+                            <select name="estado" id="estado" required>
+                                <option value="espana">ES</option>
+                                <option value="portugal">PT</option>
+                                <option value="francia">FR</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="cp">Código postal</label><br>
+                            <input type="text" id="cp" name="codigopostal" required pattern="[0-9]{5}"
+                                placeholder="00000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pago">
+                    <h3>Pago</h3>
+
+                    <label for="tarjeta">Selecciona una tarjeta</label>
+                    <div class="tarjetas">
+                        <input type="radio" name="tarjeta" required value="1"><img src="../img/american-express.png"
+                            alt="american-express">
+                        <input type="radio" name="tarjeta" required value="2"><img src="../img/discover.png"
+                            alt="discover">
+                        <input type="radio" name="tarjeta" required value="3"><img src="../img/mastercard.png"
+                            alt="mastercard">
+                        <input type="radio" name="tarjeta" required value="4"><img src="../img/visa.png" alt="visa">
+                    </div>
+
+                    <label for="titular">Titular de la tarjeta</label>
+                    <input type="text" name="nombretarjeta" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ ]+"
+                        placeholder="Raúl Galisteo García">
+
+                    <label for="numero">Número de tarjeta</label>
+                    <input type="text" id="numero" name="ntarjeta" required pattern="([0-9]{4}[\-]){3}[0-9]{4}"
+                        placeholder="0000-0000-0000-0000">
+
+                    <label for="mes">Exp Mes</label>
+                    <select name="mes" id="mes" required>
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+
+                    <div class="juntos">
+                        <div>
+                            <label for="año">Exp Año</label><br>
+                            <select name="año" id="año" required>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label><br>
+                            <input type="text" id="cvv" name="cvv" required pattern="[0-9]{3}" placeholder="000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pie">
+                <input type="checkbox" required> Acepto los términos y <a href="#">condiciones de privacidad</a>
+                <input type="submit" value="Continuar con el pago">
+            </div>
+        </form>
+    </div>
+
+    
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notas {
+    background-color: antiquewhite;
+    border: dotted 1px red;
+    border-left: solid 2px red;
+    padding: 10px;
+    font-size: 1em;
+    width: auto;
+}
+
+.notas code {
+    font-size: 1.1em;
+}
+
+.notas code span {
+    color: red;
+    font-weight: bold;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 150px auto auto 150px;
+    /*número y anchura de las columnas*/
+    grid-template-rows: auto 150px;
+    /*número y altura de las filas*/
+    /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-contenedor>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-gap {
+    display: grid;
+    grid-template-columns: 150px auto auto 150px;
+    /*número y anchura de las columnas*/
+    grid-column-gap: 10px;
+    /*separacion entre columnas*/
+    grid-template-rows: auto 150px;
+    /*número y altura de las filas*/
+    grid-row-gap: 10px;
+    /*separa entre filas*/
+    /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-gap>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-gap2 {
+    display: grid;
+    grid-template-columns: auto;
+    /*número y anchura de las columnas*/
+    grid-column-gap: 10px;
+    /*separacion entre columnas*/
+    grid-template-rows: auto;
+    /*número y altura de las filas*/
+    grid-row-gap: 10px;
+    /*separa entre filas*/
+    /*grid-template: auto 150px / 150px auto auto 150px;combina las anteriores rows/columns*/
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-gap2>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column-start: 2;
+    /*empieza en la linea de columna 2*/
+    grid-column-end: 4;
+    /* acaba en la línea de columna 4*/
+}
+
+.item2 {
+    grid-row-start: 2;
+    /*empieza en la linea de  fila 2*/
+    grid-row-end: 4;
+    /*acaba en la linea de fila 4*/
+}
+
+.item8 {
+    grid-column-end: span 2;
+    /*acaba en la línea de columna 2 pero se fusiona*/
+}
+
+
+.grid-area {
+    background-color: #2196F3;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        /*fila 1, con 5 columnas header*/
+        'nav main main main aside'
+        /*fila 2 1nav 2main 1aside*/
+        'nav footer footer footer footer';
+    /*fila3 1nav 3footer*/
+    grid-gap: 5px;
+}
+
+.grid-area>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.area1 {
+    grid-area: header;
+}
+
+.area2 {
+    grid-area: nav;
+}
+
+.area3 {
+    grid-area: main;
+}
+
+.area4 {
+    grid-area: aside;
+}
+
+.area5 {
+    grid-area: footer;
+}
+
+
+
+.grid-area2 {
+    background-color: #2196F3;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'nav main main main aside'
+        'nav main main main aside'
+        'nav footer footer footer aside';
+    grid-gap: 5px;
+}
+
+.grid-area2>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.areaa {
+    grid-area: header;
+}
+
+.areab {
+    grid-area: nav;
+}
+
+.areac {
+    grid-area: main;
+}
+
+.aread {
+    grid-area: aside;
+}
+
+.areae {
+    grid-area: footer;
+}

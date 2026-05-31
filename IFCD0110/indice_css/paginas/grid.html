@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Grid</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejemplos prácticos del sistema de cuadrícula CSS Grid: filas, columnas, áreas y alineación.">
+    <meta name="keywords" content="CSS, grid, diseño web, cuadrícula, layout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="./img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./img/harry_potter_imagens_(7)_opt.ico">
+    <link rel="stylesheet" href="../css/grid.css">
+     <link rel="stylesheet" type="text/css" href="../css/comun.css">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+
+</head>
+
+<body>
+
+     <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logo css3.jpg" alt="logo html5" title="inicio de página">
+                        Lenguaje CSS3
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                   <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="propiedades_txt.html">TEXTOS</a></span>
+                    <span><a href="selectores.html">PSEUDO-CLASES</a></span>
+                    <span><a href="combinadores.html">PSEUDO-ELEMENTOS</a></span>
+                    <span><a href="bordes.html">bordes</a></span>
+                    <span><a href="transiciones.html">transiciones</a></span>
+                     <span><a href="transformaciones_2D.html">transformaciones 2D</a></span>
+                    <span><a href="flexbox.html">flexbox</a></span>
+                    <span><a href="grid.html">grid</a></span>
+                    <span><a href="call_to_action.html">call to action</a></span>
+                    <span><a href="emojis_before.html">LISTA CON ::BEFORE </a></span>
+                    <span><a href="nav_horizontal.html">MENÚ HORIZONTAL</a></span>
+                    <span><a href="breadcrumb.html">breadcrumb</a></span>
+                    <span><a href="nav_vertical.html">MENÚ VERTICAL</a></span>
+                    <span><a href="galeria_img.html">GALERÍA</a></span>
+                    <span><a href="tabla_productos.html">tabla productos</a></span>
+                    <span><a href="propiedad_overflow.html">OVERFLOW</a></span>
+                    <span><a href="mini_producto.html">MINIATURA DE PRODUCTO</a></span>
+                </nav>
+            </div>
+
+            <hr>
+    <h1>Diseño de cuadrícula - grid</h1>
+    <hr>
+    <p>El módulo CSS Grid ofrece un sistema basado en cuadrículas con filas y columnas, facilitando el diseño sin usar
+        flotadores ni posicionamiento.</p>
+
+    <hr>
+
+    <h2>display: grid</h2>
+    <p>Un diseño de cuadrícula consiste en un elemento padre con uno o más elementos secundarios.</p>
+
+    <div class="notas">
+        <ul>
+            <li><b>grid-template-columns:</b> número y anchura de columnas <i>(150px auto auto 150px)</i></li>
+            <li><b>grid-template-rows:</b> número y altura de filas <i>(auto 150px)</i></li>
+            <li><b>grid-template:</b> combina ambas <u>grid-template-rows / grid-template-columns</u> <i>(auto 150px /
+                    150px auto auto 150px)</i></li>
+        </ul>
+    </div>
+    <br>
+
+    <div class="grid-contenedor">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <hr>
+
+    <h2>grid gap</h2>
+    <p>El espacio entre columnas y filas se denomina <i>gap</i>.</p>
+
+    <div class="notas">
+        <ul>
+            <li><b>grid-column-gap:</b> separación entre columnas <i>(20px)</i></li>
+            <li><b>grid-row-gap:</b> separación entre filas <i>(10px)</i></li>
+            <li><b>grid-gap:</b> combina ambas <u>grid-row-gap / grid-column-gap</u> <i>(10px / 20px)</i></li>
+        </ul>
+    </div>
+    <br>
+
+    <div class="grid-gap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <br>
+
+    <div class="notas">
+        <ul>
+            <li><b>grid-column-start:</b> línea donde empieza la columna</li>
+            <li><b>grid-column-end:</b> línea donde termina la columna</li>
+            <li><b>grid-column:</b> combina ambas <u>grid-column-start / grid-column-end</u></li>
+            <li><b>grid-row-start:</b> línea donde empieza la fila</li>
+            <li><b>grid-row-end:</b> línea donde termina la fila</li>
+            <li><b>grid-row:</b> combina ambas <u>grid-row-start / grid-row-end</u></li>
+        </ul>
+    </div>
+    <br>
+
+    <figure style="text-align:center;">
+        <figcaption style="color:red; font-weight:bold;">Líneas de cuadrícula en CSS Grid</figcaption>
+        <img src="img/grid_lines.png" alt="lineas_grid.png" width="50%">
+    </figure>
+
+    <div class="grid-gap2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="item5">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div class="item8">8</div>
+    </div>
+
+    <hr>
+
+    <h2>grid-template-areas</h2>
+
+    <div class="notas">
+        <code>
+&lt;style&gt;<br>
+.grid_padre {<br>
+&nbsp;&nbsp;display:grid;<br>
+&nbsp;&nbsp;grid-template-areas:<br>
+&nbsp;&nbsp;'header header header header header'<br>
+&nbsp;&nbsp;'nav main main main aside'<br>
+&nbsp;&nbsp;'nav footer footer footer footer';<br>
+}<br><br>
+.area1 {grid-area: header;}<br>
+.area2 {grid-area: nav;}<br>
+.area3 {grid-area: main;}<br>
+.area4 {grid-area: aside;}<br>
+.area5 {grid-area: footer;}<br><br>
+&lt;/style&gt;<br><br>
+&lt;div class="grid_padre"&gt;<br>
+&nbsp;&nbsp;&lt;div class="area1"&gt;cabecera&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area2"&gt;navegación&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area3"&gt;contenido&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area4"&gt;relacionado&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area5"&gt;pie&lt;/div&gt;<br>
+&lt;/div&gt;
+</code>
+    </div>
+    <br>
+
+    <div class="grid-area">
+        <div class="area1">cabecera</div>
+        <div class="area2">navegación</div>
+        <div class="area3">contenido</div>
+        <div class="area4">relacionado</div>
+        <div class="area5">pie</div>
+    </div>
+
+    <br><br>
+
+    <div class="notas">
+        <code>
+&lt;style&gt;<br>
+.grid_padre {<br>
+&nbsp;&nbsp;display:grid;<br>
+&nbsp;&nbsp;grid-template-areas:<br>
+&nbsp;&nbsp;'header header header header header'<br>
+&nbsp;&nbsp;'nav main main main aside'<br>
+&nbsp;&nbsp;'nav main main main aside'<br>
+&nbsp;&nbsp;'nav footer footer footer aside';<br>
+}<br><br>
+.area1 {grid-area: header;}<br>
+.area2 {grid-area: nav;}<br>
+.area3 {grid-area: main;}<br>
+.area4 {grid-area: aside;}<br>
+.area5 {grid-area: footer;}<br><br>
+&lt;/style&gt;<br><br>
+&lt;div class="grid_padre"&gt;<br>
+&nbsp;&nbsp;&lt;div class="area1"&gt;cabecera&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area2"&gt;navegación&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area3"&gt;contenido&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area4"&gt;relacionado&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="area5"&gt;pie&lt;/div&gt;<br>
+&lt;/div&gt;
+</code>
+    </div>
+    <br>
+
+    <div class="grid-area2">
+        <div class="areaa">cabecera</div>
+        <div class="areab">navegación</div>
+        <div class="areac">contenido</div>
+        <div class="aread">relacionado</div>
+        <div class="areae">pie</div>
+    </div>
+     <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

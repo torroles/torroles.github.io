@@ -1,0 +1,65 @@
+/* Tarjeta */
+article {
+max-width: 500px;
+    margin: 0 auto;
+    display: flex;       /* Convierte el contenedor en Flexbox */
+    flex-wrap: wrap;     /* Permite que las imágenes bajen a la siguiente línea */
+    justify-content: center;
+}
+
+/* Imagen */
+img {
+    float: left;
+    padding: 20px;
+    width: 100px;
+}
+
+/* Datos del producto */
+.datos-productos {
+
+    float: right;
+    padding: 20px;
+    width: 190px;
+    box-sizing: border-box;
+}
+
+/* Botón borrar */
+.borrar {
+    float: right;
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+/* Nombre */
+.nombre {
+    float: right;
+    font-weight: bold;
+}
+
+/* Precio */
+.precio {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+/* Colores */
+.colores {
+    clear: both;
+}
+
+.colores li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 5px;
+    background-color: brown;
+    border: 1px solid black;
+}

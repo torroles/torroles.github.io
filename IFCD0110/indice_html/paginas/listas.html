@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Listas</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="stylesheet" href="../css/listas.css">
+    <link rel="stylesheet" href="../css/comun.css">
+    
+</head>
+
+<body>
+    <main>
+
+        <header  id="indice">
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+                        Lenguaje de marcas
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="introduccion.html">introducción</a></span>
+                    <span><a href="formato.html">formato</a></span>
+                    <span><a href="bloques.html">bloques</a></span>
+                    <span><a href="tablas.html">tablas</a></span>
+                    <span><a href="listas.html">listas</a></span>
+                    <span><a href="multimedia.html">multimedia</a></span>
+                    <span><a href="hipervinculos.html">hipervínculos</a></span>
+                </nav>
+            </div>
+
+            <hr>
+            <h1>Listas</h1>
+            <hr>
+
+            <section>
+                <nav>
+                    <ol>
+                        <li><a href="#etiquetaslista">Etiquetas que definen una lista</a></li>
+                        <li><a href="#ul">Listas desordenadas</a></li>
+                        <li><a href="#ol">Listas ordenadas</a></li>
+                        <li><a href="#dl">Listas de definición</a></li>
+                        <li><a href="#resumen">Resumen</a></li>
+                    </ol>
+                </nav>
+            </section>
+
+            <hr>
+        </header>
+
+        <section>
+            <h2 id="etiquetaslista">Etiquetas que definen una Lista</h2>
+
+            <table class="tabla1">
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;ul&gt;</code></td>
+                    <td>Define una lista desordenada</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ol&gt;</code></td>
+                    <td>Define una lista ordenada</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;li&gt;</code></td>
+                    <td>Define los ítems de la lista</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;dl&gt;</code></td>
+                    <td>Define una lista de definición</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;dt&gt;</code></td>
+                    <td>Define un término de la lista de definición</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;dd&gt;</code></td>
+                    <td>Define la descripción del término</td>
+                </tr>
+            </table>
+
+            <p class="nota"><b>Nota:</b> Los elementos de lista pueden contener nuevas listas u otros elementos HTML.</p>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        </section>
+
+        <section>
+            <h2 id="ul">Listas desordenadas (ul)</h2>
+
+            <p>La etiqueta <code>&lt;ul&gt;</code> define una lista desordenada. Utiliza <code>&lt;ul&gt;</code> junto con <code>&lt;li&gt;</code>.</p>
+
+            <table class="tabla1">
+                <tr>
+                    <th>Atributo</th>
+                    <th>Valor</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>compact</td>
+                    <td>compact</td>
+                    <td>No soportado por HTML5</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>
+                        <ol type="a">
+                            <li>disc</li>
+                            <li>square</li>
+                            <li>circle</li>
+                        </ol>
+                    </td>
+                    <td>No soportado por HTML5</td>
+                </tr>
+            </table>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        </section>
+
+        <section>
+            <h2 id="ol">Listas ordenadas (ol)</h2>
+
+            <p>La etiqueta <code>&lt;ol&gt;</code> define una lista ordenada. Puede ser numérica o alfabética.</p>
+
+            <div class="fila-ol">
+                <div class="col-ol">
+                    <ol>
+                        <li type="1">Coffee</li>
+                        <li type="1">Tea</li>
+                        <li type="1">Milk</li>
+                    </ol>
+                </div>
+
+                <div class="col-ol">
+                    <ol>
+                        <li type="A">Coffee</li>
+                        <li type="A">Tea</li>
+                        <li type="A">Milk</li>
+                    </ol>
+                </div>
+
+                <div class="col-ol">
+                    <ol>
+                        <li type="a">Coffee</li>
+                        <li type="a">Tea</li>
+                        <li type="a">Milk</li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        </section>
+
+        <section>
+            <h2 id="dl">Listas de definición (dl)</h2>
+
+            <p>La etiqueta <code>&lt;dl&gt;</code> define una lista de definición. Se usa junto con <code>&lt;dt&gt;</code> y <code>&lt;dd&gt;</code>.</p>
+
+            <dl class="dl-margen">
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dd>Vegetal origin</dd>
+
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+                <dd>Animal origin</dd>
+            </dl>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        </section>
+
+        <section>
+            <h2 id="resumen">Resumen</h2>
+
+            <table class="tabla1">
+                <tr>
+                    <th><code>&lt;ul&gt;</code></th>
+                    <td>
+                        <code>
+                            &lt;ul&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;Coffee&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;Tea&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;Milk&lt;/li&gt;<br>
+                            &lt;/ul&gt;
+                        </code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><code>&lt;ol&gt;</code></th>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lt;ol&gt;<br>
+                                        &emsp;&emsp;&lt;li type="1"&gt;Coffee&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="1"&gt;Tea&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="1"&gt;Milk&lt;/li&gt;<br>
+                                        &lt;/ol&gt;
+                                    </code>
+                                </td>
+
+                                <td>
+                                    <code>
+                                        &lt;ol&gt;<br>
+                                        &emsp;&emsp;&lt;li type="A"&gt;Coffee&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="A"&gt;Tea&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="A"&gt;Milk&lt;/li&gt;<br>
+                                        &lt;/ol&gt;
+                                    </code>
+                                </td>
+
+                                <td>
+                                    <code>
+                                        &lt;ol&gt;<br>
+                                        &emsp;&emsp;&lt;li type="a"&gt;Coffee&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="a"&gt;Tea&lt;/li&gt;<br>
+                                        &emsp;&emsp;&lt;li type="a"&gt;Milk&lt;/li&gt;<br>
+                                        &lt;/ol&gt;
+                                    </code>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><code>&lt;dl&gt;</code></th>
+                    <td>
+                        <code>
+                            &lt;dl&gt;<br>
+                            &emsp;&emsp;&lt;dt&gt;Coffee&lt;/dt&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Black hot drink&lt;/dd&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Vegetal origin&lt;/dd&gt;<br>
+                            &emsp;&emsp;&lt;dt&gt;Tea&lt;/dt&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Green hot drink&lt;/dd&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Vegetal origin&lt;/dd&gt;<br>
+                            &emsp;&emsp;&lt;dt&gt;Milk&lt;/dt&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;White cold drink&lt;/dd&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;dd&gt;Animal origin&lt;/dd&gt;<br>
+                            &lt;/dl&gt;
+                        </code>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        </section>
+
+        <footer>
+             <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+    </main>
+    
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>

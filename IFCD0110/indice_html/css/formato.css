@@ -1,0 +1,111 @@
+.nota {
+    background-color: #FFFFCC;
+    border-left: 6px solid #ffeb3b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+code {
+    color: red;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}
+
+.etiquetasHTML {
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    font-size: 24px;
+    padding: 16px;
+}
+
+code span {
+    color: mediumblue;
+}
+
+code span span {
+    color: brown;
+}
+
+code span span span {
+    color: crimson;
+}
+
+.ejemplo {
+    background-color: #f1f1f1;
+    padding: 8px 16 px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba (0, 0, 0, 16), 0 2px 10px 0 rgba(0, 0, 0, 16);
+}
+
+.code {
+    margin-top: 16px;
+    margin-bottom: 16 px;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    border-left: 4px solid chartreuse;
+}
+
+table h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #DDDDDD;
+}
+
+tr:nth-child(even) {
+    /* hace que una linea si, una no, salga en gris*/
+    background-color: #DDFFDD;
+}
+
+/* Imagen alineada a la derecha */
+.img-derecha {
+    float: right;
+    width: 300px;
+}
+
+/* Ejemplos de encabezados */
+.ejemplo-h {
+    margin: 0;
+}
+
+/* Notas */
+.nota {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 4px solid #888;
+}
+
+/* Tablas */
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Flecha volver arriba */
+a img {
+    display: inline-block;
+}
+
+/* Correcciones generales */
+pre {
+    background-color: #f7f7f7;
+    padding: 10px;
+}

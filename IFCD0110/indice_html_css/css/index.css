@@ -1,0 +1,232 @@
+/* ============================
+   RESETEO Y BASES
+   ============================ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%; /* Un poco más ancho para que luzcan las dos columnas */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* ============================
+   CABECERA PRINCIPAL
+   ============================ */
+#caja1titulo {
+    margin-top: 10px;
+    border: solid blue 10px;
+    border-bottom: double blue 10px;
+    background-color: grey;
+}
+
+#caja2titulo {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#caja2titulo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: bold;
+    width: 100%;
+}
+
+#logohtmltitulo, #logocsstitulo {
+    height: 60px;
+    width: auto;
+}
+
+/* ============================
+   CONTENEDOR PRINCIPAL (DOS COLUMNAS)
+   ============================ */
+.cuadrograndejunto {
+    width: 100%;
+    background-color: #5dade2;
+    padding: 20px;
+    border: dotted 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mantenemos HTML a la izquierda y CSS a la derecha */
+    gap: 20px;
+}
+
+/* Columnas internas */
+#caja50i, #caja50d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ESTO centra la última caja si se queda sola */
+    gap: 15px;
+    align-content: start;
+}
+
+/* Separador sutil entre las dos columnas */
+#caja50i {
+    border-right: 1px dashed rgba(0,0,0,0.2);
+    padding-right: 10px;
+}
+
+/* Títulos internos */
+#caja1css, .nav, hr {
+    flex: 1 1 100%; 
+    width: 100%;
+}
+
+/* ============================
+   TARJETAS (TAMAÑO FIJO)
+   ============================ */
+.caja3css {
+    background-color: #E6E6EC;
+    border: dotted 1px #666;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* BLOQUEO DE TAMAÑO: Aquí está la clave */
+    flex: 0 0 220px;  /* No crecen, no encogen, siempre miden 220px */
+    height: 180px;    /* Altura fija para que todas sean iguales */
+    transition: transform 0.2s;
+}
+
+.caja3css:hover {
+    transform: scale(1.05);
+    background-color: #d1d1d1;
+}
+
+.caja3css img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.caja3css pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.caja3css a { 
+    text-decoration: none; 
+    color: black; 
+}
+
+/* Estilo para los títulos de sección (Lenguaje de marcas / CSS3) */
+#caja1css {
+    border: solid blue 5px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+#caja2css a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logohtml, #logocss {
+    height: 30px;
+}
+
+.nav h2 {
+    background: white;
+    color: blue;
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+footer {
+    margin-top: 50px; /* Separa el footer del ejercicio */
+    padding: 20px;
+    border-top: 1px solid #ccc; /* Una línea sutil de separación */
+    text-align: center;
+    padding: 30px;
+    color: #00ff66;
+    font-size: 0.9rem;
+    background-color: #0a0a0a;}
+
+.viñeta {
+    list-style: none;
+    padding: 0;
+    max-width: 600px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la lista */
+}
+
+.viñeta li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.viñeta li::before {
+    content: ">_ "; 
+    color: #00ff66; /* Un verde terminal le quedaría genial, o mantén tu #333 */
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Opcional: le da un toque más "code" */
+}
+
+/* 1. Definimos la animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #00ff66; /* Verde encendido */
+    }
+    50% {
+        color: transparent; /* Se apaga (invisible) */
+    }
+}
+
+/* 2. Modificamos el comportamiento al hacer hover */
+/* Cuando el usuario pasa el ratón por encima del li o del enlace... */
+.viñeta li:hover::before {
+    /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
+    animation: parpadeo 0.8s steps(2, start) infinite;
+}
+
+.viñeta a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #00ff66;
+}
+
+.viñeta a:hover {
+    text-decoration: underline;
+    color: #00ff66;
+}
+
+
+/* Responsive: si la pantalla es pequeña, se pone una columna bajo la otra */
+@media screen and (max-width: 1000px) {
+    .cuadrograndejunto {
+        grid-template-columns: 1fr;
+    }
+    #caja50i {
+        border-right: none;
+        border-bottom: 1px dashed black;
+        padding-bottom: 20px;
+    }
+}

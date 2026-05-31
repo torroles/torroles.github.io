@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head> 
+  <title>Estilos CSS de Bordes</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Raúl Galisteo García">
+  <meta name="generator" content="VS Code">
+  <meta name="description" content="Ejemplos y explicación de los distintos estilos de borde en CSS: border-style, border-width, border-color y border-radius.">
+  <meta name="keywords" content="CSS, bordes, border-style, border-width, border-color, border-radius, diseño web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/bordes.css">
+  <link rel="stylesheet" type="text/css" href="../css/comun.css">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+   <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logo css3.jpg" alt="logo html5" title="inicio de página">
+                        Lenguaje CSS3
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="propiedades_txt.html">TEXTOS</a></span>
+                    <span><a href="selectores.html">PSEUDO-CLASES</a></span>
+                    <span><a href="combinadores.html">PSEUDO-ELEMENTOS</a></span>
+                    <span><a href="bordes.html">bordes</a></span>
+                    <span><a href="transiciones.html">transiciones</a></span>
+                     <span><a href="transformaciones_2D.html">transformaciones 2D</a></span>
+                    <span><a href="flexbox.html">flexbox</a></span>
+                    <span><a href="grid.html">grid</a></span>
+                    <span><a href="call_to_action.html">call to action</a></span>
+                    <span><a href="emojis_before.html">LISTA CON ::BEFORE </a></span>
+                    <span><a href="nav_horizontal.html">MENÚ HORIZONTAL</a></span>
+                    <span><a href="breadcrumb.html">breadcrumb</a></span>
+                    <span><a href="nav_vertical.html">MENÚ VERTICAL</a></span>
+                    <span><a href="galeria_img.html">GALERÍA</a></span>
+                    <span><a href="tabla_productos.html">tabla productos</a></span>
+                    <span><a href="propiedad_overflow.html">OVERFLOW</a></span>
+                    <span><a href="mini_producto.html">MINIATURA DE PRODUCTO</a></span>
+                </nav>
+            </div>
+
+            <hr>
+            
+  <h1>Bordes CSS</h1>
+  <hr>
+
+  <h2>Estilos de borde</h2>
+  <p>La propiedad <strong>border-style</strong> especifica qué tipo de borde se mostrará.</p>
+  <p>Se permiten los siguientes valores:</p>
+
+  <ul>
+    <li><span class="spannegrita">dotted</span> - Define un borde de puntos</li>
+    <li><span class="spannegrita">dashed</span> - Define un borde discontinuo</li>
+    <li><span class="spannegrita">solid</span> - Define un borde sólido</li>
+    <li><span class="spannegrita">double</span> - Define un borde doble</li>
+    <li><span class="spannegrita">groove</span> - Define un borde acanalado 3D (depende de border-color)</li>
+    <li><span class="spannegrita">ridge</span> - Define un borde estriado 3D (depende de border-color)</li>
+    <li><span class="spannegrita">inset</span> - Define un borde interior 3D</li>
+    <li><span class="spannegrita">outset</span> - Define un borde exterior 3D</li>
+    <li><span class="spannegrita">none</span> - Sin borde</li>
+    <li><span class="spannegrita">hidden</span> - Borde oculto</li>
+  </ul>
+
+  <p>La propiedad <strong>border-style</strong> puede tener de uno a cuatro valores (superior, derecho, inferior e
+    izquierdo).</p>
+
+  <div id="cuadroejemplo">
+    <h3>Ejemplo</h3>
+
+    <div id="cuadrocodigo">
+      <p>Código</p>
+      <p>
+        &lt;p class="dotted"&gt;Borde punteado.&lt;/p&gt;<br>
+        &lt;p class="dashed"&gt;Borde con guiones.&lt;/p&gt;<br>
+        &lt;p class="solid"&gt;Línea sólida.&lt;/p&gt;<br>
+        &lt;p class="double"&gt;Doble línea.&lt;/p&gt;<br>
+        &lt;p class="groove"&gt;Surco.&lt;/p&gt;<br>
+        &lt;p class="ridge"&gt;Rugoso.&lt;/p&gt;<br>
+        &lt;p class="inset"&gt;Borde interior.&lt;/p&gt;<br>
+        &lt;p class="outset"&gt;Borde exterior.&lt;/p&gt;<br>
+        &lt;p class="none"&gt;Sin borde.&lt;/p&gt;<br>
+        &lt;p class="hidden"&gt;Borde oculto.&lt;/p&gt;<br>
+        &lt;p class="mix"&gt;Borde mixto.&lt;/p&gt;
+      </p>
+    </div>
+
+    <div id="cuadroresultado">
+      <p>Resultado</p>
+      <p class="dotted">Borde punteado.</p>
+      <p class="dashed">Borde con guiones.</p>
+      <p class="solid">Línea sólida.</p>
+      <p class="double">Doble línea.</p>
+      <p class="groove">Surco.</p>
+      <p class="ridge">Rugoso.</p>
+      <p class="inset">Borde interior.</p>
+      <p class="outset">Borde exterior.</p>
+      <p class="none">Sin borde.</p>
+      <p class="hidden">Borde oculto.</p>
+      <p class="mix">Borde mixto.</p>
+    </div>
+  </div>
+
+  <h2>Ancho del borde</h2>
+  <p>La propiedad <strong>border-width</strong> especifica la anchura de los cuatro bordes.</p>
+  <p>Puede definirse en px, pt, cm, em, etc., o mediante los valores predefinidos: fino, medio o grueso.</p>
+
+  <h3>Ejemplo</h3>
+  <p class="one">Texto</p>
+  <p class="two">Texto</p>
+  <p class="three">Texto</p>
+  <p class="four">Texto</p>
+  <p class="five">Texto</p>
+  <p class="six">Texto</p>
+  <p class="seven">Texto</p>
+
+  <h2>Color del borde</h2>
+  <p>La propiedad <strong>border-color</strong> se utiliza para establecer el color de los cuatro bordes.</p>
+
+  <ul>
+    <li><span class="spannegrita">Nombre</span> - Ej.: "rojo"</li>
+    <li><span class="spannegrita">Hex</span> - Ej.: "#FF0000"</li>
+    <li><span class="spannegrita">RGB</span> - Ej.: "rgb(255,0,0)"</li>
+    <li><span class="spannegrita">transparente</span></li>
+  </ul>
+
+  <h3>Ejemplo</h3>
+  <p class="a">Borde sólido rojo</p>
+  <p class="b">Borde sólido verde</p>
+  <p class="c">Borde multicolor</p>
+
+  <h2>Border - Lados individuales</h2>
+  <p>Es posible especificar un estilo de borde distinto para cada lado.</p>
+
+  <h2>Border - Abreviación</h2>
+  <p>La propiedad <strong>border</strong> permite definir border-width, border-style y border-color en una sola línea.
+  </p>
+
+  <h2>Bordes redondeados</h2>
+  <p>La propiedad <strong>border-radius</strong> se utiliza para añadir bordes redondeados.</p>
+
+  <h3>Ejemplo</h3>
+  <p>&lt;p class="normal"&gt;Borde normal&lt;/p&gt;<br>
+    &lt;p class="round1"&gt;Redondeado 1&lt;/p&gt;<br>
+    &lt;p class="round2"&gt;Redondeado 2&lt;/p&gt;<br>
+    &lt;p class="round3"&gt;Redondeado 3&lt;/p&gt;
+  </p>
+
+  <p><strong>Nota:</strong> La propiedad "border-radius" no está soportada por IE8 ni versiones anteriores.</p>
+
+  <h2>Propiedades de borde en CSS (enlaces a W3Schools)</h2>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>Propiedad</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border.asp">border</a></td>
+        <td>Cambia todos los bordes</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-bottom.asp">border-bottom</a></td>
+        <td>Borde inferior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_color.asp">border-bottom-color</a></td>
+        <td>Color del borde inferior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_style.asp">border-bottom-style</a></td>
+        <td>Estilo del borde inferior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-bottom_width.asp">border-bottom-width</a></td>
+        <td>Ancho del borde inferior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-color.asp">border-color</a></td>
+        <td>Color de los cuatro bordes</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-left.asp">border-left</a></td>
+        <td>Borde izquierdo</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-left_color.asp">border-left-color</a></td>
+        <td>Color del borde izquierdo</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-left_style.asp">border-left-style</a></td>
+        <td>Estilo del borde izquierdo</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-left_width.asp">border-left-width</a></td>
+        <td>Ancho del borde izquierdo</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a></td>
+        <td>Esquinas redondeadas</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-right.asp">border-right</a></td>
+        <td>Borde derecho</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-right_color.asp">border-right-color</a></td>
+        <td>Color del borde derecho</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-right_style.asp">border-right-style</a></td>
+        <td>Estilo del borde derecho</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-right_width.asp">border-right-width</a></td>
+        <td>Ancho del borde derecho</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-style.asp">border-style</a></td>
+        <td>Estilo de los cuatro bordes</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-top.asp">border-top</a></td>
+        <td>Borde superior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-top_color.asp">border-top-color</a></td>
+        <td>Color del borde superior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-top_style.asp">border-top-style</a></td>
+        <td>Estilo del borde superior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-top_width.asp">border-top-width</a></td>
+        <td>Ancho del borde superior</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.w3schools.com/cssref/pr_border-width.asp">border-width</a></td>
+        <td>Ancho de todos los bordes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <title>Multimedia</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Raúl Galisteo García">
+  <meta name="generator" content="VS Code">
+  <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+  <meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  
+<link rel="icon" type="image/png" href="../img/favicon.png">
+ <link rel="stylesheet" href="../css/multimedia.css">
+  <link rel="stylesheet" href="../css/comun.css">
+ 
+</head>
+
+<body>
+  <main>
+
+    <header  id="indice">
+      <div id="cuadrologo">
+        <div id="logo">
+          <a id="enlacelogo" href="../index.html">
+            <img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+            Lenguaje de marcas
+          </a>
+        </div>
+      </div>
+
+      <div id="navegacion">
+        <nav>
+          <span><a class="volver-indice" href="../index.html">índice</a></span>
+          <span><a href="introduccion.html">introducción</a></span>
+          <span><a href="formato.html">formato</a></span>
+          <span><a href="bloques.html">bloques</a></span>
+          <span><a href="tablas.html">tablas</a></span>
+          <span><a href="listas.html">listas</a></span>
+          <span><a href="multimedia.html">multimedia</a></span>
+          <span><a href="hipervinculos.html">hipervínculos</a></span>
+        </nav>
+      </div>
+
+      <hr>
+      <h1>Multimedia</h1>
+      <hr>
+
+      <section>
+        <nav>
+          <ol>
+            <li><a href="#multimedia">¿Qué es multimedia?</a></li>
+            <li><a href="#video">HTML video</a></li>
+          </ol>
+        </nav>
+      </section>
+
+      <hr>
+    </header>
+
+    <section>
+      <h2 id="multimedia">¿Qué es multimedia?</h2>
+
+      <div class="fila-multimedia">
+        <div class="col-texto">
+          <p>
+            El término multimedia se utiliza para referirse a cualquier objeto o sistema que utiliza múltiples medios
+            de expresión (físicos o digitales) para presentar o comunicar información. Los medios pueden ser variados:
+            texto, imágenes, animación, sonido, video, etc.
+          </p>
+        </div>
+
+        <div class="col-imagen">
+          <figure>
+            <img src="../img/html-multimedia.png" alt="multimedia" class="img-multimedia">
+            <figcaption><small>Fig.1 - Elementos multimedia</small></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <article class="articulo-info">
+        <i class="fas fa-fast-forward"></i>
+        <i>
+          Los primeros navegadores web solo soportaban texto. Más tarde llegó el soporte para colores, fuentes e
+          imágenes.
+          El audio, video y animaciones se manejaban de forma diferente según el navegador. Algunos formatos requerían
+          plug‑ins adicionales. HTML5 promete un futuro más fácil para estos elementos.
+        </i>
+        <i class="fas fa-fast-backward"></i>
+      </article>
+
+      <hr>
+      <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+    </section>
+
+    <section>
+      <h2 id="video">HTML video</h2>
+
+      <p>
+        Antes de HTML5, un vídeo solo podía reproducirse mediante plug‑ins como Flash.
+        HTML5 introduce la etiqueta <code>&lt;video&gt;</code> para incrustar videos de forma estándar.
+        Los formatos compatibles son: MP4, WebM y Ogg.
+      </p>
+
+      <table class="tabla1 tabla-video">
+        <thead>
+          <tr>
+            <th>Etiqueta y atributos</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>&lt;video&gt;</td>
+            <td>Define el video</td>
+          </tr>
+          <tr>
+            <td>&lt;source&gt;</td>
+            <td>Especifica recursos multimedia alternativos</td>
+          </tr>
+          <tr>
+            <td>&lt;track&gt;</td>
+            <td>Define subtítulos</td>
+          </tr>
+          <tr>
+            <td>autoplay</td>
+            <td>Reproduce automáticamente</td>
+          </tr>
+          <tr>
+            <td>controls</td>
+            <td>Muestra controles de reproducción</td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>Altura del video</td>
+          </tr>
+          <tr>
+            <td>loop</td>
+            <td>Reproduce en bucle</td>
+          </tr>
+          <tr>
+            <td>muted</td>
+            <td>Silencia el video</td>
+          </tr>
+          <tr>
+            <td>poster</td>
+            <td>Imagen previa</td>
+          </tr>
+          <tr>
+            <td>preload</td>
+            <td>Controla la precarga</td>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>Ruta del video</td>
+          </tr>
+          <tr>
+            <td>width</td>
+            <td>Ancho del video</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <div class="bloque-ejemplo-video">
+        <p><b>Ejemplo de uso</b></p>
+
+        <div class="bloque-ejemplo-blanco">
+
+          <div class="col-video">
+            <p><b>Big Buck Bunny</b></p>
+
+            <video class="video-full" controls autoplay preload="auto" loop poster="../img/conejo_multimedia.jpg">
+              <source src="../video/mov_bbb.mp4" type="video/mp4">
+              <source src="../video/mov_bbb.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="col-codigo">
+            <p><b>Código</b></p>
+
+            <code>
+                &emsp;&emsp;&lt;video width="100%" height="auto" controls autoplay preload="auto" loop poster="./img/conejo_multimedia.jpg"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="video/mov_bbb.mp4" type="video/mp4"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="video/mov_bbb.ogg" type="video/ogg"&gt;<br>
+                &emsp;&emsp;&lt;/video&gt;
+            </code>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+      <hr>
+
+      <section>
+        <h2 id="audio">HTML audio.</h2>
+
+        <p>
+          La etiqueta &lt;audio&gt; define sonido, como música u otros flujos de audio.
+          Los formatos admitidos son MP3, WAV y OGG.
+          Es una etiqueta nueva de HTML5.
+        </p>
+
+        <table class="tabla1 tabla-audio">
+          <thead>
+            <tr>
+              <th>Etiqueta y atributos</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>&lt;audio&gt;</td>
+              <td>Define el audio</td>
+            </tr>
+            <tr>
+              <td>&lt;source&gt;</td>
+              <td>Especifica recursos multimedia alternativos</td>
+            </tr>
+            <tr>
+              <td>autoplay</td>
+              <td>Reproduce automáticamente</td>
+            </tr>
+            <tr>
+              <td>controls</td>
+              <td>Muestra controles de reproducción</td>
+            </tr>
+            <tr>
+              <td>loop</td>
+              <td>Reproduce en bucle</td>
+            </tr>
+            <tr>
+              <td>muted</td>
+              <td>Silencia el audio</td>
+            </tr>
+            <tr>
+              <td>preload</td>
+              <td>Controla la precarga</td>
+            </tr>
+            <tr>
+              <td>src</td>
+              <td>Ruta del audio</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <div class="bloque-ejemplo-video">
+          <p><b>Ejemplo de uso</b></p>
+
+          <div class="bloque-ejemplo-blanco">
+
+            <div class="col-video">
+              <p><b>Audio</b></p>
+
+              <audio controls>
+                <source src="../audio/intro.mp3" type="audio/mp3">
+                <source src="../audio/intro.ogg" type="audio/ogg">
+              
+              </audio>
+            </div>
+
+            <div class="col-codigo">
+              <p><b>Código</b></p>
+
+              <code>
+                &emsp;&emsp;&lt;audio controls&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="audio/intro.mp3" type="audio/mp3"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="audio/intro.ogg" type="audio/ogg"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;source src="audio/intro.wav" type="audio/wav"&gt;<br>
+                &emsp;&emsp;&lt;/audio&gt;
+            </code>
+            </div>
+
+          </div>
+        </div>
+
+        <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        <hr>
+
+
+        <h2 id="object">Elemento Object</h2>
+
+        <p>
+          Define un objeto incrustado dentro de un documento HTML.
+          Se utiliza para insertar plug‑ins como applets de Java, lectores PDF o Flash.
+          Es soportado por todos los navegadores.
+        </p>
+
+        <div class="bloque-ejemplo-video">
+          <p><b>Ejemplo de uso</b></p>
+
+          <div class="bloque-ejemplo-blanco">
+
+            <div class="col-video">
+              <p><b>Object Flash</b></p>
+
+              <object class="objeto-full" data="../swf/bookmark.swf"></object>
+            </div>
+
+            <div class="col-codigo">
+              <p><b>Código</b></p>
+
+              <code>
+                    &lt;object width="400" height="50" data="./swf/bookmark.swf"&gt;&lt;/object&gt;
+                </code>
+            </div>
+
+          </div>
+        </div>
+
+        <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        <hr>
+      </section>
+      <section>
+        <h2 id="iframe">Elemento iFrame</h2>
+        <p>La etiqueta &lt;iframe&gt; especifica un marco en línea. Un marco en línea se utiliza para insertar otro
+          documento dentro del documento HTML actual. <br> Para hacer frente a los navegadores que no soportan
+          &lt;iframe&gt;, se añade un texto entre la etiqueta de apertura y el cierre.</p>
+
+        <div class="iframe-bloque">
+          <p><b>Ejemplo de uso</b></p>
+
+          <div class="iframe-bloque-blanco">
+
+            <div class="iframe-video">
+              <p><b>Video Youtube</b></p>
+              <iframe class="iframe-youtube" src="https://www.youtube.com/embed/MEVEUTnFzu8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+            <div class="iframe-codigo">
+              <p><b>Código</b></p>
+              <code>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/MEVEUTnFzu8"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen&gt;&lt;/iframe&gt;
+       </code>
+            </div>
+
+            <div class="iframe-video">
+              <p><b>Lista de reproducción Youtube</b></p>
+              <iframe class="iframe-youtube" src="https://www.youtube.com/embed/p84O3JAp_IM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+            <div class="iframe-codigo">
+              <p><b>Código</b></p>
+              <code>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/p84O3JAp_IM"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen&gt;&lt;/iframe&gt;
+       </code>
+            </div>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <a href="https://www.marca.com/" target="mi_iframe">MARCA</a>
+        <a href="https://as.com/" target="mi_iframe1">AS</a>
+        <a href="https://www.diariogol.com/" target="mi_iframe2">DIARIO GOL</a>
+        <a href="https://www.sport.es/es/" target="mi_iframe3">SPORT</a>
+
+        <iframe name="mi_iframe" class="iframe-simple"></iframe>
+        <iframe name="mi_iframe1" class="iframe-simple"></iframe>
+        <iframe name="mi_iframe2" class="iframe-simple"></iframe>
+        <iframe name="mi_iframe3" class="iframe-simple"></iframe>
+
+        <blockquote class="twitter-tweet" data-lang="es">
+          <p lang="en" dir="ltr">Mapping an asteroid requires views from all directions...</p>
+          — NASA's OSIRIS-REx
+        </blockquote>
+
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <hr>
+        <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" class="flecha"></a>
+        <hr>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+          <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+      </footer>
+
+  </main>
+
+
+    
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* 1. Reset y Configuración Global */
+* {
+    box-sizing: border-box; /* Evita que los bordes desborden las cajas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%; /* Cuerpo al 80% */
+    margin: 20px auto; /* Centrado horizontal */
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+#logo{width: 80px;
+    height: auto;
+}
+
+/* 2. Cabecera y Logo (Franja Negra) */
+#div1 { 
+    border: solid blue 10px;
+    border-bottom: double blue 10px;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+#div2 {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el logo y el texto */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#div2 a {
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Tamaño de fuente fluido */
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Enlaces de cabecera en blanco */
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* 3. Contenedor Principal (Cuadro Azul) */
+.cuadrogrande {
+    background-color: #47A0F2;
+    padding: 20px;
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.cuadrogrande nav {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que los elementos bajen de fila */
+    justify-content: center; /* CENTRA los elementos sobrantes en la última fila */
+    gap: 20px;             /* Espacio entre las cajas grises */
+}
+
+/* 4. Cajas de Ejercicios (Botones Grises) */
+.div3 {
+    background-color: #E6E6EC;
+    border: 2px dotted #666; /* Bordes punteados */
+    padding: 15px;
+    transition: transform 0.2s ease;
+    
+    /* Configuración de tamaño para centrado dinámico */
+    flex: 0 1 300px;       /* Intenta medir 300px, puede encogerse */
+    min-width: 250px;      /* Ancho mínimo para móviles */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.div3:hover {
+    transform: scale(1.02);
+    background-color: #d1d1d1;
+}
+
+.div3 a {
+    text-decoration: none !important; /* Sin subrayado */
+    color: black !important;          /* Letra negra para ejercicios */
+    font-weight: bold;
+    text-transform: uppercase;       /* Mayúsculas */
+    font-size: 0.9rem;
+}
+
+.div3 img {
+    max-width: 100%;
+    height: 130px; /* Altura uniforme para las capturas */
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* 5. Footer y Viñetas Personalizadas */
+
+footer {
+    margin-top: 50px; /* Separa el footer del ejercicio */
+    padding: 20px;
+    border-top: 1px solid #ccc; /* Una línea sutil de separación */
+    text-align: center;
+    padding: 30px;
+    color: #00ff66;
+    font-size: 0.9rem;
+    background-color: #0a0a0a;}
+
+.viñeta {
+    list-style: none;
+    padding: 0;
+    max-width: 600px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la lista */
+}
+
+.viñeta li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.viñeta li::before {
+    content: ">_ "; 
+    color: #00ff66; /* Un verde terminal le quedaría genial, o mantén tu #333 */
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Opcional: le da un toque más "code" */
+}
+
+/* 1. Definimos la animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #00ff66; /* Verde encendido */
+    }
+    50% {
+        color: transparent; /* Se apaga (invisible) */
+    }
+}
+
+/* 2. Modificamos el comportamiento al hacer hover */
+/* Cuando el usuario pasa el ratón por encima del li o del enlace... */
+.viñeta li:hover::before {
+    /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
+    animation: parpadeo 0.8s steps(2, start) infinite;
+}
+
+.viñeta a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #00ff66; 
+}
+
+.viñeta a:hover {
+    text-decoration: underline;
+    color: #00ff66;
+}
+
+
+
+/* 6. Reglas de Adaptabilidad (Responsive) */
+@media screen and (max-width: 900px) {
+    body {
+        width: 95%; /* Más ancho en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .div3 {
+        flex: 1 1 100%; /* Una sola caja por fila en móviles muy pequeños */
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Hipervínculos</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Descripción de la página">
+    <meta name="keywords" content="palabras claves para el buscador">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/comun.css">
+<link rel="stylesheet" href="../css/hipervinculos.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+
+    
+    
+</head>
+
+<body>
+    <main>
+        <header id="indice">
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+                        Lenguaje de marcas
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="introduccion.html">introducción</a></span>
+                    <span><a href="formato.html">formato</a></span>
+                    <span><a href="bloques.html">bloques</a></span>
+                    <span><a href="tablas.html">tablas</a></span>
+                    <span><a href="listas.html">listas</a></span>
+                    <span><a href="multimedia.html">multimedia</a></span>
+                    <span><a href="hipervinculos.html">hipervínculos</a></span>
+                </nav>
+            </div>
+            <br>
+            <hr>
+
+            <h1>Hipervínculos</h1>
+            <hr>
+
+            <section>
+                <nav>
+                    <ol>
+                        <li><a href="#color">Cambiar color</a></li>
+                        <li><a href="#enlace">Insertar enlace</a></li>
+                        <li><a href="#target">Atributos target</a></li>
+                        <li><a href="#imagen">Enlace en imagen</a></li>
+                    </ol>
+                </nav>
+            </section>
+
+            <hr>
+        </header>
+
+        <section>
+            <a href="#color">cambiar color</a><br>
+            <a href="#enlace">insertar enlace</a><br>
+            <a href="#target">atributos target</a><br>
+            <a href="#imagen">enlace en imagen</a>
+        </section>
+
+        <section>
+            <pre class="bloque-pre">
+Para crear un vínculo que llame a una parte de la página usamos:
+
+&lt;id="nombre"&gt; → donde queremos ir
+&lt;a href="#nombre"&gt; → enlace que nos lleva
+            </pre>
+
+            <pre id="color" class="bloque-pre">
+Podemos cambiar los colores de los enlaces usando CSS:
+
+A:LINK     → enlace sin visitar
+A:ACTIVE   → cuando pulsas
+A:VISITED  → ya visitado
+A:HOVER    → cuando pasas el ratón
+
+Ejemplo:
+
+a:link {
+    color: negro;
+    background: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: verde;
+}
+            </pre>
+        </section>
+
+        <section>
+            <a href="https://www.google.es/">buscador</a>
+
+            <p id="enlace">Para poner un enlace usamos:</p>
+
+            <code class="bloque-code">
+&lt;a href="https://www.google.es/"&gt;buscador&lt;/a&gt;
+            </code>
+
+            <p>
+                También podemos ponerlo dentro de un texto:<br>
+                Para buscar, el mejor buscador es
+                <a href="https://google.es/">GOOGLE</a>.
+            </p>
+
+            <p class="arial">
+                Después de la dirección podemos usar el atributo <b>REL</b>:<br>
+                SPONSORED → enlace de pago<br>
+                UGC → generado por usuario<br>
+                NOFOLLOW → los buscadores no lo siguen
+            </p>
+        </section>
+
+        <section>
+            <a href="https://www.google.es/" rel="sponsored">SPONSORED</a><br><br>
+            <a href="https://www.google.es/" rel="ugc">UGC</a><br><br>
+            <a href="https://www.google.es/" rel="nofollow">NOFOLLOW</a>
+
+            <p id="target">
+                El atributo TARGET:<br><br>
+                _SELF → misma pestaña<br>
+                _BLANK → nueva pestaña<br>
+                _PARENT → marco padre<br>
+                _TOP → cuerpo completo
+            </p>
+        </section>
+
+        <section>
+            <a href="https://www.google.es/" target="_self">SELF</a><br><br>
+            <a href="https://www.google.es/" target="_blank">BLANK</a><br><br>
+            <a href="https://www.google.es/" target="_parent">PARENT</a><br><br>
+            <a href="https://www.google.es/" target="_top">TOP</a><br><br>
+
+            <p>
+                Direcciones absolutas vs relativas:<br><br>
+                Absolutas → incluyen https://www<br>
+                Relativas → pertenecen a la misma página
+            </p>
+
+            <p id="imagen">
+                Para poner un enlace dentro de una imagen:<br>
+                Se coloca la etiqueta IMG dentro de A.
+            </p>
+        </section>
+
+        <section>
+            <a href="https://google.es/" target="_blank">
+                <img src="../img/google.jpg" alt="ir a google" class="img-mini borde-img">
+            </a>
+
+            <p>
+                &lt;a href="mailto:correo"&gt;email&lt;/a&gt;<br>
+                (no se usa)
+            </p>
+
+            <p>Para crear un botón con enlace:</p>
+
+            <code class="bloque-code">
+&lt;button onclick="document.location='direccion'"&gt;nombre&lt;/button&gt;
+            </code>
+
+            <button onclick="document.location='https://google.es/'">google</button>
+
+            <p>
+                Con la etiqueta A podemos usar TITLE para mostrar información al pasar el ratón.
+            </p>
+        </section>
+
+        <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+
+                </ul>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+
+
+</body>
+
+</html>

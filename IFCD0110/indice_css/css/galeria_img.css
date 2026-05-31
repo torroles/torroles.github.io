@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* Reset básico */
+* {
+    margin: 0;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    background-color: #EDEEEE;
+    color: orange;
+    border-bottom: 3px solid #4caf50;
+    padding: 30px;
+}
+
+#galeria {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;       
+    flex-wrap: wrap;     
+    justify-content: center; 
+}
+
+.imagenes img {
+    
+    padding: 1.2em;
+}
+.imagenes img:hover {
+    background-color: #e8f1f4;
+}

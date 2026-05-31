@@ -1,0 +1,292 @@
+/* ------------------------- */
+/* NOTAS Y ELEMENTOS BÁSICOS */
+/* ------------------------- */
+
+.nota {
+    background-color: #FFFFCC;
+    border-left: 6px solid #ffeb3b;
+    padding: 10px 5px;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+code {
+    color: red;
+    background-color: #f1f1f1;
+    padding: 0 4px;
+    font-size: 125%;
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.etiquetasHTML {
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    font-size: 24px;
+    padding: 16px;
+}
+
+code span { color: mediumblue; }
+code span span { color: brown; }
+code span span span { color: crimson; }
+
+/* ------------------------- */
+/* BLOQUES DE EJEMPLOS */
+/* ------------------------- */
+
+.ejemplo {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.16);
+}
+
+.code {
+    margin: 16px 0;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    border-left: 4px solid chartreuse;
+}
+
+.cite {
+    margin: 16px 0;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    border-left: 4px solid #72A3E5;
+}
+
+/* ------------------------- */
+/* TABLAS */
+/* ------------------------- */
+
+table h1,
+table h2,
+table h3,
+table h4,
+table h5,
+table h6 {
+    margin: 0;
+}
+
+.tabla1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla1 td,
+.tabla1 th {
+    border: 1px solid #DDDDDD;
+}
+
+.tabla1 tr:nth-child(even) {
+    background-color: #DDFFDD;
+}
+
+.tabla1 code {
+    color: black;
+    font-size: 130%;
+}
+
+.tablaDemo table,
+.tablaScope table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablaDemo td,
+.tablaDemo th,
+.tablaScope td,
+.tablaScope th {
+    border: 1px solid #DDDDDD;
+}
+
+.tablaFilas { width: 100%; }
+.tablaFilas thead { background-color: tomato; }
+.tablaFilas tbody { background-color: aqua; }
+.tablaFilas tfoot { background-color: yellowgreen; }
+
+/* ------------------------- */
+/* SPAN GENERAL */
+/* ------------------------- */
+
+span {
+    padding: 2px 5px;
+    margin: 2px;
+    color: #212579;
+    border-radius: 4px;
+    background-color: aliceblue;
+}
+
+/* ------------------------- */
+/* DIVS PADRE E HIJOS */
+/* ------------------------- */
+
+#div_padre {
+    border: 1px solid green;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#div_hijo1,
+#div_hijo2,
+#div_hijo3 {
+    float: left;
+    width: 33.33%;
+}
+
+#div_hijo1 { background-color: lightblue; }
+#div_hijo2 { background-color: lightgreen; }
+#div_hijo2 span { background-color: black; color: white; }
+#div_hijo3 { background-color: lightcoral; }
+
+/* ------------------------- */
+/* ENLACES */
+/* ------------------------- */
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* ------------------------- */
+/* ARTÍCULO */
+/* ------------------------- */
+
+article {
+    border-radius: 25px;
+    border: 2px solid #C48EF9;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    font-family: Cambria, Hoefler Text, Liberation Serif, Times, "Times New Roman", serif;
+    color: cornflowerblue;
+}
+
+/* ------------------------- */
+/* MULTIMEDIA */
+/* ------------------------- */
+
+.fila-multimedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col-texto { width: 60%; }
+.col-imagen { width: 40%; }
+
+.img-multimedia {
+    width: 240px;
+    height: auto;
+}
+
+.articulo-info {
+    margin: 20px 0;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.tabla-video { width: 100%; }
+
+/* ------------------------- */
+/* BLOQUES MULTIMEDIA */
+/* ------------------------- */
+
+.bloque-ejemplo-video,
+.bloque-iframe {
+    background-color: lightgray;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.bloque-ejemplo-blanco,
+.bloque-iframe-blanco {
+    background-color: white;
+    width: 95%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Columnas */
+.col-video,
+.col-iframe,
+.iframe-item {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.col-codigo,
+.iframe-code {
+    float: left;
+    width: 65%;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Multimedia */
+.video-full,
+.objeto-full,
+.iframe-youtube {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.iframe-youtube {
+    height: 315px;
+    max-width: 100%;
+}
+
+/* Iframes inferiores */
+.iframe-simple {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+/* Limpieza de floats */
+.bloque-ejemplo-blanco::after,
+.bloque-ejemplo-video::after,
+.bloque-iframe-blanco::after,
+.bloque-iframe::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Flecha */
+.flecha {
+    width: 40px;
+    height: 40px;
+}

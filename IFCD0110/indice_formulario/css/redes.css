@@ -1,0 +1,151 @@
+.contenedor {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+h2{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.flexible{
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+}
+
+.fb{
+    background-color: rgb(20, 20, 151);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fb a{
+    text-decoration: none;
+    color: white;
+}
+
+.fb img{
+    width: 20px;
+    padding: 5px;
+}
+
+.tw{
+    background-color: rgb(99, 164, 244);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tw a{
+    text-decoration: none;
+    color: white;
+}
+
+.tw img{
+    width: 20px;
+    padding: 5px;
+}
+
+.g{
+    background-color: rgb(227, 15, 15);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.g a{
+    text-decoration: none;
+    color: white;
+}
+
+.g img{
+    width: 20px;
+    padding: 5px;
+}
+
+.linea{
+    border-left: 2px grey solid;
+    width: 0.3px;
+    height: 200px;
+}
+
+.fa, .fas {
+	font-weight: 900;
+    position: absolute;
+    top: 15%;
+    left:48.60%;
+	}
+
+input[type=text], input[type=password]{
+    padding: 10px;
+
+}
+	
+.flexible input[type=submit]{
+    width: 100%;
+    background-color: green;
+    padding: 10px;
+    border: 1px outset grey;
+    color: white;
+}
+
+.pie{
+    background-color: grey;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pie input[type=submit]{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    float: left;
+    margin-left: 350px;
+}
+
+.pie a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-right: 125px;
+    margin-top: 13px;
+}
+
+:is(input[type=text], input[type=password]):invalid{
+    background-color: red;
+}
+
+:is(input[type=text], input[type=password]):use-invalid{
+    background-color: red;
+}
+
+:is(input[type=text], input[type=password]):valid{
+    background-color: green;
+
+}:is(input[type=text], input[type=password]):user-valid{
+    background-color: green;
+}
+
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 250px; /* puedes ajustarlo */
+}
+
+.formulario label {
+    margin-bottom: 5px;
+}
+
+.formulario input[type=text],
+.formulario input[type=password] {
+    margin-bottom: 15px;
+    width: 100%;
+}

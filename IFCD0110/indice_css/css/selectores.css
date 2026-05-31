@@ -1,0 +1,94 @@
+/* Estilos generales para el contenedor */
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.flexcontainer > div {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+code {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* 1. Pseudo-clases de usuario */
+.btn-ejemplo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* CAMBIO AL PASAR EL RATÓN */
+.btn-ejemplo:hover {
+    background-color: #0056b3;
+    color: #ffcc00;
+}
+
+/* CAMBIO AL HACER CLIC */
+button:active {
+    background-color: #28a745;
+    transform: translateY(2px);
+}
+
+/* 2. Estados de enlaces */
+#demo-links a:link {
+    color: #1a73e8;
+}
+
+#demo-links a:visited {
+    color: #a142f4; /* Típico color lila de enlace visitado */
+}
+
+/* 3. Pseudo-clases estructurales */
+#lista-demo li {
+    padding: 5px;
+    list-style: none;
+}
+
+#lista-demo li:first-child {
+    border-top: 3px solid #007bff;
+    font-weight: bold;
+}
+
+#lista-demo li:last-child {
+    border-bottom: 3px solid #dc3545;
+    color: #dc3545;
+}
+
+/* Pintar los elementos pares de una lista */
+#lista-demo li:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+/* 4. Estados de formulario */
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s;
+}
+
+/* CAMBIO CUANDO HACES CLIC PARA ESCRIBIR */
+input:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    background-color: #fffbe6;
+}

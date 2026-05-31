@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* 1. ESTILOS GLOBALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+/* Bordes de estructura para desarrollo */
+header, nav, main, section, h2 {
+    border: 1px solid blue;
+    overflow: hidden;
+}
+
+/* 2. CABECERA (Header) */
+#caja1titulo {
+    margin-top: 10px;
+    border: solid blue 10px;
+    border-bottom: double blue 10px;
+    background-color: grey;
+}
+
+#caja2titulo {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#caja2titulo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#caja2titulo h1 {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#caja2titulo img {
+    height: 40px;
+}
+
+/* 3. NAVEGACIÓN SUPERIOR (Nav) */
+.claseul {
+    list-style: none;
+    padding: 12px;
+    background-color: #47A0F2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.claseli {
+    background-color: #E6E6EC;
+    border: 3px outset #ccc;
+}
+
+.claseli a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    display: block;
+}
+
+.claseli a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* 4. LAYOUT PRINCIPAL (Dos columnas: Formularios y CSS) */
+main {
+    background-color: #47A0F2;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contenedor{
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contenedor, .contenedor500px {
+    flex: 1; 
+    min-width: 350px; /* Asegura que en pantallas pequeñas se apilen */
+    background-color: #47A0F2;
+    padding-bottom: 20px;
+}
+
+/* 5. CUADRÍCULA DE EJERCICIOS (Solución para centrado automático) */
+.divflexible {
+    display: flex;       /* Cambiado de Grid a Flex para permitir el centrado de huérfanos */
+    flex-wrap: wrap;     /* Permite que los elementos bajen a la siguiente fila */
+    gap: 15px;
+    padding: 15px;
+    justify-content: center; /* Centra los elementos de todas las filas, incluyendo la última */
+}
+
+.caja-ejercicio {
+    background-color: #d5dbdb;
+    border: 1px dashed #666;
+    padding: 10px;
+    width: 160px; /* Ancho fijo para mantener la simetría */
+    height: 180px; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    flex-grow: 0;  /* Evita que las cajas se ensanchen para rellenar huecos */
+    flex-shrink: 0;
+}
+
+.caja-ejercicio:hover {
+    transform: translateY(-5px);
+    background-color: #eee;
+}
+
+.enlacesendivscontenidos {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.imagenflexible {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 1px solid #999;
+}
+
+/* 6. OTROS ESTILOS Y FORMATO */
+.color {
+    color: blue;
+    text-decoration: underline;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+ text-align: center;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: verdana;
+}
+
+/* 7. PIE DE PÁGINA (Footer) */
+
+footer {
+    margin-top: 50px; /* Separa el footer del ejercicio */
+    padding: 20px;
+    border-top: 1px solid #ccc; /* Una línea sutil de separación */
+    text-align: center;
+    padding: 30px;
+    color: #00ff66;
+    font-size: 0.9rem;
+    background-color: #0a0a0a;}
+
+footer nav{
+    border: none;
+}
+
+.viñeta {
+    list-style: none;
+    padding: 0;
+    max-width: 600px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la lista */
+}
+
+.viñeta li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.viñeta li::before {
+    content: ">_ "; 
+    color: #00ff66; /* Un verde terminal le quedaría genial, o mantén tu #333 */
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Opcional: le da un toque más "code" */
+}
+
+/* 1. Definimos la animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #00ff66; /* Verde encendido */
+    }
+    50% {
+        color: transparent; /* Se apaga (invisible) */
+    }
+}
+
+/* 2. Modificamos el comportamiento al hacer hover */
+/* Cuando el usuario pasa el ratón por encima del li o del enlace... */
+.viñeta li:hover::before {
+    /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
+    animation: parpadeo 0.8s steps(2, start) infinite;
+}
+
+.viñeta a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #00ff66;
+}
+
+.viñeta a:hover {
+    text-decoration: underline;
+    color: #00ff66;
+}
+
+
+/* 8. RESPONSIVE (Ajustes para dispositivos móviles) */
+@media screen and (max-width: 800px) {
+    body { 
+        width: 98%; 
+    }
+    .contenedor, .contenedor500px {
+        flex: 1 1 100%; 
+    }
+}

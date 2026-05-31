@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Formulario de contacto</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Formulario de contacto">
+    <meta name="keywords" content="contacto, formulario">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/comun.css">
+</head>
+
+<body>
+
+     <header> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logofrom.png" alt="logo html5" title="inicio de página">
+                        Formularios
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="../formulario_de_contacto/index.html">Formulario de contacto</a></span>
+                    <span><a href="../formulario_de_pago_online/index.html">pago online</a></span>
+                    <span><a href="../formulario_de_redes_sociales/index.html">redes</a></span>
+                    <span><a href="../formulario_de_registro/index.html">registro</a></span>
+                    <span><a href="../formularios_general/formularios_css.html">formularios css3</a></span>
+                    <span><a href="../formularios_general/formulario_mio.html">mi formulario css3</a></span>
+                    <span><a href="../formularios_general/todos_los_formularios.html">campos formularios</a></span>
+                </nav>
+            </div>
+
+            <hr>
+
+    <div>
+        <form action="#" name="formulario de contacto" method="post">
+            <legend>
+                <h1>Formulario de contacto</h1>
+            </legend>
+
+            <label for="name">Nombre<span>*</span></label>
+            <input type="text" id="name" name="Nombre" required pattern="[A-Z][A-Za-z\- ]+" placeholder="Nombre"
+                title="No acepta acentos">
+
+            <label for="apellido">Apellido<span>*</span></label>
+            <input type="text" id="apellido" name="apellido" required pattern="[A-Z][A-Za-z\- ]+" placeholder="Apellido"
+                title="No acepta acentos">
+
+            <label for="telefono">Teléfono<span>*</span></label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[\+][0-9]{1,3}[ ][0-9]{9,12}"
+                placeholder="+CPais 000000000">
+
+            <label for="email">Correo electrónico<span>*</span></label>
+            <input type="email" id="email" name="email" required placeholder="E-mail">
+
+            <label for="consulta">Consulta<span>*</span></label>
+            <textarea id="consulta" name="consulta" required
+                placeholder="Escribe aquí tu consulta..."></textarea><br><br>
+
+            <label for="aceptar"></label>
+            <input type="checkbox" id="aceptar" name="confirma" required> Acepto los términos y <a href="#">condiciones
+                de privacidad</a><br><br>
+
+            <input type="submit" id="enviar" name="boton_enviar">
+        </form>
+    </div>
+
+
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

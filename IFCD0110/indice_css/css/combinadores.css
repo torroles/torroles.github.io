@@ -1,0 +1,174 @@
+* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: lucida Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, " sans-serif";
+			width: 80%;
+			margin: 0 auto;
+			font-size: 1em;
+		}
+
+	
+
+		#navegacion, #logo , #cuadrologo {
+			border: none !important;
+		}
+
+		div {
+			border: dotted 1px black;
+		}
+
+		#div1 p {
+			background-color: yellow;
+		}
+
+		#div2>p {
+			background-color: yellow;
+		}
+
+		#div3+p {
+			background-color: yellow;
+		}
+
+		#div4~p {
+			background-color: yellow;
+		}
+
+		h2+p {
+			background-color: coral;
+		}
+
+		#div5 p::first-line {
+			color: #ff0000;
+			font-variant: small-caps;
+		}
+
+		#div6 p::first-letter {
+			color: #ff0000;
+			font-size: xx-large;
+		}
+
+		#div7 p.intro::first-letter {
+			color: #ff0000;
+			font-size: 200%;
+		}
+
+
+		
+
+		@media screen and (max-width: 1024px) {
+
+			/*cuando llegues a 1024 muestrate verde.*/
+			body {
+				background-color: lightgreen;
+			}
+
+			.flexcontainer {
+				flex-direction: row;
+			}
+
+			.flexcontainer>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 23%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+
+			.flexcontainer2 {
+				flex-direction: column;
+			}
+
+			.flexcontainer2>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 30%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+
+			/*cuando  llegues a 800 muestrate azul*/
+			body {
+				background-color: lightblue;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+
+			/*cuando  llegues a 600 muestrate coral*/
+			body {
+				background-color: lightcoral;
+			}
+
+			.flexcontainer {
+				flex-direction: row;
+			}
+
+			.flexcontainer>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 40%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+
+			.flexcontainer2 {
+				flex-direction: row;
+			}
+
+			.flexcontainer2>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 40%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+
+			/*cuando  llegues a 500 muestrate gris. En el ordenador no llega a encoger tanto*/
+			body {
+				background-color: lightgray;
+			}
+
+			.flexcontainer {
+				flex-direction: column;
+			}
+
+			.flexcontainer>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 100%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+
+			.flexcontainer2 {
+				flex-direction: column;
+			}
+
+			.flexcontainer2>div {
+				background-color: antiquewhite;
+				/*margin: 10px;*/
+				padding: 10px;
+				width: 100%;
+				font-size: 0.8em;
+				/*line-height: 1.5;*/
+				text-align: center;
+			}
+		}

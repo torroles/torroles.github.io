@@ -1,0 +1,327 @@
+<head>
+    <title>Bloques</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="../img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../img/harry_potter_imagens_(7)_opt.ico">
+    <link rel="stylesheet" href="../css/comun.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Bloques</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="../img/favicon.png">
+ <link rel="stylesheet" href="../css/bloques.css">
+    <link rel="stylesheet" href="../css/comun.css">
+   
+</head>
+
+<body>
+    <main>
+        <header id="indice"> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+                        Lenguaje de marcas
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="introduccion.html">introducción</a></span>
+                    <span><a href="formato.html">formato</a></span>
+                    <span><a href="bloques.html">bloques</a></span>
+                    <span><a href="tablas.html">tablas</a></span>
+                    <span><a href="listas.html">listas</a></span>
+                    <span><a href="multimedia.html">multimedia</a></span>
+                    <span><a href="hipervinculos.html">hipervínculos</a></span>
+                </nav>
+            </div>
+
+            <hr>
+            <h1>Bloques HTML</h1>
+            <hr>
+
+            <ul>
+                <li><a href="#etiquetascitan">Etiquetas que citan el texto</a></li>
+                <li><a href="#ejemplouso">Ejemplo de uso</a></li>
+                <li><a href="#elementosagrupan">Elementos que agrupan el texto</a></li>
+                <li><a href="#etiquetascomputadora">Etiquetas de código de computadora</a></li>
+            </ul>
+            <hr>
+        </header>
+
+        <!-- SECCIÓN 1 -->
+        <section>
+            <h2 id="etiquetascitan">Etiquetas que citan el texto</h2>
+
+            <p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden proporcionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atributo <code>title</code> para definir el significado de la abreviación.</p>
+
+            <p>La etiqueta <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, película, programa de TV o canción.</p>
+
+            <p>La etiqueta <code>&lt;blockquote&gt;</code> define una cita larga representada como un elemento de bloque.</p>
+
+            <p>La etiqueta <code>&lt;q&gt;</code> define una cita corta en línea y genera comillas automáticamente.</p>
+
+            <p>La etiqueta <code>&lt;dfn&gt;</code> define un término y debe incluir el atributo <code>title</code>.</p>
+
+            <table>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                    <th>Utilización</th>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;abbr&gt;</code></td>
+                    <td>Define una abreviatura</td>
+                    <td>Esto es un texto abreviado <abbr title="HyperText Markup Language">HTML</abbr></td>
+                    <td><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></td>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;q&gt;</code></td>
+                    <td>Define una cita breve</td>
+                    <td><q>Esto es una cita breve</q></td>
+                    <td><code>&lt;q&gt;Esto es una cita breve&lt;/q&gt;</code></td>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;blockquote&gt;</code></td>
+                    <td>Cita de otra fuente</td>
+                    <td><blockquote class="bloque-cita">Esto es una cita de otra fuente</blockquote></td>
+                    <td><code>&lt;blockquote&gt;Esto es una cita&lt;/blockquote&gt;</code></td>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;cite&gt;</code></td>
+                    <td>Título de una obra</td>
+                    <td><cite>Esto es un título</cite></td>
+                    <td><code>&lt;cite&gt;Esto es un título&lt;/cite&gt;</code></td>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;dfn&gt;</code></td>
+                    <td>Define un término</td>
+                    <td>Esto es un término <dfn title="HyperText Markup Language">HTML</dfn></td>
+                    <td><code>&lt;dfn title="HyperText Markup Language"&gt;HTML&lt;/dfn&gt;</code></td>
+                </tr>
+            </table>
+
+            <h3 id="ejemplouso">Ejemplo de uso</h3>
+
+            <div class="cite">
+                <p><strong>EL LENGUAJE <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn></strong></p>
+
+                <blockquote class="bloque-cita">
+                    <p>Como <strong>Tim Berners-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la Web</cite>: <q>Yo llegué en el momento justo, interesado, cuando el hipertexto e Internet habían visto la luz. La tarea que me correspondía era hacer que casaran</q></p>
+                </blockquote>
+            </div>
+
+            <div class="code">
+                <p><strong>EL CÓDIGO HTML</strong></p>
+
+                <blockquote class="bloque-codigo">
+                    <p>&lt;p&gt;&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;&lt;/p&gt;<br>
+                        &lt;blockquote&gt;&lt;p&gt;Como &lt;strong&gt;Tim Berners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué en el momento justo...&lt;/q&gt;&lt;/p&gt;&lt;/blockquote&gt;
+                    </p>
+                </blockquote>
+            </div>
+
+            <div class="nota">
+                <p><b>Nota:</b> Para sangrar texto se debe usar <code>margin-left</code> en CSS, no <code>&lt;blockquote&gt;</code>.</p>
+            </div>
+
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40"></a>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section>
+            <h2 id="elementosagrupan">Elementos que agrupan el texto</h2>
+
+            <p>El elemento <code>&lt;div&gt;</code> se utiliza como contenedor de otros elementos HTML.</p>
+
+            <p>El elemento <code>&lt;span&gt;</code> se utiliza para agrupar texto en línea.</p>
+
+            <table>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                    <th>Utilización</th>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;div&gt;</code></td>
+                    <td>Define una división del contenido</td>
+                    <td><div class="div-ejemplo">El elemento &lt;div&gt; es un elemento en bloque.</div></td>
+                    <td>&lt;div&gt;Esto es un elemento en bloque.&lt;/div&gt;</td>
+                </tr>
+
+                <tr>
+                    <td><code>&lt;span&gt;</code></td>
+                    <td>Define una sección en línea</td>
+                    <td>El elemento <span class="span-ejemplo">es un elemento en línea.</span></td>
+                    <td>Esto es un &lt;span&gt;elemento en línea&lt;/span&gt;</td>
+                </tr>
+            </table>
+
+            <div class="bloque-ejemplo">
+                <h3>Ejemplo de uso</h3>
+
+                <div class="cite">
+                    <p><strong>Elementos DIV-SPAN</strong></p>
+
+                    <div class="bloque-div">
+                        <div class="fila verde">
+                            <span>HTML</span> <span>lenguaje de marcas de hipertexto</span> <span>se utiliza para el desarrollo de páginas web.</span>
+                        </div>
+
+                        <div class="fila coral">
+                            <span>CSS</span> <span>hojas de estilo en cascada</span> <span>se utiliza para definir la presentación HTML.</span>
+                        </div>
+
+                        <div class="fila azul">
+                            <span>JavaScript</span> <span>lenguaje de programación</span> <span>se utiliza para dar dinamismo a las páginas web.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code">
+                    <p><strong>Código HTML</strong></p>
+
+                    <blockquote class="bloque-codigo">
+                        &lt;div&gt;<br>
+                        &nbsp;&nbsp;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; ... &lt;/div&gt;<br>
+                        &nbsp;&nbsp;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; ... &lt;/div&gt;<br>
+                        &nbsp;&nbsp;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt; ... &lt;/div&gt;<br>
+                        &lt;/div&gt;
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="nota">
+                <p><b>Nota:</b> Un elemento en bloque ocupa todo el ancho disponible. Un elemento en línea solo ocupa el espacio necesario.</p>
+            </div>
+
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40"></a>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section>
+            <h2 id="etiquetascomputadora">Etiquetas de código de computadora</h2>
+
+            <ul>
+                <li><code>&lt;code&gt;</code> define un fragmento de código.</li>
+                <li><code>&lt;kbd&gt;</code> representa entrada del usuario.</li>
+                <li><code>&lt;samp&gt;</code> representa salida del sistema.</li>
+                <li><code>&lt;var&gt;</code> representa variables matemáticas o de programación.</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Visualización</th>
+                    <th>Utilización</th>
+                </tr>
+
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Define código</td>
+                    <td>Usar este código <code>function(main)</code></td>
+                    <td>&lt;code&gt;function(main)&lt;/code&gt;</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Entrada de teclado</td>
+                    <td><kbd class="kbd-dark">Ctrl</kbd> + <kbd class="kbd-dark">S</kbd></td>
+                    <td>&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;samp&gt;</td>
+                    <td>Salida del sistema</td>
+                    <td><samp>Error: página no encontrada</samp></td>
+                    <td>&lt;samp&gt;Error: página no encontrada&lt;/samp&gt;</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;var&gt;</td>
+                    <td>Variable</td>
+                    <td>Einstein escribió: <var>E=mc<sup>2</sup></var></td>
+                    <td>&lt;var&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;/var&gt;</td>
+                </tr>
+            </table>
+
+            <div class="nota">
+                <p><b>Nota:</b> Las etiquetas de código cambian la tipografía simulando código informático.</p>
+            </div>
+
+            <div id="div_padre">
+                <div class="cuadro">
+                    <p>Errores HTML</p>
+                    <samp>Error 404 Not Found</samp><br>
+                    <samp>Error 400 Bad Request</samp><br>
+                    <samp>Error 401 Unauthorized</samp><br>
+                    <samp>Error 403 Forbidden</samp><br>
+                </div>
+
+                <div class="cuadro">
+                    <p>Comandos básicos</p>
+                    <kbd class="kbd-dark">Ctrl</kbd> + <kbd class="kbd-dark">S</kbd> para guardar<br>
+                    <kbd class="kbd-dark">Ctrl</kbd> + <kbd class="kbd-dark">C</kbd> para copiar<br>
+                    <kbd class="kbd-dark">Ctrl</kbd> + <kbd class="kbd-dark">V</kbd> para pegar<br>
+                    <kbd class="kbd-dark">Ctrl</kbd> + <kbd class="kbd-dark">X</kbd> para cortar<br>
+                </div>
+
+                <div class="cuadro">
+                    <p>Fórmulas históricas</p>
+                    <var>a² + b² = c²</var><br>
+                    <var>iħ (∂/∂t) ψ = Hψ</var><br>
+                    <var>E = mc²</var><br>
+                    <var>F = G [(m1 × m2)/r²]</var><br>
+                </div>
+            </div>
+
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40"></a>
+        </section>
+
+        <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+
+</body>
+
+</html>

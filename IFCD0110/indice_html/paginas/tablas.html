@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<title>Tablas</title>
+	<meta charset="UTF-8">
+
+	
+	<meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+	<meta name="title" content="Confección y publicación de páginas web">
+	<meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+	<meta name="author" content="Raúl Galisteo García">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="icon" type="image/png" href="../img/favicon.png">
+	<link rel="stylesheet" href="../css/tablas.css">
+	<link rel="stylesheet" href="../css/comun.css">
+	
+
+
+</head>
+
+<body>
+	<main>
+
+		<header id="indice">
+			<div id="cuadrologo">
+				<div id="logo">
+					<a id="enlacelogo" href="../index.html">
+						<img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+						Lenguaje de marcas
+					</a>
+				</div>
+			</div>
+
+			<div id="navegacion">
+				<nav >
+					<span><a class="volver-indice" href="../index.html">índice</a></span>
+					<span><a href="introduccion.html">introducción</a></span>
+					<span><a href="formato.html">formato</a></span>
+					<span><a href="bloques.html">bloques</a></span>
+					<span><a href="tablas.html">tablas</a></span>
+					<span><a href="listas.html">listas</a></span>
+					<span><a href="multimedia.html">multimedia</a></span>
+                    <span><a href="hipervinculos.html">hipervínculos</a></span>
+				</nav>
+			</div>
+
+			<hr>
+			<h1>Tablas</h1>
+			<hr>
+			<ul >
+				<hr>
+
+				<section>
+					<nav >
+						<ol>
+							<li><a href="#etiquetaslista">Etiquetas que definen una lista</a></li>
+							<li><a href="#ul">Listas desordenadas</a></li>
+							<li><a href="#ol">Listas ordenadas</a></li>
+							<li><a href="#dl">Listas de definición</a></li>
+							<li><a href="#resumen">Resumen</a></li>
+						</ol>
+					</nav>
+				</section>
+
+				<hr>
+		</header>
+		<section>
+    <h2 id="etiquetastabla">Etiquetas que definen una tabla</h2>
+
+    <p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
+    <p>
+        Cada fila de la tabla se define con la etiqueta <code>&lt;tr&gt;</code>.  
+        Un encabezado de la tabla se define con la etiqueta <code>&lt;th&gt;</code>.  
+        Por defecto, los encabezados están en negrita y centrados.  
+        Las celdas de datos se definen con la etiqueta <code>&lt;td&gt;</code>.
+    </p>
+
+    <table class="tabla-definicion">
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td><code>&lt;table&gt;</code></td>
+            <td>Define una tabla</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tr&gt;</code></td>
+            <td>Define una fila</td>
+        </tr>
+        <tr>
+            <td><code>&lt;th&gt;</code></td>
+            <td>Define el encabezado de la tabla</td>
+        </tr>
+        <tr>
+            <td><code>&lt;td&gt;</code></td>
+            <td>Define una celda dentro de una fila</td>
+        </tr>
+        <tr>
+            <td><code>&lt;caption&gt;</code></td>
+            <td>Define el título o leyenda de la tabla</td>
+        </tr>
+        <tr>
+            <td><code>&lt;colgroup&gt;</code></td>
+            <td>Especifica un grupo de columnas para dar formato</td>
+        </tr>
+        <tr>
+            <td><code>&lt;col&gt;</code></td>
+            <td>Especifica propiedades de columna</td>
+        </tr>
+        <tr>
+            <td><code>&lt;thead&gt;</code></td>
+            <td>Agrupa el contenido del encabezado</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tbody&gt;</code></td>
+            <td>Agrupa el contenido del cuerpo</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tfoot&gt;</code></td>
+            <td>Agrupa el contenido del pie</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+
+		<section>
+    <h2 id="scope">El atributo Scope</h2>
+
+    <p>
+        El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de
+        columnas o filas. No tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado
+        por los lectores de pantalla.
+    </p>
+
+    <table class="tabla-scope-externa">
+        <tr>
+
+            <!-- SIN ENCABEZADO -->
+            <td class="tabla-scope-col">
+                <table class="tabla-scope-interna">
+                    <caption>Sin encabezado.</caption>
+                    <tr>
+                        <td class="tabla-scope-celda">&nbsp;</td>
+                        <td class="tabla-scope-celda">&nbsp;</td>
+                        <td class="tabla-scope-celda">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUPERIOR -->
+            <td class="tabla-scope-col">
+                <table class="tabla-scope-interna">
+                    <caption>Encabezado superior.</caption>
+                    <tr>
+                        <th scope="col" class="tabla-scope-celda">Título</th>
+                        <th scope="col" class="tabla-scope-celda">Título</th>
+                        <th scope="col" class="tabla-scope-celda">Título</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- ENCABEZADO IZQUIERDA -->
+            <td class="tabla-scope-col">
+                <table class="tabla-scope-interna">
+                    <caption>Encabezado izq.</caption>
+                    <tr>
+                        <th scope="col" class="tabla-scope-celda">Título</th>
+                        <td class="tabla-scope-celda">&nbsp;</td>
+                        <td class="tabla-scope-celda">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUP + IZQ -->
+            <td class="tabla-scope-col">
+                <table class="tabla-scope-interna">
+                    <caption>Encabezado sup+izq.</caption>
+                    <tr>
+                        <th class="tabla-scope-celda">Título</th>
+                        <th class="tabla-scope-celda">Título</th>
+                        <th class="tabla-scope-celda">Título</th>
+                    </tr>
+                    <tr>
+                        <th>Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+<section>
+    <h2 id="colspan">Los atributos Colspan y Rowspan</h2>
+
+    <p>
+        El atributo colspan define el número de columnas que una celda debe ocupar.  
+        El atributo rowspan especifica el número de filas que una celda debe ocupar.
+    </p>
+
+    <table class="tabla-colspan-externa">
+        <tr>
+
+            <!-- SIN ENCABEZADO -->
+            <td class="tabla-colspan-col">
+                <table class="tabla-colspan-interna">
+                    <caption>Sin encabezado</caption>
+
+                    <tr>
+                        <th class="bg-red w33" rowspan="3">&nbsp;</th>
+                        <th class="bg-green w33" colspan="2">&nbsp;</th>
+                    </tr>
+
+                    <tr>
+                        <td class="bg-aqua">&nbsp;</td>
+                        <td class="bg-blue">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bg-orange" colspan="2">&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUPERIOR -->
+            <td class="tabla-colspan-col">
+                <table class="tabla-colspan-interna">
+                    <caption>Encabezado superior.</caption>
+
+                    <tr>
+                        <th class="w33">Título</th>
+                        <th class="w33">Título</th>
+                        <th class="w33">Título</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" class="bg-teal">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO IZQUIERDA -->
+            <td class="tabla-colspan-col">
+                <table class="tabla-colspan-interna">
+                    <caption>Encabezado izq.</caption>
+
+                    <tr class="bg-purple">
+                        <th class="w33">Título</th>
+                        <td class="w33" rowspan="3">&nbsp;</td>
+                        <td class="w33">&nbsp;</td>
+                    </tr>
+
+                    <tr class="bg-yellow">
+                        <th>Título</th>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <tr class="bg-grey">
+                        <th>Título</th>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUP + IZQ -->
+            <td class="tabla-colspan-col">
+                <table class="tabla-colspan-interna">
+                    <caption>Encabezado sup+izq.</caption>
+
+                    <tr>
+                        <th class="w33 bg-red">Título</th>
+                        <th class="w33 bg-yellow" colspan="2">Título</th>
+                    </tr>
+
+                    <tr>
+                        <th class="w33 bg-yellow" rowspan="2">Título</th>
+                        <td class="w33 bg-green">&nbsp;</td>
+                        <td class="w33 bg-red">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="w33 bg-red">&nbsp;</td>
+                        <td class="w33 bg-yellow">&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+<section>
+    <h2 id="colgroup">Los atributos Colgroup y Col</h2>
+
+    <p>
+        La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para el formato.
+        Es útil para aplicar estilos a columnas completas sin repetir estilos en cada celda.
+    </p>
+
+    <p>
+        La etiqueta <code>&lt;col&gt;</code> especifica propiedades de columna dentro de un
+        <code>&lt;colgroup&gt;</code>. También permite aplicar estilos a columnas completas.
+    </p>
+
+    <table class="tabla-colgroup-externa">
+        <tr>
+
+            <!-- SIN ENCABEZADO -->
+            <td class="tabla-colgroup-col">
+                <table class="tabla-colgroup-interna">
+                    <caption>Sin encabezado.</caption>
+
+                    <colgroup>
+                        <col span="2" class="bg-lightgreen">
+                        <col span="2" class="bg-lightblue">
+                    </colgroup>
+
+                    <tr>
+                        <td class="w25">&nbsp;</td>
+                        <td class="w25">&nbsp;</td>
+                        <td class="w25">&nbsp;</td>
+                        <td class="w25">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUPERIOR -->
+            <td class="tabla-colgroup-col">
+                <table class="tabla-colgroup-interna">
+                    <caption>Encabezado superior.</caption>
+
+                    <colgroup>
+                        <col span="1" class="bg-lightblue">
+                        <col span="2" class="bg-green">
+                        <col span="1" class="bg-red">
+                    </colgroup>
+
+                    <tr>
+                        <th class="w25">Título</th>
+                        <th class="w25">Título</th>
+                        <th class="w25">Título;</th>
+                        <th class="w25">Título</th>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO IZQUIERDA -->
+            <td class="tabla-colgroup-col">
+                <table class="tabla-colgroup-interna">
+                    <caption>Encabezado izq.</caption>
+
+                    <colgroup>
+                        <col span="1" class="bg-lightcoral">
+                        <col span="1" class="bg-lightgreen">
+                        <col span="2" class="bg-lightblue">
+                    </colgroup>
+
+                    <tr>
+                        <th class="w25">Título</th>
+                        <td class="w25">&nbsp;</td>
+                        <td class="w25">&nbsp;</td>
+                        <td class="w25">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th>Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <th>Título</th>
+                        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+<section>
+    <h2 id="agrupacion">Agrupación por filas</h2>
+
+    <p>
+        HTML provee tres elementos que ayudan a agrupar la información en una tabla:
+        <code>&lt;thead&gt;</code> para encabezados,
+        <code>&lt;tbody&gt;</code> para el cuerpo,
+        <code>&lt;tfoot&gt;</code> para el pie o resumen.
+    </p>
+
+    <table class="tabla-agrupacion-externa">
+        <tr>
+
+            <!-- SIN ENCABEZADO -->
+            <td class="tabla-agrupacion-col">
+                <table class="tablaFilas">
+                    <caption>Sin encabezado.</caption>
+
+                    <colgroup>
+                        <col span="2" class="bg-lightgreen">
+                        <col span="2" class="bg-lightblue">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <td class="w25">&nbsp;</td>
+                            <td class="w25">&nbsp;</td>
+                            <td class="w25">&nbsp;</td>
+                            <td class="w25">&nbsp;</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO SUPERIOR -->
+            <td class="tabla-agrupacion-col">
+                <table class="tablaFilas">
+                    <caption>Encabezado superior.</caption>
+
+                    <colgroup>
+                        <col span="1" class="bg-lightblue">
+                        <col span="2" class="bg-green">
+                        <col span="1" class="bg-red">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th class="w25">Título</th>
+                            <th class="w25">Título</th>
+                            <th class="w25">Título;</th>
+                            <th class="w25">Título</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </td>
+
+            <!-- ENCABEZADO IZQUIERDA -->
+            <td class="tabla-agrupacion-col">
+                <table class="tablaFilas">
+                    <caption>Encabezado izq.</caption>
+
+                    <colgroup>
+                        <col span="1" class="bg-lightcoral">
+                        <col span="1" class="bg-lightgreen">
+                        <col span="2" class="bg-lightblue">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th class="w25">Título</th>
+                            <td class="w25">&nbsp;</td>
+                            <td class="w25">&nbsp;</td>
+                            <td class="w25">&nbsp;</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Título</th>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>Título</th>
+                            <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+<section>
+    <h2 id="ejercicio">Ejercicio</h2>
+
+    <table class="tabla-ejercicio">
+        <thead class="tabla-ejercicio-head">
+            <tr>
+                <td rowspan="2">&nbsp;</td>
+                <td rowspan="2">&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+        </thead>
+
+        <tbody class="tabla-ejercicio-body">
+            <tr>
+                <td rowspan="3">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="tabla-ejercicio-foot">
+            <tr>
+                <td colspan="3">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <a href="#indice">
+        <img src="../img/flechaarriba.jpg" alt="flecha" class="flecha">
+    </a>
+</section>
+
+
+
+		<footer>
+			  <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+		</footer>
+
+	</main>
+
+
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

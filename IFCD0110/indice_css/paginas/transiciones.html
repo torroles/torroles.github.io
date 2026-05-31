@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transiciones</title>
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejemplos prácticos de transiciones y transformaciones CSS.">
+    <meta name="keywords" content="CSS, transiciones, transformaciones, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/harry_potter_imagens_(7)_opt.png">
+    <link rel="icon" type="image/gif" href="img/harry_potter_imagens_(7)_opt.gif">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/harry_potter_imagens_(7)_opt.ico">
+    <link rel="stylesheet" href="../css/transiciones.css">
+    <link rel="stylesheet" type="text/css" href="../css/comun.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+    
+   <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logo css3.jpg" alt="logo html5" title="inicio de página">
+                        Lenguaje CSS3
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                   <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="propiedades_txt.html">TEXTOS</a></span>
+                    <span><a href="selectores.html">PSEUDO-CLASES</a></span>
+                    <span><a href="combinadores.html">PSEUDO-ELEMENTOS</a></span>
+                    <span><a href="bordes.html">bordes</a></span>
+                    <span><a href="transiciones.html">transiciones</a></span>
+                     <span><a href="transformaciones_2D.html">transformaciones 2D</a></span>
+                    <span><a href="flexbox.html">flexbox</a></span>
+                    <span><a href="grid.html">grid</a></span>
+                    <span><a href="call_to_action.html">call to action</a></span>
+                    <span><a href="emojis_before.html">LISTA CON ::BEFORE </a></span>
+                    <span><a href="nav_horizontal.html">MENÚ HORIZONTAL</a></span>
+                    <span><a href="breadcrumb.html">breadcrumb</a></span>
+                    <span><a href="nav_vertical.html">MENÚ VERTICAL</a></span>
+                    <span><a href="galeria_img.html">GALERÍA</a></span>
+                    <span><a href="tabla_productos.html">tabla productos</a></span>
+                    <span><a href="propiedad_overflow.html">OVERFLOW</a></span>
+                    <span><a href="mini_producto.html">MINIATURA DE PRODUCTO</a></span></span>
+                </nav>
+            </div>
+
+            <hr>
+    <h1>Transiciones</h1>
+    <hr>
+
+    <h2>Especificar la curva de velocidad de la transición</h2>
+    <p>La propiedad <b>transition-timing-function</b> especifica la curva de velocidad del efecto de transición.</p>
+    <p>Puede tener los siguientes valores:</p>
+
+    <ul>
+        <li>ease – transición con inicio lento, aceleración y final lento (valor por defecto)</li>
+        <li>linear – transición con velocidad constante</li>
+        <li>ease-in – inicio lento</li>
+        <li>ease-out – final lento</li>
+        <li>ease-in-out – inicio y final lentos</li>
+        <li>cubic-bezier(n,n,n,n) – permite definir una curva personalizada</li>
+    </ul>
+
+    <p>Ejemplos de curvas de velocidad:</p>
+
+    <div id="div1">linear</div><br>
+    <div id="div2">ease</div><br>
+    <div id="div3">ease-in</div><br>
+    <div id="div4">ease-out</div><br>
+    <div id="div5">ease-in-out</div><br>
+
+    <hr>
+
+    <h2>Retrasar el efecto de transición</h2>
+    <p>La propiedad <b>transition-delay</b> especifica un retardo antes de que comience la transición.</p>
+    <p>Ejemplo con retardo:</p>
+
+    <div id="div6">linear delay 0.5s</div><br>
+    <div id="div7">ease delay 1s</div><br>
+    <div id="div8">ease-in delay 1.5s</div><br>
+    <div id="div9">ease-out delay 2s</div><br>
+    <div id="div10">ease-in-out delay 2.5s</div><br>
+
+    <hr>
+
+    <h2>Duración del efecto de transición</h2>
+    <p>La propiedad <b>transition-duration</b> especifica el tiempo que tarda en completarse la transición.</p>
+
+    <div id="div11">linear delay 0.5s duration 0.5s</div><br>
+    <div id="div12">ease delay 1s duration 0.5s</div><br>
+    <div id="div13">ease-in delay 1.5s duration 0.5s</div><br>
+    <div id="div14">ease-out delay 2s duration 0.5s</div><br>
+    <div id="div15">ease-in-out delay 2.5s duration 0.5s</div><br>
+
+    <hr>
+
+    <h2>transition-property</h2>
+    <p>La propiedad <b>transition-property</b> especifica qué propiedad CSS activará la transición cuando cambie.</p>
+    <p>Consejo: normalmente se activa al pasar el ratón sobre un elemento.</p>
+    <p>Nota: siempre especifique también <b>transition-duration</b>, de lo contrario la transición no tendrá efecto.</p>
+
+    <div id="div16">linear delay 0.5s duration 0.5s background-color: blue;</div><br>
+    <div id="div17">ease delay 1s duration 0.5s background-color: blue;</div><br>
+    <div id="div18">ease-in delay 1.5s duration 0.5s background-color: blue;</div><br>
+    <div id="div19">ease-out delay 2s duration 0.5s background-color: blue;</div><br>
+    <div id="div120">ease-in-out delay 2.5s duration 0.5s background-color: blue;</div><br>
+
+    <hr>
+
+    <h2>Ejemplo resumen de transiciones</h2>
+
+    <form id="form1" name="form1" method="POST">
+        <label for="form1">Buscar</label>
+        <input type="text" name="form1" id="form1"
+            placeholder="transition: width 0.35s ease-in-out; cuando se pulsa width 500px height 200px">
+    </form>
+
+    <hr>
+    <hr>
+
+    <h2>Transformaciones 2D</h2>
+    <p>En este capítulo aprenderá los siguientes métodos de transformación 2D:</p>
+
+    <ul>
+        <li><b>translate()</b> – mueve un elemento desde su posición actual</li>
+        <li><b>rotate()</b> – rota el elemento según los grados indicados</li>
+        <li><b>scale()</b> – escala el tamaño del elemento</li>
+        <li><b>skewX()</b> – inclina el elemento en el eje X</li>
+        <li><b>skewY()</b> – inclina el elemento en el eje Y</li>
+        <li><b>matrix()</b> – combina múltiples transformaciones</li>
+    </ul>
+<footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

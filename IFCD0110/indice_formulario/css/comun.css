@@ -1,0 +1,150 @@
+body{
+   
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+  
+#navegacion {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+     background-color: white;
+      padding:0%;
+    margin:0%;
+   
+}
+
+hr {
+    border: 0.5px solid grey;
+}
+
+
+#navegacion span a {color: rgb(30, 16, 153);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(140, 216, 240);
+    font-size: large;
+    border-radius: 5px;
+    display: inline-block; /* Mantenemos este para que el padding azul funcione bien */
+    background-color: rgb(140, 216, 240); /* Tu color azul original */
+    padding: 10px; /* Tu padding original del botón */
+     margin-top: 5px;
+     margin-bottom: 5px;
+}
+
+#navegacion span a:hover {
+    /* Evitamos que el padding crezca a 20px 40px en el hover */
+    padding: 10px !important; 
+    background-color: rgb(110, 190, 220) !important; /* Un azul un poco más oscuro para el feedback */
+    text-decoration: none !important;
+}
+
+
+#cuadrologo {
+    width: 100%;
+    height: auto;
+    
+    overflow: hidden;
+    text-align: left;
+    background-color: white;
+    padding:0%;
+    margin:0%;
+    margin-top: 20px;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    display:block;
+     background-color: white;
+     padding:0%;
+}
+
+#imglogo {
+    width: 50px;
+}
+#enlacelogo { text-decoration: none;
+    color:blue;
+    /* Quitamos el fondo rosa y el padding que causa el escalado */
+    background-color: transparent !important;
+    padding: 0 !important;
+    display: inline !important; 
+    font-family: inherit !important;
+     background-color: white;
+}
+
+#enlacelogo:hover {color:black;
+    /* Aseguramos que al pasar el ratón no aparezca el subrayado ni cambie el tamaño */
+    text-decoration: none !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+footer {
+    margin-top: 50px; /* Separa el footer del ejercicio */
+    padding: 20px;
+    border-top: 1px solid #ccc; /* Una línea sutil de separación */
+    text-align: center;
+    padding: 30px;
+    color: #00ff66;
+    font-size: 0.9rem;
+    background-color: #0a0a0a;}
+#year{
+    background-color: transparent;
+}
+
+.viñeta {
+    list-style: none;
+    padding: 0;
+    max-width: 600px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la lista */
+}
+
+.viñeta li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: none !important;
+}
+
+.viñeta li::before {
+    content: ">_ "; 
+    color: #00ff66; /* Un verde terminal le quedaría genial, o mantén tu #333 */
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace; /* Opcional: le da un toque más "code" */
+}
+
+/* 1. Definimos la animación del parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        color: #00ff66; /* Verde encendido */
+    }
+    50% {
+        color: transparent; /* Se apaga (invisible) */
+    }
+}
+
+/* 2. Modificamos el comportamiento al hacer hover */
+/* Cuando el usuario pasa el ratón por encima del li o del enlace... */
+.viñeta li:hover::before {
+    /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
+    animation: parpadeo 0.8s steps(2, start) infinite;
+}
+
+.viñeta a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: #00ff66; /* Un azul más profesional */
+}
+
+.viñeta a:hover {
+    text-decoration: underline;
+    color: #00ff66;
+}
+.viñeta span{color: #00ff66;}

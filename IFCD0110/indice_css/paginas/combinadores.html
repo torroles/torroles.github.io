@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <title>Combinadores y Pseudo-elementos</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejemplos de pseudoclases, combinadores y pseudo-elementos en CSS.">
+    <meta name="keywords" content="CSS, pseudoclases, combinadores, pseudo-elementos, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/combinadores.css">
+    <link rel="stylesheet" type="text/css" href="../css/comun.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+    
+  <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logo css3.jpg" alt="logo html5" title="inicio de página">
+                        Lenguaje CSS3
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="propiedades_txt.html">TEXTOS</a></span>
+                    <span><a href="selectores.html">PSEUDO-CLASES</a></span>
+                    <span><a href="combinadores.html">PSEUDO-ELEMENTOS</a></span>
+                    <span><a href="bordes.html">bordes</a></span>
+                    <span><a href="transiciones.html">transiciones</a></span>
+                     <span><a href="transformaciones_2D.html">transformaciones 2D</a></span>
+                    <span><a href="flexbox.html">flexbox</a></span>
+                    <span><a href="grid.html">grid</a></span>
+                    <span><a href="call_to_action.html">call to action</a></span>
+                    <span><a href="emojis_before.html">LISTA CON ::BEFORE </a></span>
+                    <span><a href="nav_horizontal.html">MENÚ HORIZONTAL</a></span>
+                    <span><a href="breadcrumb.html">breadcrumb</a></span>
+                    <span><a href="nav_vertical.html">MENÚ VERTICAL</a></span>
+                    <span><a href="galeria_img.html">GALERÍA</a></span>
+                    <span><a href="tabla_productos.html">tabla productos</a></span>
+                    <span><a href="propiedad_overflow.html">OVERFLOW</a></span>
+                    <span><a href="mini_producto.html">MINIATURA DE PRODUCTO</a></span>
+                </nav>
+            </div>
+<hr>
+       <br>
+    <h1>Combinadores y Pseudo-elementos</h1>
+   <br>
+
+
+    <div class="flexcontainer">
+        <div>
+            <h2>Selector de descendientes</h2>
+            <p>div p {background-color: yellow}</p>
+            <div id="div1">
+                <p>Párrafo 1 dentro del div.</p>
+                <p>Párrafo 2 dentro del div.</p>
+                <span>
+                    <p>Párrafo 3 dentro del div.</p>
+                </span>
+            </div>
+            <p>Párrafo 4. Fuera del div.</p>
+            <p>Párrafo 5. Fuera del div.</p>
+
+            <code>
+        &lt;div id="div1"&gt;<br>
+        <mark>&lt;p&gt;Párrafo 1 dentro del div.&lt;/p&gt;</mark><br>
+        <mark>&lt;p&gt;Párrafo 2 dentro del div.&lt;/p&gt;</mark><br>
+        <mark>&lt;span&gt;&lt;p&gt;Párrafo 3 dentro del div.&lt;/p&gt;&lt;/span&gt;</mark><br>
+        &lt;/div&gt;<br>
+        &lt;p&gt;Párrafo 4. Fuera del div.&lt;/p&gt;<br>
+        &lt;p&gt;Párrafo 5. Fuera del div.&lt;/p&gt;
+            </code>
+        </div>
+
+        <div>
+            <h2>Selector de hijos</h2>
+            <p>div &gt; p {background-color: yellow}</p>
+            <p>Se aplica a los párrafos descendientes directos de div. El párrafo 3 no se pinta porque está dentro de un
+                span.</p>
+
+            <div id="div2">
+                <p>Párrafo 1 dentro del div.</p>
+                <p>Párrafo 2 dentro del div.</p>
+                <span>
+                    <p>Párrafo 3 dentro del div.</p>
+                </span>
+            </div>
+
+            <p>Párrafo 4. Fuera del div.</p>
+            <p>Párrafo 5. Fuera del div.</p>
+        </div>
+
+        <div>
+            <h2>Selector de hermano adyacente</h2>
+            <p>div + p {background-color: yellow}</p>
+            <p>Se pintan los selectores inmediatamente después del div.</p>
+
+            <div id="div3">
+                <p>Párrafo 1 dentro del div.</p>
+                <p>Párrafo 2 dentro del div.</p>
+            </div>
+
+            <p>Párrafo 3. Fuera del div.</p>
+            <p>Párrafo 4. Fuera del div.</p>
+        </div>
+
+        <div>
+            <h2>Selector general entre hermanos</h2>
+            <p>div ~ p {background-color: yellow}</p>
+            <p>Selecciona todos los elementos que son hermanos posteriores del elemento especificado.</p>
+
+            <p>Párrafo 1.</p>
+
+            <div id="div4">
+                <code>Un poco de código.</code>
+                <p>Párrafo 2.</p>
+            </div>
+
+            <p>Párrafo 3.</p>
+            <code>Un poco de código.</code>
+            <p>Párrafo 4.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Pseudo-elementos CSS</h2>
+    <p>Un pseudo-elemento CSS se utiliza para aplicar estilo a partes específicas de un elemento. Por ejemplo:</p>
+
+    <ul>
+        <li>Estilizar la primera letra o la primera línea de un elemento.</li>
+        <li>Insertar contenido antes o después del contenido real.</li>
+    </ul>
+
+    <div class="flexcontainer2">
+        <div>
+            <h2>La primera línea ::first-line</h2>
+            <div id="div5">
+                <p>Puedes usar el pseudo-elemento ::first-line para añadir un efecto especial a la primera línea de un texto. Un poco más de texto. E incluso más, y más, y más...</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>El pseudo-elemento ::first-letter</h2>
+            <div id="div6">
+                <p>¡Puedes usar el pseudo-elemento ::first-letter para añadir un efecto especial al primer carácter de un texto!</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Pseudo-elementos y clases CSS</h2>
+            <div id="div7">
+                <p class="intro">Esto es una introducción.</p>
+                <p>Este es un párrafo con algo de texto. Incluso un poco más de texto.</p>
+            </div>
+        </div>
+    </div>
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+</body>
+
+</html>

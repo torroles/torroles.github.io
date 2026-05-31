@@ -1,0 +1,64 @@
+/* Bloques extraídos de estilos en línea */
+
+.bloque-cita {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bloque-codigo {
+    line-height: 20px;
+}
+
+.div-ejemplo {
+    border: 1px solid #F8060A;
+    padding: 5px;
+}
+
+.span-ejemplo {
+    border: 1px solid blue;
+}
+
+.bloque-ejemplo {
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.bloque-div {
+    border: 1px solid black;
+    margin: 10px 15px;
+}
+
+.fila {
+    padding: 5px;
+}
+
+.fila.verde {
+    background-color: lightgreen;
+}
+
+.fila.coral {
+    background-color: lightcoral;
+}
+
+.fila.azul {
+    background-color: lightblue;
+}
+
+.kbd-dark {
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+#div_padre {
+    display: flex;
+    gap: 20px;
+}
+
+.cuadro {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+

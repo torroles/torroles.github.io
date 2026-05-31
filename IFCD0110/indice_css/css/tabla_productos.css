@@ -1,0 +1,48 @@
+/* Reset básico */
+* {
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Contenedor de la tabla */
+.styled-table {
+    width: 80%;
+    margin: 20px auto;   /* ← CENTRA LA TABLA */
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+/* Título inferior (caption) */
+.styled-table caption {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;   /* ← CENTRA EL TEXTO DEL CAPTION */
+}
+
+/* Celdas */
+.styled-table th,
+td {
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+/* Encabezados */
+.styled-table th {
+    background-color: #009688;
+    color: white;
+}
+
+/* Filas alternas */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Hover */
+td:hover {
+    background-color: #c7e2e0;
+}
+
+/* Añadir símbolo € */
+td:nth-child(3)::after {
+    content: "€";
+}

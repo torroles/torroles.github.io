@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Introducción</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/introduccion.css">
+<link rel="stylesheet" href="../css/comun.css">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+    <main>
+        <header id="indice">
+            <!--logo-->
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/HTML5_Logo_64.png" alt="logo html5" title="inicio de página">
+                        Lenguaje de marcas
+                    </a>
+                </div>
+            </div>
+
+            <br>
+
+            <!--navegacion-->
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="introduccion.html">introducción</a></span>
+                    <span><a href="formato.html">formato</a></span>
+                    <span><a href="bloques.html">bloques</a></span>
+                    <span><a href="tablas.html">tablas</a></span>
+                    <span><a href="listas.html">listas</a></span>
+                    <span><a href="multimedia.html">multimedia</a></span>
+                    <span><a href="hipervinculos.html">hipervínculos</a></span>
+                </nav>
+            </div>
+
+            <br>
+            <hr>
+
+            <h1>HTML Introducción</h1>
+
+            <hr>
+
+            <section>
+                <nav>
+                    <ol>
+                        <li><a href="#queeshtml">¿Qué es HTML?</a></li>
+                        <li><a href="#estructurabasica">Estructura básica de un documento HTML</a></li>
+                        <li><a href="#explicacionetiquetas">Explicación de las etiquetas básicas</a></li>
+                        <li><a href="#etiquetashtml">Etiquetas HTML</a></li>
+                        <li><a href="#navegadoresweb">Navegadores web</a></li>
+                        <li><a href="#estructurapagina">Estructura de una página web</a></li>
+                    </ol>
+                </nav>
+            </section>
+
+            <hr>
+        </header>
+
+        <!-- SECCIÓN 1 -->
+        <section>
+            <h2 id="queeshtml">¿Qué es HTML?</h2>
+            <p>HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
+
+            <ul>
+                <li>HTML significa Hyper Text Markup Language.</li>
+                <li>HTML describe la estructura de las páginas Web usando marcado.</li>
+                <li>Los elementos HTML son los bloques de construcción de páginas HTML.</li>
+                <li>Los elementos HTML están representados por etiquetas.</li>
+                <li>Las etiquetas HTML están ordenadas en niveles como &lt;head&gt;, &lt;p&gt;, &lt;table&gt;...</li>
+                <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido.</li>
+            </ul>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- SECCIÓN 2 -->
+        <section>
+            <h2 id="estructurabasica">Estructura básica de un documento HTML</h2>
+
+            <div class="ejemplo">
+                <h3>Ejemplo</h3>
+                <div class="code">
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="es-ES"&gt;<br>
+                        &lt;head&gt;<br>
+                        &nbsp;&nbsp;&lt;meta charset="utf-8"&gt;<br>
+                        &nbsp;&nbsp;&lt;title&gt;Título de la página&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;Mi primer encabezado.&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Mi primer párrafo.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+            </div>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- SECCIÓN 3 -->
+        <section>
+            <h2 id="explicacionetiquetas">Explicación de las etiquetas básicas</h2>
+
+            <ol>
+                <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define el tipo de documento.</li>
+                <li>La etiqueta <code>&lt;html lang="es-ES"&gt;</code> define el elemento raíz.</li>
+                <li>La etiqueta <code>&lt;head&gt;</code> define los metadatos.</li>
+                <li>La etiqueta <code>&lt;meta charset="utf-8"&gt;</code> define el juego de caracteres.</li>
+                <li>La etiqueta <code>&lt;title&gt;</code> especifica el título.</li>
+                <li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido visible.</li>
+                <li>La etiqueta <code>&lt;h1&gt;</code> define el encabezado principal.</li>
+                <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
+            </ol>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- SECCIÓN 4 -->
+        <section>
+            <h2 id="etiquetashtml">Etiquetas HTML</h2>
+
+            <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
+
+            <div class="etiquetasHTML">
+                <p><code><b>&lt;Nombre de etiqueta&gt;</b> contenido ... <b>&lt;/nombre de la etiqueta&gt;</b></code></p>
+            </div>
+
+            <dl>
+                <dt><b>Etiquetas HTML</b></dt>
+                <dd>Normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code></dd>
+                <dd>La primera etiqueta es la <b>etiqueta de inicio</b> y la segunda la <b>etiqueta de fin</b></dd>
+                <dd>La etiqueta de fin incluye una barra inclinada antes del nombre</dd>
+            </dl>
+
+            <div class="nota">
+                <p><b>Nota:</b> La etiqueta de inicio también se llama <b>etiqueta de apertura</b> y la final
+                    <b>etiqueta de cierre</b>.
+                </p>
+            </div>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- SECCIÓN 5 -->
+        <section>
+            <h2 id="navegadoresweb">Navegadores web</h2>
+
+            <p>El propósito de un navegador web es leer documentos HTML y mostrarlos.</p>
+
+            <img src="./img/img_chrome.png" alt="imagen navegador chrome" width="635" height="361">
+
+            <br>
+
+            <table>
+                <tr><th>Versión</th><th>Año</th></tr>
+                <tr><td>HTML</td><td>1991</td></tr>
+                <tr><td>HTML 2.0</td><td>1995</td></tr>
+                <tr><td>HTML 3.2</td><td>1997</td></tr>
+                <tr><td>HTML 4.01</td><td>1999</td></tr>
+                <tr><td>XHTML</td><td>2000</td></tr>
+                <tr><td>HTML5</td><td>2014</td></tr>
+            </table>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- SECCIÓN 6 -->
+        <section>
+            <h2 id="estructurapagina">Estructura de una página web</h2>
+
+            <p>A continuación se muestra una visualización de la estructura HTML:</p>
+
+            <!-- Mantengo tu estructura visual original -->
+            <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">
+                &lt;html&gt;
+                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">
+                    &lt;head&gt;
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
+                        &lt;title&gt;Título de la página&lt;/title&gt;
+                    </div>
+                    &lt;/head&gt;
+                </div>
+
+                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">
+                    &lt;body&gt;
+                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
+                            &lt;h1&gt;Esto es un encabezado.&lt;/h1&gt;
+                        </div>
+                        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
+                            &lt;p&gt;Esto es un párrafo.&lt;/p&gt;
+                        </div>
+                        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">
+                            &lt;p&gt;Esto es otro párrafo.&lt;/p&gt;
+                        </div>
+                    </div>
+                    &lt;/body&gt;
+                </div>
+            </div>
+
+            <br>
+
+            <div class="nota">
+                <p><b>Nota:</b> Sólo el contenido dentro de <code>&lt;body&gt;</code> se muestra en el navegador.</p>
+            </div>
+
+            <hr>
+            <a href="#indice"><img src="../img/flechaarriba.jpg" alt="flecha" width="40" height="40"></a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+             <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+    </main>
+    <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+
+</body>
+
+</html>

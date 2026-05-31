@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Formulario mio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mio.css">
+<link rel="stylesheet" href="../css/comun.css">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+     <header> 
+            
+            <div id="cuadrologo">
+                <div id="logo">
+                    <a id="enlacelogo" href="../index.html">
+                        <img id="imglogo" src="../img/logofrom.png" alt="logo html5" title="inicio de página">
+                        Formularios
+                    </a>
+                </div>
+            </div>
+
+            <div id="navegacion">
+                <nav>
+                    <span><a class="volver-indice" href="../index.html">índice</a></span>
+                    <span><a href="../formulario_de_contacto/index.html">Formulario de contacto</a></span>
+                    <span><a href="../formulario_de_pago_online/index.html">pago online</a></span>
+                    <span><a href="../formulario_de_redes_sociales/index.html">redes</a></span>
+                    <span><a href="../formulario_de_registro/index.html">registro</a></span>
+                    <span><a href="../formularios_general/formularios_css.html">formularios css3</a></span>
+                    <span><a href="../formularios_general/formulario_mio.html">mi formulario css3</a></span>
+                    <span><a href="../formularios_general/todos_los_formularios.html">campos formularios</a></span>
+                </nav>
+            </div>
+
+            <hr>
+<h1>MI FORMULARIO CSS3</h1>
+<hr>
+        </header>
+
+
+        <div class="titulo">
+            <h2>TÍTULO DEL FORMULARIO</h2>
+            <p>DESCRIPCIÓN DEL FORMULARIO</p>
+        </div>
+   
+
+    <main>
+        <div class="contenedor">
+            <!-- Columna Izquierda -->
+            <div class="contenido" id="fondo">
+                <form action="#">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="tu_nombre" required>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="tu_apellido" required>
+
+                    <label for="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" required placeholder="00000000-X" pattern="[0-9]{8}-[A-Z]">
+
+                    <div class="grupo-radio">
+                        <div class="opcion-sexo">
+                            <label for="masculino">Hombre</label>
+                            <input type="radio" id="masculino" name="sexo">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="contenido" id="fondo1">
+                <form action="#">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="tu e-mail" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="contraseña" required>
+
+                    <label for="movil">Teléfono</label>
+                    <input type="tel" id="movil" placeholder="123456789" pattern="[0-9]{9}" required>
+
+                    <div class="grupo-radio">
+                        <div class="opcion-sexo">
+                            <label for="femenino">Mujer</label>
+                            <input type="radio" id="femenino" name="sexo">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div>
+        <div class="pie">
+            <label for="text">Escribe aquí tus observaciones:</label>
+            <textarea name="tex" id="text" style="width: 100%; height: 150px; resize: none;"></textarea>
+        </div>
+    </div>
+
+    
+  <footer>
+            <nav>
+                <ul class="viñeta">
+                    <li><a class="volver-indice" href="../index.html">Volver al Índice de Ejercicios</a></li>
+                    <li><a href="../../../index.html">Volver Porfolio</a></li>
+                    <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            
+                </ul>
+            </nav>
+        </footer>
+
+   <script src="../../js/navegacion_ejercicios.js"></script>
+    <script src="../../js/año_footer.js"></script>
+
+</body>
+</html>

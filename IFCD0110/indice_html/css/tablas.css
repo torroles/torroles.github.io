@@ -1,0 +1,229 @@
+/* ------------------------- */
+/* NOTAS Y ELEMENTOS BÁSICOS */
+/* ------------------------- */
+
+.nota {
+    background-color: #FFFFCC;
+    border-left: 6px solid #ffeb3b;
+    padding: 10px 5px;
+}
+
+code {
+    color: red;
+    background-color: #f1f1f1;
+    padding: 0 4px;
+    font-size: 125%;
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.etiquetasHTML {
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    font-size: 24px;
+    padding: 16px;
+}
+
+code span { color: mediumblue; }
+code span span { color: brown; }
+code span span span { color: crimson; }
+
+/* ------------------------- */
+/* BLOQUES DE EJEMPLOS */
+/* ------------------------- */
+
+.ejemplo {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.16);
+}
+
+.code,
+.cite {
+    margin: 16px 0;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+.code { border-left: 4px solid chartreuse; }
+.cite { border-left: 4px solid #72A3E5; }
+
+/* ------------------------- */
+/* TABLAS GENERALES */
+/* ------------------------- */
+
+table h1, table h2, table h3, table h4, table h5, table h6 {
+    margin: 0;
+}
+
+#tabla1,
+.tablaDemo table,
+.tablaScope table,
+.tablaFilas,
+.tabla-definicion,
+.tabla-scope-interna,
+.tabla-colspan-interna,
+.tabla-colgroup-interna {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tabla1 td, #tabla1 th,
+.tablaDemo td, .tablaDemo th,
+.tablaScope td, .tablaScope th,
+.tabla-definicion td, .tabla-definicion th {
+    border: 1px solid #DDDDDD;
+}
+
+#tabla1 tr:nth-child(even),
+.tabla-definicion tr:nth-child(even) {
+    background-color: #DDFFDD;
+}
+
+/* ------------------------- */
+/* TABLA FILAS */
+/* ------------------------- */
+
+.tablaFilas thead { background-color: tomato; }
+.tablaFilas tbody { background-color: aqua; }
+.tablaFilas tfoot { background-color: yellowgreen; }
+
+/* ------------------------- */
+/* SPAN GENERAL */
+/* ------------------------- */
+
+span {
+    padding: 2px 5px;
+    margin: 2px;
+    color: #212579;
+    border-radius: 4px;
+    background-color: aliceblue;
+}
+
+/* ------------------------- */
+/* DIVS PADRE E HIJOS */
+/* ------------------------- */
+
+#div_padre {
+    border: 1px solid green;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#div_hijo1, #div_hijo2, #div_hijo3 {
+    float: left;
+    width: 33.33%;
+}
+
+#div_hijo1 { background-color: lightblue; }
+#div_hijo2 { background-color: lightgreen; }
+#div_hijo2 span { background-color: black; color: white; }
+#div_hijo3 { background-color: lightcoral; }
+
+/* ------------------------- */
+/* TABLA DEFINICIÓN */
+/* ------------------------- */
+
+.tabla-definicion td, .tabla-definicion th {
+    padding: 6px;
+}
+
+/* ------------------------- */
+/* TABLA SCOPE */
+/* ------------------------- */
+
+.tabla-scope-externa {
+    width: 95%;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla-scope-col { width: 25%; }
+.tabla-scope-celda { width: 33.3%; }
+
+/* ------------------------- */
+/* TABLA COLSPAN */
+/* ------------------------- */
+
+.tabla-colspan-externa {
+    width: 95%;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla-colspan-col { width: 25%; }
+.w33 { width: 33.3%; }
+
+/* ------------------------- */
+/* TABLA COLGROUP */
+/* ------------------------- */
+
+.tabla-colgroup-externa {
+    width: 95%;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla-colgroup-col { width: 33.3%; }
+.w25 { width: 25%; }
+
+/* ------------------------- */
+/* TABLA AGRUPACIÓN */
+/* ------------------------- */
+
+.tabla-agrupacion-externa {
+    width: 95%;
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla-agrupacion-col { width: 33.3%; }
+
+/* ------------------------- */
+/* TABLA EJERCICIO */
+/* ------------------------- */
+
+.tabla-ejercicio {
+    width: 100%;
+    border: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tabla-ejercicio-head { background-color: green; }
+.tabla-ejercicio-body { background-color: red; }
+.tabla-ejercicio-foot { background-color: blue; }
+
+/* ------------------------- */
+/* COLORES */
+/* ------------------------- */
+
+.bg-red { background-color: red; }
+.bg-green { background-color: green; }
+.bg-aqua { background-color: aquamarine; }
+.bg-blue { background-color: blue; }
+.bg-orange { background-color: orange; }
+.bg-teal { background-color: teal; }
+.bg-purple { background-color: rebeccapurple; }
+.bg-yellow { background-color: yellow; }
+.bg-grey { background-color: grey; }
+.bg-lightgreen { background-color: lightgreen; }
+.bg-lightblue { background-color: lightblue; }
+.bg-lightcoral { background-color: lightcoral; }
+
+/* ------------------------- */
+/* FLECHA */
+/* ------------------------- */
+
+.flecha {
+    width: 40px;
+    height: 40px;
+}

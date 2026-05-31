@@ -1,0 +1,562 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0d4a86;
+    --blue-dark: #093868;
+    --blue-light: #1a6bb5;
+    --accent: #e8f0fa;
+    --text: #1a1a2e;
+    --muted: #5a6478;
+    --line: #dde3ee;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #e9eef5;
+    color: var(--text);
+    font-size: 13.5px;
+    line-height: 1.6;
+    /* CORRECCIÓN: Permitir scroll vertical */
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cv {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: var(--white);
+    box-shadow: 0 8px 40px rgba(13, 74, 134, .18);
+    min-height: 100vh;
+    border-radius: 14px;
+    /* CORRECCIÓN: Permitir que el contenido fluya */
+    overflow: visible; 
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+    width: 270px;
+    flex-shrink: 0;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-photo {
+    padding: 28px 28px 20px;
+    text-align: center;
+    background: var(--blue-dark);
+}
+
+/* CORRECCIÓN: QR adaptable */
+.qr {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+.sidebar-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, .35);
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.sidebar-photo .name-side {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: .3px;
+}
+
+.sidebar-photo .title-side {
+    font-size: 11px;
+    font-weight: 300;
+    opacity: .75;
+    margin-top: 4px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.sidebar-body {
+    padding: 20px 22px;
+    flex: 1;
+}
+
+.s-section {
+    margin-bottom: 24px;
+}
+
+.s-section-title {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .55);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+
+.contact-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: .85;
+}
+
+.contact-item a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: var(--white);
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.skill-group {
+    margin-bottom: 10px;
+}
+
+.skill-group-label {
+    font-size: 11px;
+    opacity: .6;
+    margin-bottom: 5px;
+}
+
+.lang-bar-wrap {
+    margin-top: 6px;
+}
+
+.lang-label {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.lang-bar {
+    height: 4px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 2px;
+}
+
+.lang-fill {
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 2px;
+}
+
+.extras {
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.extras-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+    flex-shrink: 0;
+}
+
+/* ── MAIN ── */
+.main {
+    flex: 1;
+    padding: 36px 38px 36px 36px;
+    background: var(--white);
+}
+
+.main-header {
+    margin-bottom: 22px;
+}
+
+.main-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: var(--blue);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.main-header .sub {
+    font-size: 20px;
+    color: var(--blue-light);
+    font-weight: 600;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.about-box {
+    background: var(--accent);
+    border-left: 4px solid var(--blue);
+    padding: 14px 18px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    border-radius: 8px;
+}
+
+.section {
+    margin-bottom: 26px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--blue);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+}
+
+.entry {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-date {
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+    padding-top: 2px;
+}
+
+.entry-date .period {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 1.4;
+}
+
+.entry-date .place {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.entry-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.entry-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--blue);
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.entry-connector {
+    width: 2px;
+    flex: 1;
+    background: var(--line);
+    margin-top: 4px;
+    min-height: 20px;
+}
+
+.entry-body {
+    flex: 1;
+    padding-bottom: 4px;
+}
+
+.entry-body h4 {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.entry-body h4 .org {
+    font-weight: 300;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.entry-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.entry-body ul li {
+    font-size: 12.5px;
+    color: var(--muted);
+    padding: 2px 0 2px 14px;
+    position: relative;
+    line-height: 1.55;
+}
+
+.entry-body ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--blue-light);
+    font-weight: 600;
+}
+
+.comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 18px;
+}
+
+.comp-item {
+    font-size: 11.8px;
+    color: var(--muted);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    gap: 7px;
+    align-items: flex-start;
+    line-height: 1.45;
+}
+
+.comp-item::before {
+    content: '›';
+    color: var(--blue-light);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ── NUEVA SECCIÓN: RESPONSIVE PARA MÓVIL ── */
+@media (max-width: 850px) {
+    .cv {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+    .sidebar-photo img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .qr {
+        max-width: 150px;
+    }
+
+    .main {
+        padding: 24px;
+    }
+
+    .main-header h1 {
+        font-size: 32px;
+    }
+
+    .main-header .sub {
+        font-size: 16px;
+    }
+
+    .entry {
+        gap: 10px;
+    }
+
+    .entry-date {
+        width: 85px;
+        text-align: left;
+    }
+
+    .comp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ── COPIAR AL FINAL DE TU ARCHIVO CSS ORIGINAL ── */
+
+.obfuscated-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+}
+
+.obfuscated-link .link-text {
+    display: inline-block;
+}
+
+/* Localizado dentro de tu bloque print existente o añadido al final */
+/* ── BLOQUE DE IMPRESIÓN REPARADO (REEMPLAZA EL TUYO AL FINAL) ── */
+
+@media print {
+    /* Forzar diseño de escritorio en el papel para que no salte la versión móvil */
+    body {
+        background: white !important;
+        -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+        print-color-adjust: exact !important;         /* Firefox */
+    }
+
+    .cv {
+        display: flex !important;
+        flex-direction: row !important; /* Evita que el aside se ponga encima */
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+        page-break-inside: avoid;
+    }
+
+    .sidebar {
+        width: 270px !important; /* Mantiene su tamaño fijo real */
+        flex-shrink: 0 !important;
+        background: #0d4a86 !important; /* Asegura el color azul */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .sidebar-photo {
+        background: #093868 !important; /* Mantiene el fondo oscuro de la foto */
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .main {
+        flex: 1 !important;
+        background: white !important;
+    }
+
+    /* Evitar saltos de página a mitad de una experiencia o titulación */
+    .entry, .s-section, .section {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    /* Forzado de visibilidad de los datos dinámicos reales en el papel */
+    .obfuscated-link .link-text {
+        display: none !important;
+    }
+    
+    .obfuscated-link::after {
+        content: attr(data-real) !important;
+        display: inline-block !important;
+        color: #ffffff !important;
+    }
+}/* ── BLOQUE DE IMPRESIÓN REPARADO SIN HUECOS BLANCOS ── */
+
+@media print {
+    /* Forzar diseño de escritorio en el papel para evitar saltos raros */
+    body {
+        background: white !important;
+        -webkit-print-color-adjust: exact !important; 
+        print-color-adjust: exact !important;
+    }
+
+    .cv {
+        display: flex !important;
+        flex-direction: row !important; 
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+    }
+
+    /* CORRECCIÓN PRINCIPAL: Permitir que el fondo azul se extienda hasta el final */
+    .sidebar {
+        width: 270px !important; 
+        flex-shrink: 0 !important;
+        background: #0d4a86 !important; 
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .sidebar-photo {
+        background: #093868 !important; 
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .main {
+        flex: 1 !important;
+        background: white !important;
+    }
+
+    /* CORRECCIÓN: Quitamos el "avoid" a .section para que el texto fluya de página. 
+       Solo se lo dejamos a cada bloque individual (.entry) para que no se partan las listas por la mitad */
+    .entry {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .section {
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+
+    /* Forzado de visibilidad de los datos dinámicos reales en el papel */
+    .obfuscated-link .link-text {
+        display: none !important;
+    }
+    
+    .obfuscated-link::after {
+        content: attr(data-real) !important;
+        display: inline-block !important;
+        color: #ffffff !important;
+    }
+}

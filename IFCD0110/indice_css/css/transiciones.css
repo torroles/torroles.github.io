@@ -1,0 +1,176 @@
+/* BASE */
+div {
+    width: 150px;
+    background: red;
+    -webkit-transition: width 5s; /* Safari */
+    transition: width 5s;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#cuadrologo, #logo, #enlacelogo, #navegacion {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: left;
+    background-color: white;
+}
+
+/* TIMING FUNCTION */
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+/* SAFARI TIMING FUNCTION */
+#div1 {-webkit-transition-timing-function: linear;}
+#div2 {-webkit-transition-timing-function: ease;}
+#div3 {-webkit-transition-timing-function: ease-in;}
+#div4 {-webkit-transition-timing-function: ease-out;}
+#div5 {-webkit-transition-timing-function: ease-in-out;}
+
+/* DELAY */
+#div6 {
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;
+    transition-timing-function: linear; 
+    transition-delay: 0.5s;
+}
+#div7 {
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 1s;
+    transition-timing-function: ease; 
+    transition-delay: 1s;
+}
+#div8 {
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition-delay: 1.5s;
+    transition-timing-function: ease-in; 
+    transition-delay: 1.5s;
+}
+#div9 {
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 2s;
+    transition-timing-function: ease-out; 
+    transition-delay: 2s;
+}
+#div10 {
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 2.5s;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 2.5s;
+}
+
+/* DURATION + DELAY */
+#div11 {
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-timing-function: linear; 
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+#div12 {
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: ease; 
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+}
+#div13 {
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition-delay: 1.5s;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: ease-in; 
+    transition-delay: 1.5s;
+    transition-duration: 0.5s;
+}
+#div14 {
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: ease-out; 
+    transition-delay: 2s;
+    transition-duration: 0.5s;
+}
+#div15 {
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 2.5s;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 2.5s;
+    transition-duration: 0.5s;
+}
+
+/* PROPERTY + DURATION + DELAY */
+#div16 {
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: background-color;
+    transition-timing-function: linear; 
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+#div17 {
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: background-color;
+    transition-timing-function: ease; 
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+#div18 {
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition-delay: 1.5s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: background-color;
+    transition-timing-function: ease-in; 
+    transition-delay: 1.5s;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+#div19 {
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 2s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: background-color;
+    transition-timing-function: ease-out; 
+    transition-delay: 2s;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+#div20 {
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 2.5s;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-property: background-color;
+    transition-timing-function: ease-in-out; 
+    transition-delay: 2.5s;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+/* HOVER */
+div:hover {
+    width: 300px;
+    background-color: blue;
+}
+
+/* INPUT */
+input[type="text"] {
+    width: 100px;
+    height: 20px;
+    transition: width 0.35s ease-in-out;
+    -webkit-transition: width 0.35s ease-in-out;
+}
+input[type="text"]:focus {
+    width: 500px;
+    height: 200px;
+}
