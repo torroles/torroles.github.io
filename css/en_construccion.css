@@ -78,14 +78,12 @@
 
 /* FOOTER */
 footer {
-    margin-top: 50px; /* Separa el footer del ejercicio */
-    padding: 20px;
-    border-top: 1px solid #ccc; /* Una línea sutil de separación */
     text-align: center;
     padding: 30px;
     color: #00ff66;
     font-size: 0.9rem;
-    background-color: #0a0a0a;}
+    background-color: #0a0a0a;
+}
 
 
 .viñeta {
@@ -123,7 +121,7 @@ footer {
 
 /* 2. Modificamos el comportamiento al hacer hover */
 /* Cuando el usuario pasa el ratón por encima del li o del enlace... */
-.viñeta li:hover::before, li:hover {
+.viñeta li:hover::before {
     /* Aplicamos la animación: dura 0.8 segundos, es infinita y va a saltos (steps) como una consola real */
     animation: parpadeo 0.8s steps(2, start) infinite;
 }
@@ -131,7 +129,7 @@ footer {
 .viñeta a {
     background-color: transparent !important;
     text-decoration: none;
-    color: #00ff66;
+    color: #00ff66; /* Un azul más profesional */
 }
 
 .viñeta a:hover {
