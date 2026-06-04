@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Monitor de Conectividad | Prácticas async</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejercicio async: Monitorización asíncrona del estado de conexión de red utilizando el objeto window y promesas fetch para medir latencia.">
+    <meta name="keywords" content="JavaScript, Asincronía, Promesas, Fetch, Red, Latencia, Conectividad, Portafolio, Raúl Galisteo García">
+
+    <link rel="stylesheet" href="css/red.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <h1>Monitor de Conexión (Asíncrono)</h1>
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Uso del evento asíncrono <code>online/offline</code> del objeto <code>window</code> para detectar cambios en la conectividad en tiempo real.</p>
+        </div>
+        <div class="area-render">
+            <div id="estadoRed" style="padding: 20px; text-align: center; font-weight: bold; border-radius: 8px;">
+                Detectando estado...
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=async">Volver al Índice</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/año_footer.js"></script>
+    <script src="js/asincronia_red.js"></script>
+</body>
+</html>

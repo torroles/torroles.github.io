@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sincronización de Datos en el DOM | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de sincronización: Captura de eventos de formulario mediante addEventListener y actualización reactiva del DOM para evitar acoplamiento HTML-JS.">
+    <meta name="keywords" content="JavaScript, DOM, sincronización, addEventListener, formularios, reactividad, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/estilos_controlador.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Sincronización de Datos en el DOM</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Captura de entradas mediante <code>input</code> y actualización dirigida al DOM. Eliminación del acoplamiento HTML-JS mediante <code>addEventListener</code>.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="bloque-control">
+                <input type="text" id="inputDato" placeholder="Escribe algo aquí...">
+                <button id="btnInsertar" class="btn-interactivo">Insertar Texto</button>
+            </div>
+
+            <div class="area-render">
+                <p>El contenido actual es: <span id="resultado" class="destacado">Nada</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=dom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/controlador_dom.js"></script>
+</body>
+</html>

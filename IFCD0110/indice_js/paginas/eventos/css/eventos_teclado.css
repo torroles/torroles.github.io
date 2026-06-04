@@ -1,0 +1,79 @@
+/* Importación de estilos base según plantilla */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ejercicio-carrusel {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos del teclado */
+.consola-datos {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #2d3748;
+    color: white;
+    border-radius: 6px;
+}
+
+.dato-prop {
+    margin: 5px 0;
+}
+
+.badge-mod {
+    padding: 4px 8px;
+    background: #4a5568;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+.badge-active {
+    opacity: 1;
+    background: #e53e3e;
+}
+
+.fila-teclas {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tecla {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.tecla-activa {
+    background-color: #3182ce;
+    color: white;
+}

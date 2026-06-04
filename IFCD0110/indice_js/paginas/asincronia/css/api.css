@@ -1,0 +1,91 @@
+/* Estilos Base y Layout Corporativo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+.ejercicio {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja de Explicación Azul (Recuperada) */
+.explicacion {
+    background-color: #ebf8ff;
+    padding: 10px 15px;
+    border-left: 4px solid #3182ce;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+    color: #2b6cb0;
+}
+
+/* Controles de Navegación */
+.controles-fecha {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#buscarBtn {
+    padding: 8px 15px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#buscarBtn:hover {
+    background-color: #2b6cb0;
+}
+
+/* Rejilla del Calendario */
+.mifecha2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cabecera-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 400px;
+    margin: 0 auto;
+    background: #3182ce;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.dia,
+.diaactual {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #edf2f7;
+    background-color: #f7fafc;
+}
+
+.diaactual {
+    background-color: #3182ce !important;
+    color: white;
+    font-weight: bold;
+}
+
+.oculto {
+    display: none !important;
+}

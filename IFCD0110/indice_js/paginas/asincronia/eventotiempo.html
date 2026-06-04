@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Asincronía y Tiempos | Prácticas async</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejercicio async: Demostración técnica de asincronía mediante setInterval y gestión eficiente de tiempos en el navegador.">
+    <meta name="keywords" content="JavaScript, BOM, asincronía, setInterval, temporizadores, portafolio, Raúl Galisteo García">
+    
+    <link rel="stylesheet" href="css/eventotiempo.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Gestión de Asincronía</h1>
+    <section class="ejercicio">
+  <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Implementación de asincronía mediante el objeto <code>window</code>. Demostración del uso de <code>setInterval</code> para procesos recurrentes y <code>setTimeout</code> para ejecuciones diferidas, garantizando el no-bloqueo del hilo principal del navegador.</p>
+        </div>
+        <div class="area-render">
+    <h3>Control de Tiempo (3 segundos)</h3>
+    <button class="btn-interactivo" onclick="gestor.iniciarIntervalo('tresi', 3000)">setInterval (Repetir)</button>
+    <button class="btn-interactivo" onclick="gestor.iniciarRetrasado('tresi', 3000)">setTimeout (Única vez)</button>
+    <button class="btn-interactivo" onclick="gestor.detener('tresi')">Detener Intervalo</button>
+    <p id="tresi">Esperando acción...</p>
+
+</div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=async">Volver al Índice</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/año_footer.js"></script>
+    <script src="js/eventotiempo.js"></script>
+</body>
+</html>

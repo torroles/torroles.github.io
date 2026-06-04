@@ -1,0 +1,170 @@
+/* Configuración general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px; 
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+h3 {
+    color: #2d3748;
+    margin-top: 0;
+    border-bottom: 1px dashed #cbd5e0;
+    padding-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+/* Contenedor del laboratorio */
+.ejercicio {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- ESTILO AZUL BONITO DE LA PLANTILLA --- */
+.explicacion {
+    margin-bottom: 25px;
+    background-color: #ebf8ff;
+    padding: 15px;
+    border-left: 4px solid #3182ce;
+    border-radius: 0 6px 6px 0;
+    color: #2b6cb0;
+}
+
+.explicacion p { margin: 5px 0; line-height: 1.5; }
+.sub-tecnico { font-size: 0.8rem; color: #718096; margin-top: -6px; margin-bottom: 15px; }
+
+/* Distribución en Malla Responsiva */
+.malla-jquery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tarjeta-control {
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+/* Elementos comunes e interactivos */
+.area-interactiva {
+    display: flex;
+    gap: 15px;
+}
+
+.caja-base {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #2d3748;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+#capa1 {
+    background-color: #bee3f8;
+    border: 2px dashed #63b3ed;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#capa1:hover { transform: scale(1.03); }
+#capa2 { background-color: #fed7d7; border: 2px solid #feb2b2; }
+
+/* Botonería jQuery */
+.btn-jquery {
+    padding: 10px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-jquery:hover { background-color: #2b6cb0; }
+
+/* Estilos de la Persiana (Slide) */
+.panel-desplegable {
+    background-color: white;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: none;
+}
+.panel-desplegable p { margin: 0; font-size: 0.85rem; line-height: 1.4; color: #4a5568; }
+
+/* Estilos del bloque Fade */
+.fila-botones {
+    display: flex;
+    gap: 8px;
+}
+.btn-pequeno {
+    flex: 1;
+    padding: 6px;
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.btn-pequeno:hover { background-color: #cbd5e0; }
+#cajaOpacidad {
+    background-color: #e9d8fd;
+    border: 2px solid #d6bcfa;
+    width: 100%;
+}
+
+/* Estilos de la Pista de Animación */
+.contenedor-pista {
+    background-color: white;
+    border: 1px solid #edf2f7;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+#cajaAnimada {
+    background-color: #feebc8;
+    border: 2px solid #fbd38d;
+}
+
+code {
+    background-color: #edf2f7;
+    color: #c53030;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}

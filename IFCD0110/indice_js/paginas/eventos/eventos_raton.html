@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Eventos de Ratón en JavaScript | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de eventos: Monitorización del ciclo de interacción del ratón sobre elementos DOM, incluyendo coordenadas relativas, absolutas y bitácora de eventos.">
+    <meta name="keywords" content="JavaScript, eventos de ratón, mouse events, DOM, telemetría, coordenadas, bitácora, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/eventos_raton.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Control de Eventos en JavaScript (Ratón)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Monitorizar el ciclo completo de interacción que realiza un periférico de señalización (ratón) sobre el DOM, abstrayendo el comportamiento nativo mediante escuchadores semánticos.</p>
+        </div>
+        
+        <div class="malla-laboratorio">
+            <div class="bloque-interactivo">
+                <h3>Zonas de Impacto</h3>
+                <div class="tarjeta-accion">
+                    <button id="elementoBoton" class="btn-interactivo">Interactúa conmigo</button>
+                    <p class="resultado" id="feedbackBoton">Esperando interacción...</p>
+                </div>
+                <div class="tarjeta-accion">
+                    <div class="marco-imagen">
+                        <img id="elementoImagen" src="https://picsum.photos/180/120?random=5" alt="Imagen de pruebas">
+                    </div>
+                    <p class="resultado" id="feedbackImagen">Esperando interacción...</p>
+                </div>
+                <div class="tarjeta-accion">
+                    <div id="zonaRastreo" class="area-radar"><span>Área de Radar</span></div>
+                    <div class="telemetria">
+                        <p>Posición Relativa: <strong id="coordCoordenadas">X: 0, Y: 0</strong></p>
+                        <p>Posición Absoluta: <strong id="coordPantalla">X: 0, Y: 0</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloque-consola">
+                <h3>Bitácora de Eventos</h3>
+                <div id="consolaLog" class="terminal-box">
+                    <div class="linea-sistema">[Sistema]: Inicializando escuchadores...</div>
+                </div><br>
+                <button id="btnLimpiarConsola" class="btn-limpiar">Limpiar Bitácora</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=eventos">Volver al Índice</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/eventos_raton.js"></script>
+</body>
+</html>

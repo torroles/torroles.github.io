@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Juego de la Serpiente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="El clásico juego de la serpiente (Snake) programado en JavaScript nativo con sistema de control híbrido para teclado y dispositivos móviles.">
+    <meta name="keywords" content="html, javascript, juego serpiente, snake game, dom, eventos, canvas, desarrollo web, portafolio">
+    <link rel="stylesheet" href="css/serpiente.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body onload="iniciarJuego();">
+    
+    <h1>El Juego de la Serpiente (Snake)</h1>
+    
+    <main class="contenedor-juego">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Desarrollar el clásico videojuego arcade 'Snake' mediante manipulación del elemento Canvas de HTML5. El script implementa un bucle de juego asíncrono que refresca el estado físico del juego, gestiona una estructura de datos de matriz para el cuerpo de la serpiente, calcula colisiones perimetrales/autofagia y expone un sistema de control adaptativo (teclado para escritorio y API táctil mediante botones en pantalla para dispositivos móviles).</p>
+        </div>
+        
+        <div class="marcador">
+            Puntuación: <span id="puntosActuales">0</span>
+        </div>
+
+        <canvas id="lienzoJuego" width="400" height="400"></canvas>
+
+        <div class="botonera-movil">
+            <button class="boton-direccion" onclick="cambiarDireccionMovil('ARRIBA')">↑</button>
+            <div class="fila-medio">
+                <button class="boton-direccion" onclick="cambiarDireccionMovil('IZQUIERDA')">←</button>
+                <button class="boton-direccion" onclick="cambiarDireccionMovil('DERECHA')">→</button>
+            </div>
+            <button class="boton-direccion" onclick="cambiarDireccionMovil('ABAJO')">↓</button>
+        </div>
+
+        <div class="caja-reinicio">
+            <button id="botonReiniciar" onclick="reiniciarPartida()">Reiniciar Partida</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/serpiente.js"></script>
+</body>
+</html>

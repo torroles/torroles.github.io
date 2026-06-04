@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Sistema de Validación de Email (Regex vs Algorítmico) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de validación: Comparativa técnica de análisis de correos electrónicos mediante expresiones regulares (RegExp) y segmentación algorítmica.">
+    <meta name="keywords" content="JavaScript, validación de email, RegExp, análisis algorítmico, formularios, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/email.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Sistema de Validación de Email (Regex vs Algorítmico)</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Contrastar dos metodologías de análisis de datos: mediante <code>RegExp</code> estricta y mediante segmentación algorítmica (<code>indexOf</code>, <code>split</code>).</p>
+        </div>
+        
+        <div class="formulario">
+            <form id="emailForm" onsubmit="return false;">
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                <button type="button" onclick="procesarValidaciones()">Analizar Dirección</button>
+            </form>
+        </div>
+
+        <div class="panel-resultados">
+            <p class="resultado-linea">🔍 Método 1 (Regex): <span id="resRegex" class="status-badge espera">Esperando entrada...</span></p>
+            <p class="resultado-linea">🔍 Método 2 (Algorítmico): <span id="resAlgoritmico" class="status-badge espera">Esperando entrada...</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/email.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Generador Dinámico de Calendario | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio CSSOM: Generación dinámica de calendarios mediante la creación programática de nodos DOM y manipulación eficiente de estilos.">
+    <meta name="keywords" content="JavaScript, CSSOM, generación dinámica, calendario, DOM, nodos, portafolio profesional, Raúl Galisteo García, prácticas JS">
+    <link rel="stylesheet" href="css/calendario_cssom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body onunload="cambiarVentanaPadre()">
+    <h1>Formularios de JavaScript</h1>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 1: Validación de formularios en JavaScript</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Evaluar si un campo obligatorio se encuentra vacío de forma manual antes del envío. Si la validación falla, se detiene el flujo del formulario lanzando una alerta.</p>
+        </div>
+        <div class="formulario">
+            <form action="#" name="miFormulario" id="form1">
+                <label for="inputNombre">Nombre:</label>
+                <input type="text" name="Nombre" id="inputNombre" placeholder="Ej. Raul">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 2: Validación de Entrada Numérica</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Controlar en tiempo de ejecución que el valor introducido por el usuario sea estrictamente un operando numérico comprendido entre 1 y 10.</p>
+        </div>
+        <div class="formulario">
+            <label for="numb">Ingrese por favor un número entre 1 y 10:</label>
+            <input id="numb" placeholder="Ej. 5">
+            <button type="button" id="btnValidarNum">Submit</button>
+        </div>
+        <p class="resultado" id="demo">Introduce un número para validar.</p>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 3: Validación automática de formularios HTML</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Delegar la validación primaria de restricciones en el motor nativo del navegador mediante el atributo <code>required</code>.</p>
+        </div>
+        <div class="formulario">
+            <form action="#" method="post">
+                <label for="inputNombreAuto">Nombre:</label>
+                <input type="text" name="Nombre" id="inputNombreAuto" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 4: Validación de restricciones HTML5</h2>
+        <div class="explicacion">
+            <p>HTML5 introduce el concepto de validación de restricciones, estructurado en base a atributos nativos y pseudoselectores CSS (<code>:invalid</code>, <code>:valid</code>).</p>
+        </div>
+        <table>
+            <tr><th>Atributo</th><th>Descripción</th></tr>
+            <tr><td><code>disabled</code></td><td>Deshabilita el control, impidiendo edición y envío.</td></tr>
+            <tr><td><code>max / min</code></td><td>Límites numéricos o cronológicos.</td></tr>
+            <tr><td><code>pattern</code></td><td>Define una RegEx para contrastar el valor.</td></tr>
+            <tr><td><code>required</code></td><td>Campo obligatorio para procesar la estructura.</td></tr>
+        </table>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/formularios.js"></script>
+</body>
+</html>

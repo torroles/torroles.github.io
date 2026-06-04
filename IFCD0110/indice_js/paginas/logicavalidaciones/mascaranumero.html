@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Motor Funcional de Máscaras (Pattern Masking) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de validación: Sistema interceptor de teclado para aplicar máscaras de formato personalizado (Pattern Masking) en tiempo real.">
+    <meta name="keywords" content="JavaScript, pattern masking, máscara de entrada, eventos teclado, preventDefault, validación numérica, Raúl Galisteo García, prácticas JS">
+    <link rel="stylesheet" href="css/numeros.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Motor Funcional de Máscaras de Entrada (Pattern Masking)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Desarrollar un sistema interceptor de flujo de teclado. Al capturar el evento <code>keydown</code>, se anula la inserción nativa con <code>preventDefault()</code> para delegar el control en un búfer aislado que procesa y formatea la salida dinámicamente.</p>
+            <p>Patrón configurado: <code>0--0*0 000_000</code></p>
+        </div>
+        
+        <div class="formulario">
+            <form action="" onsubmit="return false;">
+                <label for="elinput">Código Formateado:</label>
+                <input type="text" id="elinput" placeholder="Introduce solo números">
+            </form>
+        </div>
+        <p class="resultado" id="feedbackMascara">Búfer interno vacío. Comienza a teclear dígitos numéricos.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/numeros.js"></script>
+</body>
+</html>

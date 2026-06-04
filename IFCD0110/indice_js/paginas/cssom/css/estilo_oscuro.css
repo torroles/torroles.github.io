@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a202c;
+    color: #e2e8f0;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #63b3ed;
+    border-bottom: 2px solid #63b3ed;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ejercicio {
+    background-color: #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.explicacion {
+    background-color: #4a5568;
+    padding: 15px;
+    border-left: 4px solid #63b3ed;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+    color: #edf2f7;
+}
+
+.area-render {
+    padding: 20px;
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    background-color: #1a202c;
+    margin-top: 20px;
+}
+
+.btn-interactivo {
+    padding: 8px 15px;
+    background-color: #63b3ed;
+    color: #1a202c;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-interactivo:hover {
+    background-color: #4299e1;
+}

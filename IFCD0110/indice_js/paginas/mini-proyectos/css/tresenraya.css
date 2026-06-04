@@ -1,0 +1,109 @@
+/* Layout corporativo unificado con tu portafolio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contenedor-juego {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Mensajes superiores de estado de juego */
+.estado-turno {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.estado-ganador {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.estado-empate {
+    background-color: #feebc8;
+    color: #744210;
+}
+
+/* Grid CSS moderno para renderizar la cuadrícula de 3x3 */
+.tablero-rejilla {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* Estilo individual para cada celda interactiva */
+.celda {
+    background-color: #edf2f7;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.celda:hover {
+    background-color: #e2e8f0;
+}
+
+/* Colores dinámicos según la marca inyectada por JS */
+.marca-x {
+    color: #3182ce;
+}
+
+.marca-o {
+    color: #e53e3e;
+}
+
+.caja-reinicio button {
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.caja-reinicio button:hover {
+    background-color: #2b6cb0;
+}

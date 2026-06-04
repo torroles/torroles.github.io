@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Efectos Especiales en Web | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de efectos dinámicos: Animación de texto mediante la manipulación cíclica de cadenas de caracteres y gestión de temporizadores (setInterval).">
+    <meta name="keywords" content="JavaScript, efectos especiales, marquesina, setInterval, manipulación de strings, DOM, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/estilos_marquesina.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Efectos Especiales en Web</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Animación basada en la manipulación cíclica de una cadena de caracteres mediante <code>setInterval</code>, actualizando el contenido del DOM en cada ciclo de ejecución.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="contenedor-efecto">
+                <p>Texto desplazado mediante manipulación cíclica de strings:</p>
+                <div id="marquesina"></div>
+                <div class="controles">
+                    <button id="btnAlternar" class="btn-interactivo">Detener / Reanudar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/marquesina.js"></script>
+</body>
+</html>

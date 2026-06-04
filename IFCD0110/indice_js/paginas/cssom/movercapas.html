@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Desplazamiento y Arrastre de Capas | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de CSSOM y eventos: Implementación de desplazamiento programático de capas y técnica de arrastre (Drag & Drop) mediante eventos de ratón.">
+    <meta name="keywords" content="JavaScript, CSSOM, desplazamiento, drag and drop, eventos de ratón, DOM, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/estilos_mover.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Desplazamiento y Arrastre de Capas</h1>
+   
+
+    <section class="ejercicio">
+
+     <div class="explicacion">
+        <p><strong>Objetivo Técnico:</strong> Manipulación de las coordenadas del objeto CSSOM (top/left) mediante eventos de ratón y escucha activa de botones.</p>
+    </div>
+        <div class="malla-laboratorio">
+            <div id="capa1" class="capa-movil">Capa 1</div>
+            
+            <div id="capa2" class="capa-arrastrable">Arrástrame</div>
+
+            <div class="panel-controles">
+                <h3>Control Capa 1</h3>
+                <button class="btn-interactivo" data-dir="top">Arriba</button>
+                <button class="btn-interactivo" data-dir="bottom">Abajo</button>
+                <button class="btn-interactivo" data-dir="left">Izquierda</button>
+                <button class="btn-interactivo" data-dir="right">Derecha</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/mover_capas.js"></script>
+</body>
+
+</html>

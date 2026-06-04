@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Alternancia de Capas por Estado | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de manipulación del DOM: Gestión de visibilidad y transiciones de imágenes mediante la alternancia de clases CSS en lugar de estilos en línea.">
+    <meta name="keywords" content="JavaScript, DOM, CSS clases, transiciones, visibilidad, alternancia de capas, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/imagen_dom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Alternancia de Capas por Estado</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Gestionar el orden visual y la opacidad mediante clases de estado en CSS, evitando la manipulación de estilos en línea (inline-styles) en JavaScript.</p>
+        </div>
+
+        <div class="marco-visualizador">
+            <img id="img1" class="capa-img activa" src="img/puesta de sol y arbol.jpg" alt="Atardecer">
+            <img id="img2" class="capa-img" src="img/sol y mar.jpg" alt="Sol y mar">
+        </div>
+        <p class="sub-tecnico">Pasa el ratón sobre la imagen para activar la transición.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=dom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/imagen_dom.js"></script>
+</body>
+
+</html>

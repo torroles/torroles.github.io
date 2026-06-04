@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Generador Dinámico de Calendario | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de manipulación de CSSOM: Generación dinámica de calendarios mediante el cálculo de días de la semana y renderizado programático del DOM.">
+    <meta name="keywords" content="JavaScript, CSSOM, calendario dinámico, renderizado, DOM, manipulación de fechas, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/calendario_cssom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Generador Dinámico de Calendario</h1>
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Generación dinámica con alineación de días de la semana y control de navegación.</p>
+        </div>
+        
+        <div class="controles-fecha">
+            <select id="selectMes"></select>
+            <input type="number" id="inputAno" placeholder="Año">
+            <button id="btnVer" class="btn-interactivo">Ver Calendario</button>
+        </div>
+
+        <div id="contenedorCalendario" class="area-render"></div>
+    </section>
+    <script src="js/calendario_cssom.js"></script>
+</body>
+</html>

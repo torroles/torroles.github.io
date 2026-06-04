@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Máscara Dinámica y Validación de Fechas | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de validación: Máscara de entrada automática para fechas en formato DD/MM/AAAA con validación de restricciones en tiempo real.">
+    <meta name="keywords" content="JavaScript, validación de fechas, máscara de entrada, formato DD/MM/AAAA, portafolio profesional, Raúl Galisteo García, prácticas JS">
+    <link rel="stylesheet" href="css/fechas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Máscara Dinámica y Validación de Fechas (DD/MM/AAAA)</h1>
+
+    <section class="ejercicio">
+    
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Implementar una máscara de entrada guiada en tiempo real. El algoritmo intercepta el teclado mediante <code>onKeyUp</code>, evalúa de forma segmentada los caracteres, inyecta las barras delimitadoras automáticamente y valida consistencias críticas como topes mensuales y años no bisiestos.</p>
+        </div>
+        
+        <div class="formulario">
+            <label for="inputFecha">Introduzca una fecha:</label>
+            <input name="fecha" id="inputFecha" type="text" size="12" maxlength="10" placeholder="DD/MM/AAAA" onkeyup="this.value=formateafecha(this.value);">
+        </div>
+        <p class="resultado" id="feedbackFecha">Escribe los números; el sistema formateará y comprobará las restricciones automáticamente.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/fechas.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inyección y Ciclo de Vida de Nodos | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de manipulación del DOM: Gestión de ciclo de vida de nodos, incluyendo inyección, delegación de eventos y eliminación programática.">
+    <meta name="keywords" content="JavaScript, DOM, delegación de eventos, createElement, ciclo de vida, nodos, inyección, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/manipulacion_dom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Inyección y Ciclo de Vida de Nodos</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Cada capa permite <strong>eliminación individual</strong> mediante un botón integrado y <strong>modificación de estado</strong> (cambio de color) mediante clic. Gestión de eventos basada en <code>e.target</code>.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="bloque-control">
+                <button id="btnCrear" class="btn-interactivo">Crear Nueva Capa Dinámica</button>
+                <p class="sub-tecnico">Total de capas activas: <span id="contadorCapas">0</span></p>
+            </div>
+
+            <div id="contenedorPrincipal" class="area-render"></div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=dom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/manipulacion_dom.js"></script>
+</body>
+
+</html>

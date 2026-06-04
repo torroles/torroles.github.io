@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Geolocalización | Prácticas BOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejercicio BOM: Acceso a la API de geolocalización del navegador.">
+    <meta name="keywords" content="JavaScript, BOM, Geolocation API, navigator, portafolio, Raúl Galisteo García">
+    <link rel="stylesheet" href="css/localizacion.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Acceso a Geolocalización</h1>
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Implementación de la API <code>navigator.geolocation</code> para la recuperación de coordenadas geográficas del dispositivo del usuario previa solicitud de permisos.</p>
+        </div>
+        <div class="area-render">
+            <button class="btn-interactivo" onclick="obtenerPosicion()">Obtener mi ubicación</button>
+            <p id="infoUbicacion">Esperando permisos de acceso...</p>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=bom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/año_footer.js"></script>
+    <script src="js/localizacion.js"></script>
+</body>
+</html>

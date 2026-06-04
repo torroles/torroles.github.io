@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Selector de Estilos Dinámicos | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejercicio CSSOM: Alternancia dinámica de hojas de estilo mediante manipulación de nodos en el DOM.">
+    <meta name="keywords" content="JavaScript, CSSOM, estilos dinámicos, temas, DOM, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link id="linkEstilo" rel="stylesheet" href="css/estilos_dinamicos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+
+    <h1>Selector de Temas (CSSOM)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico:</strong> Manipulación del atributo <code>href</code> del nodo <code>&lt;link&gt;</code> para cargar diferentes hojas de estilo en tiempo real sin recargar la página.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="controles-fecha">
+                <button class="btn-interactivo" onclick="cambiarEstilo('css/estilos_dinamicos.css', 'Corporativo')">Tema original</button>
+                <button class="btn-interactivo" onclick="cambiarEstilo('css/estilo_oscuro.css', 'Oscuro')">Tema Oscuro</button>
+                <button class="btn-interactivo" onclick="cambiarEstilo('css/estilo_contraste.css', 'Alto Contraste')">Alto Contraste</button>
+            </div>
+            
+            <div id="panelDeteccion" class="area-render">
+                <p>Estado actual:</p>
+                <p id="textoEstado">Estilo aplicado: Corporativo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/estilos_dinamicos.js"></script>
+</body>
+
+</html>

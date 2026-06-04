@@ -1,0 +1,63 @@
+/* Configuración general del layout del ejercicio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta informativa para el reclutador */
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Contenedor del Ejercicio */
+.ejercicio-carrusel {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Espacio reservado para las imágenes con posicionamiento absoluto */
+.contenedor-imagenes {
+    position: relative;
+    height: 200px;
+    width: 400px;
+    margin: 20px auto; /* Centra el componente horizontalmente */
+}
+
+/* Estilos de las imágenes del carrusel */
+#img1, #img2 {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Microinteracción de feedback visual al pasar el cursor */
+#img1:hover, #img2:hover {
+    transform: scale(1.01);
+}

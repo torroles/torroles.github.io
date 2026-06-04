@@ -1,0 +1,63 @@
+/* Configuración general del layout (Consistente con todo tu porfolio) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta informativa corporativa para el reclutador */
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Contenedor del Ejercicio base */
+.ejercicio-reloj {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Centrado y espaciado de la zona de visualización */
+.pantalla-reloj {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pantalla-reloj p {
+    color: #718096;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo del reloj digital tipo marcador con CSS moderno (sin inputs innecesarios) */
+.reloj-digital {
+    display: inline-block;
+    background-color: #000000;
+    color: #00ffcc; /* Un color cian eléctrico estilo display digital */
+    font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada para que no baile el texto */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.3), 0 4px 6px rgba(0,0,0,0.15);
+    letter-spacing: 2px;
+}

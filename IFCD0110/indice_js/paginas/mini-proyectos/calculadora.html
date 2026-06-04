@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Calculadora aritmética interactiva desarrollada con JavaScript nativo, control de excepciones aritméticas y renderizado en el DOM.">
+    <meta name="keywords" content="html, javascript, calculadora, dom, eventos, control de errores, desarrollo web">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    
+    <h1>Calculadora Simple</h1>
+    
+    <main class="ejercicio-calculadora">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Crear un motor de cálculo aritmético básico mediante la manipulación del DOM. El script valida la entrada de datos numéricos flotantes, implementa una estructura condicional indexada para las cuatro operaciones básicas y cuenta con control de excepciones para prevenir la división por cero de manera asíncrona.</p>
+        </div>
+        
+        <div class="formulario">
+            <label for="calcNum1">Número 1:</label>
+            <input type="number" id="calcNum1" placeholder="Ej. 10" step="any">
+
+            <label for="calcOperacion">Operación:</label>
+            <select id="calcOperacion">
+                <option value="+">Suma (+)</option>
+                <option value="-">Resta (-)</option>
+                <option value="*">Multiplicación (*)</option>
+                <option value="/">División (/)</option>
+            </select>
+
+            <label for="calcNum2">Número 2:</label>
+            <input type="number" id="calcNum2" placeholder="Ej. 5" step="any">
+
+            <button onclick="procesarCalculo()">Calcular</button>
+        </div>
+        
+        <p class="resultado" id="resultadoCalculadora">Introduce los valores y selecciona una operación.</p>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

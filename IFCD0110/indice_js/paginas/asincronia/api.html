@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Buscador de Motos | API | Prácticas Asincronía</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Ejercicio de consumo de API REST: Buscador en tiempo real de especificaciones de motocicletas utilizando JavaScript asíncrono.">
+    <meta name="keywords" content="JavaScript, API, Fetch, Asincronía, Motos, Ninja API, Portafolio, Raúl Galisteo García">
+    <link rel="stylesheet" href="css/api.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Buscador Técnico de Motos (API externa)</h1>
+   <section class="ejercicio">
+    <div class="explicacion">
+        <p><strong>Objetivo Técnico:</strong> Consumo avanzado de APIs mediante filtros dinámicos. Uso de <code>async/await</code> y manipulación eficiente del DOM para renderizado de tarjetas (Cards).</p>
+    </div>
+    
+    <div class="controles-busqueda">
+     <input type="text" id="marca" placeholder="Marca...">
+<input type="text" id="modelo" placeholder="Modelo...">
+<input type="number" id="año" placeholder="Año...">
+<button id="buscarBtn">Buscar Motos</button>
+
+<div id="spinner" class="oculto">⏳ Cargando...</div>
+<div id="mensaje"></div>
+<div id="resultados"></div>
+
+<div id="sugerencias-marca"></div>
+<div id="sugerencias-modelo"></div>
+</section>
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=asincronia">Volver al Índice</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/año_footer.js"></script>
+    <script src="js/api_motos.js"></script>
+</body>
+</html>

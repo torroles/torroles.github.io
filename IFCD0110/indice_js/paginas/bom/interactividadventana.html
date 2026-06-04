@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Interactividad entre Ventanas (BOM) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio BOM: Gestión de ventanas emergentes, manipulación de URLs y control de navegación mediante objetos del navegador en JavaScript.">
+    <meta name="keywords" content="JavaScript, BOM, window.open, manipulación de ventanas, portafolio, Raúl Galisteo García, navegación web, prácticas JS">
+    <link rel="stylesheet" href="css/estilos_interactividad.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <h1>Interactividad entre ventanas (BOM)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico (BOM):</strong> Uso de <code>window.open</code> para la gestión de ventanas secundarias y manipulación de <code>location</code> mediante formularios programáticos.</p>
+        </div>
+
+        <form name="form1" class="bloque-control">
+            <input type="text" name="url" value="https://www.google.com" placeholder="Introduce URL completa">
+            <button type="button" class="btn-interactivo" onclick="abreURL()">Abrir en ventana</button>
+            <button type="button" class="btn-interactivo" onclick="cerrarVentana()">Cerrar ventana</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=bom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/interactividad.js"></script>
+</body>
+
+</html>

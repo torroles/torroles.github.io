@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 0;
+}
+
+.ejercicio {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explicacion {
+    background-color: #ebf8ff;
+    padding: 15px;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.malla-laboratorio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bloque-interactivo,
+.bloque-consola {
+    flex: 1;
+    min-width: 320px;
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.tarjeta-accion {
+    background-color: white;
+    border: 1px solid #edf2f7;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-interactivo {
+    padding: 10px 16px;
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.area-radar {
+    width: 140px;
+    height: 80px;
+    background-color: #edf2f7;
+    border: 2px dashed #a0aec0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #4a5568;
+}
+
+.terminal-box {
+    background-color: #1a202c;
+    color: #a0aec0;
+    font-family: monospace;
+    padding: 12px;
+    height: 280px;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+.linea-sistema {
+    color: #48bb78;
+}
+
+.ev-name {
+    color: #ecc94b;
+}
+
+.btn-limpiar {
+    width: 100%;
+    padding: 12px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+/* Configuración estructural base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+.ejercicio {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explicacion {
+    background-color: #fafafa;
+    padding: 10px 15px;
+    border-left: 4px solid #805ad5;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.sub-tecnico {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 5px;
+}
+
+/* Layout del Visualizador */
+.marco-visualizador {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.capa-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.capa-img.activa {
+    z-index: 1;
+    opacity: 1;
+}

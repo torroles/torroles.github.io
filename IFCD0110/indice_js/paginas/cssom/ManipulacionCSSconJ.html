@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Editor de Propiedades Visuales (CSSOM) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de CSSOM: Panel interactivo para la manipulación directa de estilos (color, dimensiones, posición) mediante el acceso programático al objeto style del DOM.">
+    <meta name="keywords" content="JavaScript, CSSOM, manipulación de estilos, DOM, objeto style, desarrollo web, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/estilos_editor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Editor de Propiedades Visuales (CSSOM)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico (CSSOM):</strong> Manipulación directa del Modelo de Objetos CSS mediante JavaScript. Aplicamos cambios de estado sobre el objeto <code>style</code> del DOM para modificar visualmente el elemento de forma dinámica.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div id="capa" class="capa-visual"></div>
+
+            <div class="bloque-control">
+                <div>
+                    <label>Color: <input type="color" id="inputColor" value="#3182ce"></label>
+                    <button id="btnColor" class="btn-interactivo">Aplicar Color</button>
+                </div>
+                <div>
+                    <label>Ancho (px): <input type="number" id="inputW" value="100"></label>
+                    <label>Alto (px): <input type="number" id="inputH" value="100"></label>
+                    <button id="btnTamano" class="btn-interactivo">Aplicar Tamaño</button>
+                </div>
+                <div>
+                    <label>Top (px): <input type="number" id="inputTop" value="0"></label>
+                    <label>Left (px): <input type="number" id="inputLeft" value="0"></label>
+                    <button id="btnPosicion" class="btn-interactivo">Aplicar Posición</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/editor_cssom.js"></script>
+</body>
+</html>

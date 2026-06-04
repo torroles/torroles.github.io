@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Manipulación del DOM con jQuery | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de librerías: Manipulación eficiente del DOM mediante selectores jQuery, eventos y encadenamiento de métodos de animación.">
+    <meta name="keywords" content="JavaScript, jQuery, DOM, manipulación, eventos, selectores, animaciones, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/jquery_hover.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Manipulación del DOM con Librerías (jQuery)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Enfoque de la Librería:</strong> Esta suite demuestra el uso de selectores optimizados, atajos semánticos (como <code>.hover()</code>) y la característica de <strong>encadenamiento (chaining)</strong> de jQuery para ejecutar múltiples acciones sobre el DOM.</p>
+        </div>
+
+        <div class="malla-jquery">
+            <div class="tarjeta-control">
+                <h3>Práctica 1: Interrupción de Capas</h3>
+                <p class="sub-tecnico">Pasa el ratón para alternar <code>hide()</code> y <code>show()</code>.</p>
+                <div class="area-interactiva">
+                    <div id="capa1" class="caja-base">Pasa el ratón (Capa 1)</div>
+                    <div id="capa2" class="caja-base">Ocultable (Capa 2)</div>
+                </div>
+            </div>
+
+            <div class="tarjeta-control">
+                <h3>Práctica 2: Acordeón Persiana</h3>
+                <p class="sub-tecnico">Uso de <code>slideToggle()</code> para colapsar paneles.</p>
+                <button id="btnSlide" class="btn-jquery">Alternar Persiana</button>
+                <div id="panelPersiana" class="panel-desplegable">
+                    <p>Contenido desplegado dinámicamente mediante la manipulación del alto físico.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-control">
+                <h3>Práctica 3: Filtro de Opacidad</h3>
+                <p class="sub-tecnico">Modulación de transparencia con <code>fadeTo()</code>.</p>
+                <div class="fila-botones">
+                    <button id="btnFadeBajo" class="btn-pequeno">20%</button>
+                    <button id="btnFadeMedio" class="btn-pequeno">60%</button>
+                    <button id="btnFadeAlto" class="btn-pequeno">100%</button>
+                </div>
+                <div id="cajaOpacidad" class="caja-base">Contenedor Translúcido</div>
+            </div>
+
+            <div class="tarjeta-control">
+                <h3>Práctica 4: Animaciones Estructurales</h3>
+                <p class="sub-tecnico">Cola asíncrona de redimensionado encadenado.</p>
+                <button id="btnAnimar" class="btn-jquery">Disparar Flujo Coreográfico</button>
+                <div class="contenedor-pista">
+                    <div id="cajaAnimada" class="caja-base">Animación CSS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=eventos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/jquery_hover.js"></script>
+</body>
+</html>

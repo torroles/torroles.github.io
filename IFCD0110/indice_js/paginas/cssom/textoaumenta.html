@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Editor de Animación de Fuentes | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de CSSOM: Implementación de animaciones controladas mediante cálculo recursivo y manipulación directa de la propiedad fontSize con JavaScript.">
+    <meta name="keywords" content="JavaScript, CSSOM, animaciones, setTimeout, fontSize, manipulación del DOM, desarrollo web, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/estilos_fuente.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Editor de Animación de Fuentes</h1>
+
+    <main class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico (CSSOM):</strong> Implementación de una animación controlada mediante el cálculo recursivo de estilos. A diferencia de las transiciones CSS puras, este script manipula directamente la propiedad <code>style.fontSize</code> en el objeto CSSOM, permitiendo una lógica de control avanzada (pausa, reinicio y velocidad variable) gestionada mediante el bucle de eventos de JavaScript y <code>setTimeout</code>.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div id="contenedorLetras" class="area-render">
+                <div id="letras">Toda la frase va creciendo</div>
+            </div>
+
+            <div class="controles">
+                <button id="btnPausa" class="btn-interactivo">Pausar / Reanudar</button>
+                <button id="btnReset" class="btn-interactivo">Reiniciar</button>
+                <label>Velocidad (ms): 
+                    <input type="range" id="inputVel" min="5" max="100" value="20">
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/animacion_fuente.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prácticas de JavaScript - Búsquedas Booleanas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Resolución de ejercicios prácticos: Automatización de búsquedas lógicas y booleanas avanzadas utilizando la API del navegador.">
+    <meta name="keywords" content="html, javascript, busquedas, booleanos, google, window open, curso, fundamentos">
+    <link rel="stylesheet" href="css/busqueda.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Automatización de Búsquedas Booleanas</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Construir y depurar cadenas de comandos booleanos complejos para automatizar la apertura de consultas indexadas en motores de búsqueda externos mediante <code>window.open()</code>.</p>
+        </div>
+        
+        <h3>Consultas Requeridas:</h3>
+        <ul>
+            <li><strong>Búsqueda 1:</strong> Expresión exacta "certificado de profesionalidad" con "manual" o "texto".</li>
+            <li><strong>Búsqueda 2:</strong> Términos "diario", "noticias" o "última hora" con modalidades "on-line" o "en línea".</li>
+        </ul>
+
+        <div class="formulario">
+            <button type="button" onclick="ejecutarBusqueda1()">Ejecutar Búsqueda 1</button>
+            <button type="button" onclick="ejecutarBusqueda2()">Ejecutar Búsqueda 2</button>
+        </div>
+        <p class="resultado" id="feedbackBusqueda">Haz clic en un botón para lanzar la consulta en una nueva pestaña.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/busqueda.js"></script>
+</body>
+</html>

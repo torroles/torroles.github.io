@@ -1,0 +1,98 @@
+/* Configuración general del layout (Idéntico a tus anteriores entregas) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta informativa corporativa para el reclutador */
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Contenedor del Ejercicio base */
+.ejercicio-menu {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de la barra de pestañas */
+.barra-navegacion {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Capas principales del menú maquetadas de manera limpia sin atributos inline */
+.layer {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    background-color: #fffaf0; /* Un tono crema elegante en lugar del amarillo plano anterior */
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    margin-right: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* Transición de aceleración fluida */
+}
+
+/* Estilo destacado del título del menú raíz */
+.titulo-menu {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: #3182ce;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.titulo-menu:hover {
+    background-color: #2b6cb0;
+}
+
+/* Bloque contenedor de enlaces secundarios */
+.subenlaces {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+/* Enlaces del submenú */
+.subenlaces a {
+    padding: 8px 12px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Efecto hover moderno para los subenlaces */
+.subenlaces a:hover {
+    background-color: #edf2f7;
+    color: #2b6cb0;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; padding: 20px; margin: 0; }
+h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+
+.ejercicio { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* --- ESTILO AZUL UNIFICADO --- */
+.explicacion {
+    background-color: #ebf8ff;
+    padding: 10px 15px;
+    border-left: 4px solid #3182ce;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+    color: #2b6cb0;
+}
+
+.contenedor-efecto {
+    background-color: #fcfcfc;
+    padding: 20px;
+    border: 2px dashed #cbd5e0;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#marquesina {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3182ce; /* Azul corporativo */
+    padding: 20px;
+    min-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn-interactivo { 
+    padding: 10px 20px; 
+    background-color: #3182ce; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+.btn-interactivo:hover { background-color: #2b6cb0; }

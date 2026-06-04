@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+.ejercicio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explicacion {
+    background-color: #ebf8ff;
+    padding: 10px;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.bloque-control {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.btn-interactivo {
+    padding: 8px 15px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-interactivo:hover {
+    background-color: #2b6cb0;
+}

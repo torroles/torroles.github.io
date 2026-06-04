@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Panel Diagnóstico del Entorno | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de diagnóstico interactivo: Selector dinámico para consultar y renderizar datos del sistema y del navegador mediante la manipulación del DOM.">
+    <meta name="keywords" content="JavaScript, diagnóstico, BOM, DOM, navigator, window object, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/diagnostico_dom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Diagnóstico del Entorno</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Mejora técnica:</strong> Uso de un formulario de control para filtrar la información del objeto <code>window</code>. Aplicamos <code>textContent</code> para renderizar la respuesta del sistema tras la selección.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="bloque-control">
+                <label for="selectorInfo">Elige el dato a consultar:</label>
+                <select id="selectorInfo" class="btn-interactivo">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="user">Información del Navegador</option>
+                    <option value="url">URL Actual</option>
+                    <option value="res">Resolución de Pantalla</option>
+                    <option value="lang">Idioma</option>
+                </select>
+            </div>
+
+            <div id="panelDiagnostico" class="area-render">
+                <p class="sub-tecnico">La información aparecerá aquí al seleccionar una opción...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=dom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/diagnostico_dom.js"></script>
+</body>
+
+</html>

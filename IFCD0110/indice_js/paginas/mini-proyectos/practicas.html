@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicios Prácticos JavaScript | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Recopilación de ejercicios prácticos de JavaScript: lógica condicional, asincronía, eventos del DOM y manipulación de elementos.">
+    <meta name="keywords" content="JavaScript, prácticas JS, lógica de programación, asincronía, DOM, eventos, portafolio profesional, Raúl Galisteo García">
+    <link rel="stylesheet" href="css/practicas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Prácticas de JavaScript</h1>
+    
+    <section class="ejercicio">
+        <h2>Ejercicio 1: Selección de Personal</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Evaluar la elegibilidad de un candidato utilizando operadores lógicos combinados. El algoritmo descarta automáticamente a perfiles con edades comprendidas entre los 21 y 30 años o que posean un nivel de estudios igual o superior a 2; en caso contrario, el candidato es aceptado.</p>
+        </div>
+        <div class="formulario">
+            <label for="inputNombre">Nombre:</label>
+            <input type="text" id="inputNombre" placeholder="Ej. Raul">
+            <label for="inputEdad">Edad:</label>
+            <input type="number" id="inputEdad" placeholder="Ej. 22">
+            <label for="inputEstudios">Estudios (Nivel):</label>
+            <input type="number" id="inputEstudios" placeholder="Ej. 1">
+            <button onclick="procesarEleccion()">Evaluar Persona</button>
+        </div>
+        <p class="resultado" id="resultadoEleccion">Introduce datos para evaluar.</p>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 2: Cálculo de Descuento (Panadería)</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Implementar una estructura de control condicional indexada para la tarificación dinámica de productos. Aplica un 0% de descuento para pedidos inferiores a 10 unidades, un 10% de descuento para volúmenes entre 10 y 20 unidades, y un 20% escalonado para compras superiores a 20 unidades.</p>
+        </div>
+        <div class="formulario">
+            <label for="inputBarras">Número de barras:</label>
+            <input type="number" id="inputBarras" placeholder="Ej. 15">
+            <label for="inputPrecio">Precio por barra (€):</label>
+            <input type="number" id="inputPrecio" value="1" step="0.1">
+            <button onclick="procesarDescuento()">Calcular Precio</button>
+        </div>
+        <p class="resultado" id="resultadoPan">Introduce la cantidad de barras.</p>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 3: Gestión de Asincronía y Flujos Temporales</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Implementación de temporizadores (setTimeout y setInterval) para gestionar flujos asíncronos en la ejecución de scripts.</p>
+        </div>
+        <h3>setTimeout</h3>
+        <h4>Intervalo de 5 segundos</h4>
+        <button onclick="iniciarTimeout()">Iniciar</button>
+        <p id="cincoi"></p>
+        <button onclick="detenerTimeout()">Detener</button>
+        <p id="cincod"></p>
+
+        <h3>setInterval</h3>
+        <h4>Repetición función Intervalo de 3 segundos</h4>
+        <button onclick="inicio()">Iniciar</button>
+        <p id="output_mensaje"></p>
+        <button onclick="final()">Detener</button>
+        <p id="output_estado"></p>
+    </section>
+
+    <section class="ejercicio">
+        <h2>Ejercicio 4: Control de Eventos del Ratón (DOM)</h2>
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Manipulación del DOM mediante eventos de puntero (click, mouseover, etc.) para alterar propiedades de elementos de imagen.</p>
+        </div>
+        <div class="estilo">
+            <div class="flex">
+                <div class="fondo"><img id="bombilla1" src="img/pic_bulboff.gif" onclick="encender(this);" alt="b"><p>onclick</p></div>
+                <div class="fondo"><img id="bombilla2" src="img/pic_bulboff.gif" ondblclick="encender(this);" alt="b"><p>ondblclick</p></div>
+                <div class="fondo"><img id="bombilla3" src="img/pic_bulboff.gif" oncontextmenu="encender(this); return false;" alt="b"><p>oncontextmenu</p></div>
+                <div class="fondo"><img id="bombilla4" src="img/pic_bulboff.gif" onmousedown="encender(this);" alt="b"><p>onmousedown</p></div>
+                <div class="fondo"><img id="bombilla5" src="img/pic_bulboff.gif" onmouseenter="encender(this);" alt="b"><p>onmouseenter</p></div>
+            </div>
+            <br>
+            <div class="flex">
+                <div class="fondo"><img id="bombilla6" src="img/pic_bulboff.gif" onmouseleave="encender(this);" alt="b"><p>onmouseleave</p></div>
+                <div class="fondo"><img id="bombilla7" src="img/pic_bulboff.gif" onmousemove="encender(this);" alt="b"><p>onmousemove</p></div>
+                <div class="fondo"><img id="bombilla8" src="img/pic_bulboff.gif" onmouseout="encender(this);" alt="b"><p>onmouseout</p></div>
+                <div class="fondo"><img id="bombilla9" src="img/pic_bulboff.gif" onmouseover="encender(this);" alt="b"><p>onmouseover</p></div>
+                <div class="fondo"><img id="bombilla10" src="img/pic_bulboff.gif" onmouseup="encender(this);" alt="b"><p>onmouseup</p></div>
+            </div>
+        </div>
+        <form action="" name="bombillas" onsubmit="return false;">
+            <input type="button" onclick="apagar()" value="Apagar todas">
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/practicas.js"></script>
+</body>
+</html>

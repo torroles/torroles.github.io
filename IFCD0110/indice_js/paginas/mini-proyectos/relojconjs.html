@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Reloj Digital Dinámico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Reloj digital interactivo en tiempo real programado con JavaScript nativo, utilizando el objeto Date y temporizadores asíncronos.">
+    <meta name="keywords" content="html, javascript, reloj digital, date, dom, eventos, temporizadores, desarrollo web">
+    <link rel="stylesheet" href="css/reloj.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body onload="mueveReloj();">
+    
+    <h1>Reloj Digital Dinámico</h1>
+    
+    <main class="ejercicio-reloj">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Construir un cronómetro digital síncrono con el sistema del cliente en tiempo real. El script instancia de forma cíclica el objeto nativo `Date` de JavaScript, procesa y normaliza los componentes de tiempo (horas, minutos y segundos) aplicando formateo de cadenas nativo (`padStart`) y gestiona la reactivación asíncrona del hilo de ejecución mediante la API `setTimeout` cada 1000 milisegundos.</p>
+        </div>
+        
+        <div class="pantalla-reloj">
+            <p>Vemos aquí el reloj funcionando...</p>
+            <div id="displayReloj" class="reloj-digital">00 : 00 : 00</div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/reloj.js"></script>
+</body>
+</html>

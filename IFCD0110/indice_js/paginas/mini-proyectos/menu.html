@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menú Desplegable interactivo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Menú de navegación interactivo con submenús desplegables mediante la manipulación del DOM y transiciones suaves de altura en CSS.">
+    <meta name="keywords" content="html, javascript, menu desplegable, dom, eventos, transiciones css, desarrollo web">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body onload="inicializarMenus();">
+    
+    <h1>Menú con capas y submenús</h1>
+    
+    <main class="ejercicio-menu">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Implementar un sistema de navegación mediante menús colapsables interactivos. El componente gestiona de manera asíncrona los estados visuales del árbol de enlaces mediante eventos de puntero (`onmouseover` y `onmouseout`), delegando el comportamiento animado a transiciones nativas de CSS sobre la propiedad `height` para optimizar el rendimiento de renderizado.</p>
+        </div>
+        
+        <nav class="barra-navegacion">
+            
+            <div id="Layer1" class="layer" onmouseover="ampliarMenu(this)" onmouseout="reducirMenu(this)">
+                <a href="menu1.html" class="titulo-menu">Menu 1</a>
+                <div class="subenlaces">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+            </div>
+
+            <div id="Layer2" class="layer" onmouseover="ampliarMenu(this)" onmouseout="reducirMenu(this)">
+                <a href="menu2.html" class="titulo-menu">Menu 2</a>
+                <div class="subenlaces">
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                    <a href="#">Link 7</a>
+                    <a href="#">Link 8</a>
+                </div>
+            </div>
+
+            <div id="Layer3" class="layer" onmouseover="ampliarMenu(this)" onmouseout="reducirMenu(this)">
+                <a href="menu3.html" class="titulo-menu">Menu 3</a>
+                <div class="subenlaces">
+                    <a href="#">Link 9</a>
+                    <a href="#">Link 10</a>
+                    <a href="#">Link 11</a>
+                    <a href="#">Link 12</a>
+                </div>
+            </div>
+
+        </nav>
+    </main>
+
+       <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

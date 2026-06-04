@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Controlador de Estilos (CSSOM) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio avanzado de CSSOM: Manipulación dinámica de estilos, propiedades CSS y accesibilidad mediante el acceso programático al modelo de objetos de CSS.">
+    <meta name="keywords" content="JavaScript, CSSOM, manipulación de estilos, DOM, accesibilidad, contraste de color, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/cambiarcolor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Controlador de Estilos (CSSOM)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo Técnico (CSSOM):</strong> Generación dinámica de nodos en el DOM y acceso programático a
+                sus propiedades de estilo. Se implementa una función de contraste para asegurar la legibilidad del texto
+                según el color de fondo elegido.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <table id="tablaDinamica"></table>
+
+            <div class="bloque-control">
+                <input type="number" id="inputCelda" min="1" max="10" placeholder="Nº Celda (1-10)">
+
+                <div class="contenedor-controles">
+                    <div class="fila-control">
+                        <label>Fondo:</label>
+                        <input type="text" id="fondoTexto" placeholder="ej: blue, #ff0000">
+                        <label for="fondoSelector" id="btnFondoColor" class="btn-color-simulado">Color</label>
+                        <input type="color" id="fondoSelector">
+                    </div>
+                    <div class="fila-control">
+                        <label>Texto:</label>
+                        <input type="text" id="textoTexto" placeholder="ej: white, #ffffff">
+                        <label for="textoSelector" id="btnTextoColor" class="btn-color-simulado">Color</label>
+                        <input type="color" id="textoSelector">
+                    </div>
+                </div>
+
+                <button id="btnAplicar" class="btn-interactivo">Aplicar Cambios</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=cssom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/cambiarcolor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Eventos de Dispositivos de Entrada (Teclado) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de captura de periféricos: Telemetría de propiedades key, code y modificadores (Ctrl, Shift, Alt) mediante el manejo de eventos de teclado en JavaScript.">
+    <meta name="keywords" content="JavaScript, eventos de teclado, keydown, keyup, telemetría, DOM, periféricos, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/eventos_teclado.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    
+    <h1>Eventos de Dispositivos de Entrada (Teclado)</h1>
+    
+    <main class="ejercicio-carrusel">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Interceptar los estados mecánicos <code>keydown</code> y <code>keyup</code>. El componente extrae los valores del objeto del evento para mapear la tecla física mediante el DOM y verificar en tiempo real las combinaciones de teclas con modificadores del sistema (Ctrl, Shift, Alt).</p>
+        </div>
+
+        <div class="contenedor-teclado">
+            <div class="consola-datos">
+                <h3>Telemetría de la Tecla</h3>
+                <div class="dato-prop"><span>e.key (Valor):</span> <strong id="valKey">-</strong></div>
+                <div class="dato-prop"><span>e.code (Ubicación):</span> <strong id="valCode">-</strong></div>
+                <div class="dato-prop"><span>e.which / keyCode:</span> <strong id="valWhich">-</strong></div>
+                
+                <div class="modificadores">
+                    <span id="modCtrl" class="badge-mod">CTRL</span>
+                    <span id="modShift" class="badge-mod">SHIFT</span>
+                    <span id="modAlt" class="badge-mod">ALT</span>
+                </div>
+            </div>
+
+            <div class="teclado-visual">
+                <p class="instruccion">Pulsa cualquier tecla de tu teclado:</p>
+                <div class="fila-teclas">
+                    <div class="tecla" id="KeyQ">Q</div><div class="tecla" id="KeyW">W</div><div class="tecla" id="KeyE">E</div><div class="tecla" id="KeyR">R</div><div class="tecla" id="KeyT">T</div>
+                </div>
+                <div class="fila-teclas">
+                    <div class="tecla" id="KeyA">A</div><div class="tecla" id="KeyS">S</div><div class="tecla" id="KeyD">D</div><div class="tecla" id="KeyF">F</div><div class="tecla" id="KeyG">G</div>
+                </div>
+                <div class="fila-teclas">
+                    <div class="tecla" id="Space">Spacebar</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=eventos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/eventos_teclado.js"></script>
+</body>
+</html>

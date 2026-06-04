@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Generador de Contenido Dinámico | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de manipulación del DOM: Renderizado dinámico de contenido utilizando innerText y generación de índices aleatorios con Math.random().">
+    <meta name="keywords" content="JavaScript, DOM, innerText, Math.random, renderizado dinámico, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/generador_contenido.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Generador de Contenido Dinámico</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Concepto Técnico:</strong> Utilizamos <code>innerText</code> para inyectar textos de forma segura. La selección se basa en el índice aleatorio generado mediante <code>Math.random()</code>.</p>
+        </div>
+
+        <div class="malla-laboratorio">
+            <div class="bloque-control">
+                <button id="btnGenerar" class="btn-interactivo">Obtener Nueva Ventaja</button>
+            </div>
+
+            <div id="contenedorVentaja" class="area-render">
+                <h3 id="tituloVentaja">Nuestras Ventajas</h3>
+                <p id="textoAleatorio">Haz clic en el botón para cargar una ventaja...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=dom">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/generador_contenido.js"></script>
+</body>
+</html>

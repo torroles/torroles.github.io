@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Prácticas de JavaScript - Calculadora de Edad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Resolución de ejercicios prácticos: Manipulación del objeto Date en JavaScript para el cálculo preciso de edades.">
+    <meta name="keywords" content="html, javascript, objeto date, calculo edad, eventos, dom, curso, fundamentos">
+    <link rel="stylesheet" href="css/edad.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Calculadora de Edad</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Determinar la edad exacta de un usuario procesando objetos de tiempo <code>Date()</code>. El script calcula la diferencia de años y evalúa mediante condicionales si el día y mes actuales ya han superado la efeméride de nacimiento para ajustar el desfase de días.</p>
+        </div>
+        
+        <div class="formulario">
+            <form id="ageForm" method="post">
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <button type="submit">Calcular Edad</button>
+            </form>
+        </div>
+        <p class="resultado" id="resultadoEdad">Introduce tu fecha de nacimiento para procesar.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/edad.js"></script>
+</body>
+
+</html>

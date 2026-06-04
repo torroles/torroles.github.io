@@ -1,0 +1,106 @@
+/* Layout corporativo unificado con tu portafolio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.explicacion {
+    background-color: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    color: #2b6cb0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contenedor-juego {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.marcador {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+/* Lienzo de juego centrado */
+canvas {
+    background-color: #1a202c;
+    border: 4px solid #2d3748;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%; /* El canvas se escala bien en pantallas chicas */
+}
+
+/* Botonera en cruz optimizada para móviles */
+.botonera-movil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+/* Ocultar la botonera en pantallas de PC */
+@media (min-width: 768px) {
+    .botonera-movil {
+        display: none;
+    }
+}
+
+.fila-medio {
+    display: flex;
+    gap: 30px;
+}
+
+.boton-direccion {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.boton-direccion:active {
+    background-color: #2b6cb0;
+    transform: scale(0.95);
+}
+
+.caja-reinicio button {
+    padding: 10px 20px;
+    background-color: #2d3748;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.caja-reinicio button:hover {
+    background-color: #1a202c;
+}

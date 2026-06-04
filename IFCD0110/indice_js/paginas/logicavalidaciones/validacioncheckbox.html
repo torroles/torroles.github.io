@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Control de Selección Matricial | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de validación: Control independiente de grupos de checkboxes mediante atributos data-group para limitar el número máximo de selecciones.">
+    <meta name="keywords" content="JavaScript, checkboxes, validación de formularios, data-group, selección matricial, portafolio profesional, Raúl Galisteo García, prácticas JS">
+
+    <link rel="stylesheet" href="css/checkboxes.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body>
+    <h1>Control de Selección Matricial (Límite por Filas)</h1>
+
+    <section class="ejercicio">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Gestionar de forma independiente los estados de selección de una matriz de verificación de datos. El script lee dinámicamente los atributos personalizados <code>data-group</code> de cada fila y actualiza un array global de contadores, denegando el marcado si se supera el tope máximo de <strong>2 opciones por fila</strong>.</p>
+        </div>
+        
+        <div class="formulario">
+            <form name="formularioCheckboxes" id="formularioCheckboxes" onsubmit="return false;">
+                <table class="tabla-opciones">
+                    <thead><tr><th colspan="3">Fila 1 (Grupo 0) - Máximo 2 selecciones</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><label><input type='checkbox' data-group="0" name='checkbox1' value='Opcion 1A'> Opción 1A</label></td>
+                            <td><label><input type='checkbox' data-group="0" name='checkbox2' value='Opcion 1B'> Opción 1B</label></td>
+                            <td><label><input type='checkbox' data-group="0" name='checkbox3' value='Opcion 1C'> Opción 1C</label></td>
+                        </tr>
+                    </tbody>
+                    <thead><tr><th colspan="3">Fila 2 (Grupo 1) - Máximo 2 selecciones</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><label><input type='checkbox' data-group="1" name='checkbox4' value='Opcion 2A'> Opción 2A</label></td>
+                            <td><label><input type='checkbox' data-group="1" name='checkbox5' value='Opcion 2B'> Opción 2B</label></td>
+                            <td><label><input type='checkbox' data-group="1" name='checkbox6' value='Opcion 2C'> Opción 2C</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <p class="resultado" id="feedbackCheck">Selecciona las casillas que desees por cada grupo.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/checkboxes.js"></script>
+</body>
+</html>

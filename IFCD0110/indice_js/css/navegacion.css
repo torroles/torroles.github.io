@@ -1,0 +1,27 @@
+
+
+#navegacion {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#navegacion span a {color: rgb(30, 16, 153);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(140, 216, 240);
+    font-size: large;
+    border-radius: 5px;
+    display: inline-block; /* Mantenemos este para que el padding azul funcione bien */
+    background-color: rgb(140, 216, 240); /* Tu color azul original */
+    padding: 10px; /* Tu padding original del botón */
+}
+
+#navegacion span a:hover {
+    /* Evitamos que el padding crezca a 20px 40px en el hover */
+    padding: 10px !important; 
+    background-color: rgb(110, 190, 220) !important; /* Un azul un poco más oscuro para el feedback */
+    text-decoration: none !important;
+}
+
+

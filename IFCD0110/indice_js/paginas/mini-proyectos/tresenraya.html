@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Juego del Tres en Raya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Juego del Tres en Raya (Tic-Tac-Toe) interactivo desarrollado en JavaScript nativo con detección automática de victorias y empates.">
+    <meta name="keywords" content="html, javascript, tres en raya, tic tac toe, dom, eventos, matriz, desarrollo web, portafolio">
+    <link rel="stylesheet" href="css/tresenraya.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+<body onload="inicializarTablero();">
+    
+    <h1>Juego del Tres en Raya</h1>
+    
+    <main class="contenedor-juego">
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Diseñar e implementar el juego interactivo 'Tres en Raya' aplicando manipulación avanzada de nodos del DOM. El script gestiona el estado de la partida mediante un array lineal de 9 posiciones, alterna los turnos de juego de forma secuencial, evalúa las combinaciones ganadoras mediante álgebra booleana y renderiza las celdas dinámicamente inyectando clases de estado.</p>
+        </div>
+        
+        <div id="informacionTurno" class="estado-turno">Turno de las X</div>
+
+        <div class="tablero-rejilla">
+            <div class="celda" onclick="marcarCasilla(this, 0)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 1)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 2)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 3)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 4)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 5)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 6)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 7)"></div>
+            <div class="celda" onclick="marcarCasilla(this, 8)"></div>
+        </div>
+
+        <div class="caja-reinicio">
+            <button onclick="inicializarTablero()">Reiniciar Partida</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=mini-proyectos">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/tresenraya.js"></script>
+</body>
+</html>

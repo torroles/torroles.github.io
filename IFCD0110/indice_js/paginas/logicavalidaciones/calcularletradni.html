@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Algoritmo de Control de Identidad (Letra DNI) | Prácticas JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Laboratorio de validación: Algoritmo para el cálculo de la letra de control de un DNI español mediante operación de módulo 23.">
+    <meta name="keywords" content="JavaScript, DNI, algoritmo, validación, módulo 23, portafolio profesional, Raúl Galisteo García, prácticas JS">
+    <link rel="stylesheet" href="css/dni.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Algoritmo de Control de Identidad (Letra DNI)</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Generar la clave alfabética de validación de un DNI español. El proceso aplica la operación aritmética de módulo 23 al operando numérico introducido, utilizando el resto resultante como puntero indexado sobre la cadena maestra estandarizada de asignación.</p>
+        </div>
+        
+        <div class="formulario">
+            <label for="dni">Introduzca su número de DNI:</label>
+            <input type="text" id="dni" name="dni" placeholder="Ej. 12345678">
+            <button type="button" onclick="calcularLetraDNI()">Calcular Letra</button>
+        </div>
+        <p class="resultado" id="resultadoDNI">Introduce los dígitos numéricos para verificar la letra de control.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/dni.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Prácticas de JavaScript - Calculadora de Tiempo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raúl Galisteo García">
+    <meta name="generator" content="VS Code">
+    <meta name="description" content="Resolución de ejercicios prácticos: Conversión y cálculo de intervalos de tiempo absolutos en días, meses y años con JavaScript.">
+    <meta name="keywords" content="html, javascript, diferencia fechas, marcas de tiempo, objetos date, dom, curso">
+    <link rel="stylesheet" href="css/tiempo.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head>
+
+<body>
+    <h1>Calculadora de Intervalos de Tiempo</h1>
+
+    <section class="ejercicio">
+        
+        <div class="explicacion">
+            <p><strong>Objetivo:</strong> Calcular de forma precisa el rango temporal existente entre dos fechas dadas. El script sustrae los objetos <code>Date()</code> obteniendo una diferencia en milisegundos brutos, para posteriormente desglosarla matemáticamente en unidades legibles de días, meses y años métricos.</p>
+        </div>
+        
+        <div class="formulario">
+            <form id="timeForm" method="post">
+                <label for="startDate">Fecha de Inicio:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                
+                <label for="endDate">Fecha de Fin:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                
+                <button type="submit">Calcular Tiempo</button>
+            </form>
+        </div>
+        <p class="resultado" id="resultadoTiempo">Introduce los dos límites temporales para computar el intervalo.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="viñeta">
+                <li><a href="../../index.html?bloque=validaciones">Volver al Índice de Ejercicios</a></li>
+                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/año_footer.js"></script>
+    <script src="js/tiempo.js"></script>
+</body>
+
+</html>
