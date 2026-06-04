@@ -10,7 +10,7 @@
     <meta name="keywords" content="JavaScript, BOM, setInterval, temporizador, portafolio, Raúl Galisteo García">
     <link rel="stylesheet" href="css/temporizador.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="icon" type="image/png" href="img/favicon.jpg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
     <h1>Cronómetro de Sesión</h1>
@@ -28,16 +28,14 @@
         <nav>
             <ul class="viñeta">
                 <li><a href="../../index.html?bloque=bom">Volver al Índice de Ejercicios</a></li>
-                <li><a href="../../../index.html">Volver al Portafolio</a></li>
+                <li><a href="../../../../index.html">Volver al Portafolio</a></li>
                 <li>© <span id="year"></span> &nbsp; Raúl Galisteo García - Portfolio Profesional</li>
             </ul>
         </nav>
     </footer>
     <script src="js/año_footer.js"></script>
     <script src="js/temporizador.js"></script>
-        let segundos = 0; let interval;
-        function iniciar() { if(!interval) interval = setInterval(() => { segundos++; document.getElementById('contador').textContent = segundos; }, 1000); }
-        function parar() { clearInterval(interval); interval = null; }
+        
     </script>
 </body>
 </html>
